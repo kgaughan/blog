@@ -1,0 +1,5 @@
+/output/*
+.*.sw?
+*~
+/*.pid
+*.pyc
