@@ -23,9 +23,12 @@ FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 
 LINKS = (
+    ('Main site', 'https://stereochro.me/'),
+)
+
+SOCIAL = (
     ('Github', 'https://github.com/kgaughan/'),
     ('Twitter', 'https://twitter.com/talideon/'),
-    ('Main site', 'https://stereochro.me/'),
 )
 
 THEME = os.path.join(os.curdir, 'themes', 'svbtle')
@@ -33,4 +36,4 @@ THEME = os.path.join(os.curdir, 'themes', 'svbtle')
 DEFAULT_PAGINATION = 20
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
