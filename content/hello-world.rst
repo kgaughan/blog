@@ -22,9 +22,9 @@ never cared to read: writing went from being something I did because I liked
 it or liked what I was writing about to being... a chore.
 
 I used to have hobbies. I mean, not ones that most people would think were
-super exciting or, and some of them would be considered weird by a lot of
-people (though conlanging_ has gone a bit more mainstream in more recent
-years), but I liked them. No more though.
+super exciting, and some of them would be considered weird by a lot of people
+(though conlanging_ has gone a bit more mainstream in more recent years), but I
+liked them. No more though.
 
 So I feel burned out, and need to do something. This blog is meant to help me
 fix myself. I figure it would be a good idea to document my work on various

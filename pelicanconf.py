@@ -9,6 +9,7 @@ import os.path
 
 AUTHOR = u'Keith Gaughan'
 SITENAME = u"Can't Hack"
+TAGLINE = "...but trying to"
 SITEURL = ''
 
 PATH = 'content'
@@ -21,9 +22,10 @@ DEFAULT_LANG = u'en'
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 
-# Blogroll
 LINKS = (
-#    ('You can modify those links in your config file', '#'),
+    ('Github', 'https://github.com/kgaughan/'),
+    ('Twitter', 'https://twitter.com/talideon/'),
+    ('Main site', 'https://stereochro.me/'),
 )
 
 THEME = os.path.join(os.curdir, 'themes', 'svbtle')
