@@ -1,6 +1,9 @@
 About
 =====
 
+:date: 2016-03-02 01:44
+:status: published
+
 A self-improvement project by `Keith Gaughan <https://stereochro.me/>`_.
 
 At the time of writing (March 2016), I feel I'm at a bit of a crossroads in my

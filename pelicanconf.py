@@ -22,6 +22,10 @@ DEFAULT_LANG = u'en'
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 
+DEFAULT_METADATA = {
+    'status': 'draft',
+}
+
 LINKS = (
     ('Main site', 'https://stereochro.me/'),
 )

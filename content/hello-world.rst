@@ -3,6 +3,7 @@ Hello, world!
 
 :date: 2016-03-01 20:00
 :category: General
+:status: published
 
 *Can't Hack* is a blog. Those who know my might know that I already have a blog
 over at stereochro.me__, but this is meant to be something a little different.
