@@ -1,28 +1,16 @@
 PY?=python
 PELICAN?=pelican
-PELICANOPTS=
 
 PORT:=8000
 
-BASEDIR=$(CURDIR)
-INPUTDIR=$(BASEDIR)/content
-OUTPUTDIR=$(BASEDIR)/output
-CONFFILE=$(BASEDIR)/pelicanconf.py
-PUBLISHCONF=$(BASEDIR)/publishconf.py
+INPUTDIR=${PWD}/content
+OUTPUTDIR=${PWD}/output
+CONFFILE=${PWD}/pelicanconf.py
+PUBLISHCONF=${PWD}/publishconf.py
 
 SSH_HOST=lir.talideon.com
 SSH_USER=keith
 SSH_TARGET_DIR=/home/keith/sites/canthack.it/web
-
-DEBUG ?= 0
-ifeq ($(DEBUG), 1)
-	PELICANOPTS += -D
-endif
-
-RELATIVE ?= 0
-ifeq ($(RELATIVE), 1)
-	PELICANOPTS += --relative-urls
-endif
 
 help:
 	@echo 'Makefile for a pelican Web site                                           '
@@ -37,32 +25,28 @@ help:
 	@echo '   make stopserver                     stop local server                  '
 	@echo '   make ssh_upload                     upload the web site via SSH        '
 	@echo '   make rsync_upload                   upload the web site via rsync+ssh  '
-	@echo '                                                                          '
-	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   '
-	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
-	@echo '                                                                          '
 
 html:
-	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE)
 
 clean:
-	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
+	test -d $(OUTPUTDIR) && rm -rf $(OUTPUTDIR)
 
 regenerate:
-	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE)
 
 serve:
 	cd $(OUTPUTDIR) && $(PY) -m pelican.server $(PORT)
 
 devserver:
-	$(BASEDIR)/develop_server.sh restart $(PORT)
+	${PWD}/develop_server.sh restart $(PORT)
 
 stopserver:
-	$(BASEDIR)/develop_server.sh stop
+	${PWD}/develop_server.sh stop
 	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
 
 publish:
-	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
+	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF)
 
 ssh_upload: publish
 	scp -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
