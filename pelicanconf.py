@@ -35,7 +35,21 @@ SOCIAL = (
     ('Twitter', 'https://twitter.com/talideon/'),
 )
 
+PLUGIN_PATHS = [os.path.abspath('../pelican-plugins')]
+PLUGINS = [
+    # See: https://github.com/getpelican/pelican-plugins/tree/master/code_include
+    'code_include',
+    # https://github.com/getpelican/pelican-plugins/tree/master/headerid
+    'headerid',
+    # See: https://github.com/getpelican/pelican-plugins/tree/master/sitemap
+    'sitemap',
+]
+
 THEME = os.path.join(os.curdir, 'themes', 'svbtle')
+
+SITEMAP = {
+    'format': 'xml',
+}
 
 DEFAULT_PAGINATION = 20
 
