@@ -8,9 +8,9 @@ OUTPUTDIR=${PWD}/output
 CONFFILE=${PWD}/pelicanconf.py
 PUBLISHCONF=${PWD}/publishconf.py
 
-SSH_HOST=lir.talideon.com
-SSH_USER=keith
-SSH_TARGET_DIR=/home/keith/sites/canthack.it/web
+SSH_HOST=cian.talideon.com
+SSH_USER=freebsd
+SSH_TARGET_DIR=/home/$(SSH_USER)/sites/canthack.it/web
 
 help:
 	@echo 'Makefile for a pelican Web site                                           '
@@ -54,4 +54,8 @@ ssh_upload: publish
 rsync_upload: publish
 	rsync -P -rvc --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
 
-.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload
+copy_upload: publish
+	cp -r $(OUTPUTDIR)/* $(SSH_TARGET_DIR)
+
+.PHONY: html help clean regenerate serve devserver publish
+.PHONY: ssh_upload rsync_upload copy_upload
