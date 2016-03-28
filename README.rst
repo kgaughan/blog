@@ -14,8 +14,17 @@ And to ensure the theme is pulled in::
 
     $ git submodule update --init
 
-I may make the Makefile portable so it works on both GNU make and BSD make
-without modification.
+You should also ensure that the pelican-plugins repo is checked out in the
+same directory as the repo::
+
+    $ git clone https://github.com/getpelican/pelican-plugins.git
+
+Finally, ensure that reST smart quotes are switched on in ``~/.docutils``::
+
+    [restructuredtext parser]
+    smart_quotes=yes
+
+The makefile should be portable, so it'll work with both GNU make and BSD make.
 
 .. _Pelican: https://github.com/getpelican/pelican
 .. _Can't Hack: https://i.canthack.it/
