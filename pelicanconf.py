@@ -53,5 +53,9 @@ SITEMAP = {
 
 DEFAULT_PAGINATION = 20
 
+# Pages to disable.
+AUTHORS_SAVE_AS = ''
+AUTHOR_SAVE_AS = ''
+
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
