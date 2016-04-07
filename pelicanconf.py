@@ -45,6 +45,14 @@ PLUGINS = [
     'sitemap',
 ]
 
+STATIC_PATHS = (
+    'images',
+    'extra/robots.txt',
+)
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+}
+
 THEME = os.path.join(os.curdir, 'themes', 'svbtle')
 
 SITEMAP = {
