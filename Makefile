@@ -26,6 +26,9 @@ help:
 	@echo '   make ssh_upload                     upload the web site via SSH        '
 	@echo '   make rsync_upload                   upload the web site via rsync+ssh  '
 
+drafts:
+	@grep -rl '^:status: *draft$$' content
+
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE)
 
