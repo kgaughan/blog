@@ -8,7 +8,7 @@ import os.path
 
 
 AUTHOR = u'Keith Gaughan'
-SITENAME = u"Can't Hack"
+SITENAME = u"Can't Hack It"
 TAGLINE = "...but trying to"
 SITEURL = ''
 
@@ -37,11 +37,11 @@ SOCIAL = (
 
 PLUGIN_PATHS = [os.path.abspath('../pelican-plugins')]
 PLUGINS = [
-    # See: https://github.com/getpelican/pelican-plugins/tree/master/code_include
+    # https://github.com/getpelican/pelican-plugins/tree/master/code_include
     'code_include',
     # https://github.com/getpelican/pelican-plugins/tree/master/headerid
     'headerid',
-    # See: https://github.com/getpelican/pelican-plugins/tree/master/sitemap
+    # https://github.com/getpelican/pelican-plugins/tree/master/sitemap
     'sitemap',
 ]
 
