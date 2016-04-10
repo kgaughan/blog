@@ -48,9 +48,9 @@ Most of the time it's obvious which progressive should be used under which
 circumstances, and which verbs it would be odd to use a particular progressive
 form with. There are some oddballs, however, such as rith_ (meaning 'run'),
 which, in spite of *intuitively* being a verb you'd use with the simple
-progressive [*]_, is actually
-used with the state-of-being progressive. Thus, if you wanted to say 'I am
-running' rather than saying 'Táim ag rith', you'd say 'Táim i mo rith'.
+progressive\ [*]_, is actually used with the state-of-being progressive. Thus,
+if you wanted to say 'I am running' rather than saying 'Táim ag rith', you'd
+say 'Táim i mo rith'.
 
 Some verbs are rarely used in the simple indicative form, and are instead
 always progressive because they indicate some long-lasting state. The verb

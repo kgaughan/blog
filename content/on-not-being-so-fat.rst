@@ -112,7 +112,7 @@ to end up harming yourself. What you do have to do is eat sensibly. That mean:
 
 * If you eat bread, eat loaves with small slices. Consider this a bit of a
   mental hack. I stopped buying sliced pans and switched to eating soda bread.
-  Now, this isn't because soda bread [1]_ is all that much more healthy, but
+  Now, this isn't because soda bread\ [1]_ is all that much more healthy, but
   because the slices are smaller. Essentially, my brain is having two slices of
   bread and it's happy. The fact that those slices are smaller doesn't matter:
   it had two, and it's happy. This is really just a variation on moderating
@@ -132,7 +132,7 @@ to end up harming yourself. What you do have to do is eat sensibly. That mean:
 
 * ...but don't deny yourself either: I like biscuits and one of the ways I
   avoid buying a big packet of bourbon creams is that when I'm in Tesco, I
-  sometimes buy a bag of the cookies [2]_ they sell in the bakery. I find it
+  sometimes buy a bag of the cookies\ [2]_ they sell in the bakery. I find it
   easier for me to limit myself to one or two of these a day than avoiding the
   constant temptation of biscuits.
 
@@ -157,8 +157,8 @@ great effort as I already walked everywhere.
 Then I decided I'd walk for at least 10,000 steps in one session per day. That
 was harder, but doable most days. I'd go out at 10pm, and start walking.
 
-After a struggle [3]_, I managed to start doing that pretty regularly, I bumped
-that up to 13,000.
+After a struggle\ [3]_, I managed to start doing that pretty regularly, I
+bumped that up to 13,000.
 
 Over time, I pushed up the amount of time I would spend out up to 2:30h. Yup, I
 spend a good chunk of my waking hours just walking around in three very big
@@ -166,7 +166,7 @@ circles.
 
 Carlow's ring roads aren't exactly the most exciting places in the world, and
 as you might imagine, walking around them at night gets very tedious very
-quickly. What I do to relieve that tedium is practicing on Duolingo [4]_, and
+quickly. What I do to relieve that tedium is practicing on Duolingo\ [4]_, and
 listening to podcasts, of which I either have too many or too few.
 
 That's what I did, and I did it that way because I had to. If I could spend
