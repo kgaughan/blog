@@ -8,7 +8,7 @@ import os.path
 
 
 AUTHOR = u'Keith Gaughan'
-SITENAME = u"Can't Hack It"
+SITENAME = u"Can’t Hack It"
 TAGLINE = "...but trying to"
 SITEURL = ''
 
