@@ -65,7 +65,7 @@ rsync_deploy: publish
 	rsync -P -rvc --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
 
 copy_deploy: publish
-	cp -r $(OUTPUTDIR)/* $(SSH_TARGET_DIR)
+	cp -R $(OUTPUTDIR)/* $(SSH_TARGET_DIR)
 
 .PHONY: html help clean regenerate serve devserver publish
 .PHONY: ssh_deploy rsync_deploy copy_deploy
