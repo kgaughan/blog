@@ -53,7 +53,7 @@ EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
 }
 
-THEME = os.path.join(os.curdir, 'themes', 'svbtle')
+THEME = os.path.join(os.curdir, 'themes', 'tvlkv')
 
 SITEMAP = {
     'format': 'xml',
