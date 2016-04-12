@@ -13,21 +13,28 @@ SSH_USER=freebsd
 SSH_TARGET_DIR=/home/$(SSH_USER)/sites/canthack.it/web
 
 help:
-	@echo 'Makefile for a pelican Web site                                           '
-	@echo '                                                                          '
-	@echo 'Usage:                                                                    '
-	@echo '   make html                           (re)generate the web site          '
-	@echo '   make clean                          remove the generated files         '
-	@echo '   make regenerate                     regenerate files upon modification '
-	@echo '   make publish                        generate using production settings '
-	@echo '   make serve [PORT=8000]              serve site at http://localhost:8000'
-	@echo '   make devserver [PORT=8000]          start/restart develop_server.sh    '
-	@echo '   make stopserver                     stop local server                  '
-	@echo '   make ssh_upload                     upload the web site via SSH        '
-	@echo '   make rsync_upload                   upload the web site via rsync+ssh  '
+	@echo 'Makefile for a pelican Web site'
+	@echo
+	@echo 'Usage:'
+	@echo '   make html                   (re)generate the web site'
+	@echo '   make clean                  remove the generated files'
+	@echo '   make regenerate             regenerate files upon modification'
+	@echo '   make publish                generate using production settings'
+	@echo '   make serve [PORT=8000]      serve site at http://localhost:8000'
+	@echo '   make devserver [PORT=8000]  start/restart develop_server.sh'
+	@echo '   make stopserver             stop local server'
+	@echo '   make ssh_deploy             deploy the web site via SSH'
+	@echo '   make rsync_deploy           deploy the web site via rsync+ssh'
+	@echo '   make copy_deploy            deploy the web site via rsync+ssh'
+	@echo '   make copy_deploy            deploy the web site by copying locally'
+	@echo '   make drafts                 list draft posts'
+	@echo '   make categories             list categories alphabetically'
 
 drafts:
-	@grep -rl '^:status: *draft$$' content
+	@grep -rl '^:status: *draft$$' $(INPUTDIR)
+
+categories:
+	@find $(INPUTDIR) -name \*.rst -exec sed -n -E 's/^:category: *(.*)/\1/p' {} \; | sort -u
 
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE)
@@ -51,14 +58,15 @@ stopserver:
 publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF)
 
-ssh_upload: publish
+ssh_deploy: publish
 	scp -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
 
-rsync_upload: publish
+rsync_deploy: publish
 	rsync -P -rvc --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
 
-copy_upload: publish
+copy_deploy: publish
 	cp -r $(OUTPUTDIR)/* $(SSH_TARGET_DIR)
 
 .PHONY: html help clean regenerate serve devserver publish
-.PHONY: ssh_upload rsync_upload copy_upload
+.PHONY: ssh_deploy rsync_deploy copy_deploy
+.PHONY: drafts categories
