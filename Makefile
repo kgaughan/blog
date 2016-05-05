@@ -25,7 +25,6 @@ help:
 	@echo '   make stopserver             stop local server'
 	@echo '   make ssh_deploy             deploy the web site via SSH'
 	@echo '   make rsync_deploy           deploy the web site via rsync+ssh'
-	@echo '   make copy_deploy            deploy the web site via rsync+ssh'
 	@echo '   make copy_deploy            deploy the web site by copying locally'
 	@echo '   make drafts                 list draft posts'
 	@echo '   make categories             list categories alphabetically'
