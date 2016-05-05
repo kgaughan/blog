@@ -39,7 +39,7 @@ operator, thus in the following::
 
     3 + 4; 5 + 6
 
-The semicolon is acting as an operator that joins to expressions together and
+The semicolon is acting as an operator that joins two expressions together and
 evaluates them in a particular order. It's really no different from ``+`` in
 that regard.
 
