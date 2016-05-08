@@ -21,7 +21,7 @@ Say I have the following expression::
 
 Because the type of the values on each side of the ``+`` operators is an
 integer, we know that the ``+`` refers to integer addition, and thus the answer
-will be '2'.
+will be '3'.
 
 Now, let's say that our language allows operators to be overloaded, and one of
 the meansings of ``+`` is concatenation. Thus in the following expression, ``+``
@@ -44,7 +44,7 @@ evaluates them in a particular order. It's really no different from ``+`` in
 that regard.
 
 So, what determines the behaviour of ``;`` when though of as an operator?
-Nothing really, except that the langauges we use assume that it behaves a
+Nothing really, except that the languages we use assume that it behaves a
 particular way. However, if we can vary the behaviour of ``+`` depending on the
 type of the expressions on either side, why can't we do the same with ``;``?
 This is what a monad does: it's a type that lets you determine the behaviour of
