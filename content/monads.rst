@@ -24,7 +24,7 @@ integer, we know that the ``+`` refers to integer addition, and thus the answer
 will be '3'.
 
 Now, let's say that our language allows operators to be overloaded, and one of
-the meansings of ``+`` is concatenation. Thus in the following expression, ``+``
+the meanings of ``+`` is concatenation. Thus in the following expression, ``+``
 means list concatenation::
 
     [1, 2, 3] + [4, 5, 6]
