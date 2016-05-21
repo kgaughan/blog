@@ -2,7 +2,7 @@ Centring blocks with CSS
 ========================
 
 :date: 2016-05-15 01:40
-:category: css
+:category: CSS
 :status: published
 
 Some good friends of mine got married recently, and I helped out with the site
