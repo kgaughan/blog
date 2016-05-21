@@ -14,7 +14,9 @@ be centred, while its contents needed to be left-aligned, and the container
 needed to be only as wide as it needed to be to contain the widest line of the
 poem.
 
-After some messing around, I came up with this bit of CSS::
+After some messing around, I came up with this bit of CSS:
+
+.. code-block:: css
 
     .centred {
         /* Make the element only as wide as it needs to be. */
