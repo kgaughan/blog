@@ -17,20 +17,21 @@ poem.
 After some messing around, I came up with this bit of CSS:
 
 .. code-block:: css
+   :linenos: table
 
-    .centred {
-        /* Make the element only as wide as it needs to be. */
-        display: inline-block;
+   .centred {
+       /* Make the element only as wide as it needs to be. */
+       display: inline-block;
 
-        /* Let us apply positioning. */
-        position: relative;
+       /* Let us apply positioning. */
+       position: relative;
 
-        /* Move the left of the element to the middle of the container. */
-        left: 50%;
+       /* Move the left of the element to the middle of the container. */
+       left: 50%;
 
-        /* Translate backwards half the width of the block, thus centring it. */
-        transform: translateX(-50%);
-    }
+       /* Translate backwards half the width of the block, thus centring it. */
+       transform: translateX(-50%);
+   }
 
 Apparently the new coolness out there for doing this kind of thing is the
 flexbox__, but I had no idea what browsers the people viewing the site would be
