@@ -5,6 +5,7 @@ from __future__ import unicode_literals
 
 import os
 import os.path
+import sys
 
 
 AUTHOR = u'Keith Gaughan'
@@ -36,6 +37,7 @@ SOCIAL = (
 )
 
 PLUGIN_PATHS = [os.path.abspath('../pelican-plugins')]
+sys.path += PLUGIN_PATHS
 PLUGINS = [
     # https://github.com/getpelican/pelican-plugins/tree/master/code_include
     'code_include',
