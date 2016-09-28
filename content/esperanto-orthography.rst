@@ -12,8 +12,8 @@ Esperanto orthography is terrible
    Esperanto. I'm not saying the language is bad either. I'm just saying
    the writing system could've been much better.
 
-   Nor am I proposing that this orthography be adopted, but simply showing how
-   a small number of changes could have make the orthography much better.
+   Nor am I proposing that this orthography be adopted; I'm simply showing what
+   effect a small number of changes would've had.
 
 The orthography of Esperanto is terrible. Not as bad as, say, English or
 French, but pretty bad. It needn't have been this way, though, as it's so
@@ -63,13 +63,13 @@ coming from any background to pronounce. Esperanto's orthography accidentally
 favours the creation of words that are difficult to pronounce.
 
 Esperanto adheres to a linguistically naïve conception of the 'one sound, one
-letter orthographic principle' requiring the affricates be treated as one sound
-rather than a compound sound, and thus does not guard against complex consonant
-clusters involving an affricate and either a stop or a fricative, thus giving
-us words like 'scii' and 'matĉo', which are difficult to pronounce.
+letter' orthographic principle, requiring the affricates be treated as one
+sound rather than a compound sound, and thus does not guard against complex
+consonant clusters involving an affricate and either a stop or a fricative,
+thus giving us words like 'scii' and 'matĉo', which are difficult to pronounce.
 
-To eliminate this bias within the language's orthography, we could thus
-eliminate 'c', 'ĉ', and 'ĝ' by writing them as their constituent sounds:
+To eliminate this bias within the language's orthography, we could eliminate
+'c', 'ĉ', and 'ĝ' by writing them as their constituent sounds:
 
 ======== ============
 Original Reformed (I)
@@ -80,9 +80,9 @@ c        ts
 ======== ============
 
 The spelling is still as unambiguous as before, but what's been revealed as
-some nasty consonant clusters in words. Take 'scii' and 'matĉo': in this
-reformed orthography, some unfortunate complex consonant clusters become more
-obvious: 'stsii' and 'mattŝo'.
+some nasty consonant clusters in words. Take the aforementioned 'scii' and
+'matĉo': in this reformed orthography, some unfortunate complex consonant
+clusters in these words become more obvious: 'stsii' and 'mattŝo'.
 
 A good orthography should guard against bad spelling-based borrowings like
 these by making them obvious. The existing orthography does not.
