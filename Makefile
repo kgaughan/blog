@@ -8,8 +8,9 @@ OUTPUTDIR=${PWD}/output
 CONFFILE=${PWD}/pelicanconf.py
 PUBLISHCONF=${PWD}/publishconf.py
 
-SSH_HOST=cian.talideon.com
-SSH_USER=freebsd
+SSH_HOST:=cian.talideon.com
+SSH_USER:=freebsd
+SSH_PORT:=22
 SSH_TARGET_DIR=/home/$(SSH_USER)/sites/canthack.it/web
 
 help:
