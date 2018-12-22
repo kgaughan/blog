@@ -5,9 +5,9 @@ Status: published
 
 I haven't posted here in two years. This site was meant to be a way for me to start writing something more than post random crap on Twitter. I've failed at that, but I'd like to try again.
 
-I've a couple of small projects that I think I can use to get started again.  I haven't been able to get a start on this year's [Advent of Code](https://adventofcode.com/), but I'd like to do as much of them through until the end of the year as I can, and write posts about the problems, any issues I rand into, and how I solved them.
+I've a couple of small projects that I think I can use to get started again.  I haven't been able to get a start on this year's [Advent of Code](https://adventofcode.com/), but I'd like to do as much of them through until the end of the year as I can, and write posts about the problems, any issues I ran into, and how I solved them.
 
-Also, there are a few books I'd like to write posts about, as I intend on finally going through. They're mostly self-help books that I want to read so I can try to become a better person than I am now.
+Also, there are a few books I'd like to write posts about, as I intend on finally going through with reading them. They're mostly self-help books that I want to read so I can try to become a better person than I am now.
 
 * [:59 Seconds](https://www.goodreads.com/book/show/6340948-59-seconds) by Professor Richard Wiseman. The idea here is to develop some better habits to make me more effective than I am now. I like to be more organised and diligent than I am now, and possibly become a little less anxious and more open with people without needing something like alcohol for it to happen. I'd like to have healthier relationships with people, and especially friends and family.
 
