@@ -14,7 +14,7 @@ SITEURL = 'https://i.canthack.it'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.xml'
+CATEGORY_FEED_ATOM = 'feeds/{slug}.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 
