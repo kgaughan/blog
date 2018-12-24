@@ -1,0 +1,327 @@
+* {
+	font-size: inherit;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	text-align: left;
+	vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Oswald;
+	font-weight: 400;
+	display: block;
+	color: black;
+}
+
+html {
+	min-height: 100%;
+	overflow-y: scroll;
+	background: white;
+	color: #777;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5;
+}
+
+pre, code {
+	font-family: Inconsolata, monospace;
+	background: #eee;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 0.0625em dotted #999;
+	color: black;
+}
+
+a:hover, a:active {
+	color: #0e94ec;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+strong {
+	font-weight: 500;
+	color: black;
+}
+
+p {
+	margin: 1em 0;
+}
+
+.rubric {
+	font-weight: 500;
+}
+.footnote {
+	font-size: 80%;
+}
+
+.sidebar {
+	background: #196281;
+}
+
+.sidebar,
+.sidebar a,
+.sidebar li a,
+.sidebar h2 {
+	color: white;
+}
+
+.sidebar li a:hover,
+.sidebar li a:active {
+	background: white;
+	color: #196281;
+}
+
+.posts h1 {
+	font-size: 200%;
+	line-height: 1.25;
+	margin: 1.25em 0 0.5em 0;
+}
+
+.posts h1 + .published {
+	margin-top: -1em;
+	margin-bottom: 1.5em;
+	font-size: 0.75em;
+}
+
+.posts h2 {
+	font-size: 150%;
+}
+
+.posts h2, .posts h3, .posts h4 {
+	margin-top: 1.5em;
+}
+
+.posts ul li, .posts ol li {
+	margin: 0.5em 0 0.5em 1em;
+}
+
+blockquote {
+	margin: 1em 2em;
+}
+
+.highlight pre,
+.linenos pre {
+	padding: 0.25ex;
+	line-height: 1.2;
+	/* Width should include padding, &c. */
+	box-sizing: border-box;
+}
+.highlighttable {
+	border-collapse: collapse;
+	width: 100%;
+}
+.linenos pre {
+	background: inherit;
+}
+.highlight pre {
+	border-left: 0.5ex solid #196281;
+	width: 100%;
+	overflow-x: auto;
+}
+
+a.button-accent {
+	display: inline-block;
+	border: 0.125em solid #196281;
+	border-radius: 2em;
+	text-transform: uppercase;
+	color: #196281;
+	font-weight: 500;
+	margin: 2em 0;
+	padding: 0.5em 1em;
+}
+a.button-accent:link {
+	color: #196281;
+}
+a.button-accent:hover, a.button-accent:active {
+	background: #196281;
+	color: white;
+}
+
+p.paginator {
+	min-height: 122px;
+}
+
+article {
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+
+	.article-meta {
+		font-size: 75%;
+		margin: 1em 0 0;
+		padding: 0;
+	}
+}
+
+.sidebar h1 a,
+.posts .title a {
+	border: none;
+}
+
+.posts h4, .posts h5, .posts h6 {
+	font-weight: 500;
+	margin: 2em 0 1em;
+}
+
+.posts ul, .posts ol, .posts dl ol .entry-content ul {
+	list-style-position: outside;
+	margin: 0 0 0 2em;
+	padding: 0;
+}
+
+table {
+	border: solid gray;
+	border-width: 0.125em 0;
+	border-collapse: collapse;
+	margin: 1em auto;
+}
+thead tr {
+	border-bottom: 0.0625em solid gray;
+}
+
+table.docutils col {
+	width: auto;
+}
+
+th, td {
+	padding: 0.125em 0.5em 0.25em;
+	border: none;
+}
+
+tbody tr {
+	border-top: 0.0625em solid silver;
+}
+
+td.label {
+	padding-right: 1em;
+}
+
+/* Admonitions */
+
+.note {
+	margin: 1em 2em;
+	border: solid #196281;
+	border-width: 0.125em 0;
+
+	p {
+		margin: 1ex;
+	}
+
+	.admonition-title {
+		font-family: Oswald, sans-serif;
+		text-align: center;
+		color: #196281;
+	}
+}
+
+/* Wide devices. */
+@media (min-width: 48em) {
+	.sidebar-content {
+		position: absolute;
+		bottom: 0;
+		padding: 2em;
+	}
+
+	.sidebar {
+		width: 15em;
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: auto;
+		min-height: 700px;
+		z-index: 0;
+
+		figure {
+			width: 100px;
+			height: 100px;
+			margin: 40px 0;
+		}
+
+		h1 {
+			font-size: 225%;
+		}
+
+		ul {
+			margin: 3em 0 0 0;
+		}
+
+		li {
+			clear: both;
+			display: block;
+			padding: 1em 0;
+
+			a {
+				border: 0.125em solid white;
+				border-radius: 2em;
+				padding: 0.5em 1em;
+				margin: 1em 0;
+			}
+		}
+	}
+
+	.posts {
+		top: 0;
+		min-height: 700px;
+		height: 100%;
+		position: relative;
+		z-index: 1;
+		margin: 0 0 0 17em;
+		padding-right: 2.5em;
+	}
+
+	article {
+		max-width: 40em;
+	}
+}
+
+/* Narrow devices. */
+@media (max-width: 48em) {
+	.sidebar {
+		padding: 1ex 0;
+
+		h1 {
+			font-size: 150%;
+			text-align: center;
+		}
+
+		h2 {
+			font-size: 75%;
+			text-align: center;
+		}
+
+		ul {
+			padding-top: 1ex;
+			display: inline-block;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		li {
+			padding: 0 1ex;
+			font-size: 75%;
+			float: left;
+			list-style: none;
+
+			a {
+				border: none;
+			}
+		}
+		li + li {
+			border-left: 0.0625em solid white;
+		}
+
+		figure {
+			display: none;
+		}
+	}
+
+	.posts {
+		padding: 0 1.25em;
+	}
+}

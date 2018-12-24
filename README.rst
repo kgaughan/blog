@@ -8,11 +8,7 @@ On a bare bones FreeBSD box, you will need to install a few prerequisites::
 
 Then you can install Pelican itself::
 
-    $ pip install --user pelican
-
-And to ensure the theme is pulled in::
-
-    $ git submodule update --init
+    $ pip install --user pelican Markdown
 
 You should also ensure that the pelican-plugins repo is checked out in the
 same directory as the repo::
