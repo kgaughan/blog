@@ -51,10 +51,14 @@ p {
 	margin: 1em 0;
 }
 
+sup {
+  vertical-align: super;
+  font-size: 80%;
+}
 .rubric {
 	font-weight: 500;
 }
-.footnote {
+.footnote, .simple-footnotes {
 	font-size: 80%;
 }
 

@@ -45,6 +45,8 @@ PLUGINS = [
     'headerid',
     # https://github.com/getpelican/pelican-plugins/tree/master/sitemap
     'sitemap',
+    # https://github.com/getpelican/pelican-plugins/tree/master/simple_footnotes
+    'simple_footnotes',
 ]
 
 STATIC_PATHS = (

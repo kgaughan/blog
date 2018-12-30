@@ -34,7 +34,7 @@ drafts:
 	@grep -rl '^:status: *draft$$' $(INPUTDIR)
 
 categories:
-	@find $(INPUTDIR) -name \*.rst -exec sed -n -E 's/^:category: *(.*)/\1/p' {} \; | sort -u
+	@find $(INPUTDIR) \( -name \*.rst -o -name \*.md \) -exec sed -n -E 's/^(:c|C)ategory: *(.*)/\2/p' {} \; | sort -u
 
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE)
