@@ -9,7 +9,7 @@ It's coming to the end of the year, and I figure it's a good time to review what
 
 First up, and most important, is that I found a few great friends this year. I really can't exaggerate that, nor how lucky that makes me feel. If you're reading this, and you think you number among them, you do. 😃
 
-Second is that [Operation Fat Bastard]({filename}/on-not-being-so-fat.rst), my effort to get down to about 70kg, has mostly been successful. I hit a plateau towards the end of the year, but I managed to lose 18kg, bringing me down to 79.5kg currently. I still have another 10kg to go, but I'll see what I can do to kickstart the process again. I think I might need to include some proper exercise in addition the portion control and walking I've mostly been doing. If things go right, I might be done by March, and then I can go into maintenance mode.
+Second is that _Operation Fat Bastard_, my effort to get down to about 70kg, has mostly been successful. I hit a plateau towards the end of the year, but I managed to lose 18kg, bringing me down to 79.5kg currently. I still have another 10kg to go, but I'll see what I can do to kickstart the process again. I think I might need to include some proper exercise in addition the portion control and walking I've mostly been doing. If things go right, I might be done by March, and then I can go into maintenance mode.
 
 I have a bike again! I haven't been cycling it as much as I'd like - Waterways Ireland don't make it easy to cycle along the canal for a start - but I'm hoping to start again as soon as the weather improves a bit.
 
