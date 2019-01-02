@@ -37,7 +37,7 @@ $(OUTPUTDIR)/%.html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean:
-	find $(OUTPUTDIR) -mindepth 1 -delete
+	test -e $(OUTPUTDIR) && find $(OUTPUTDIR) -mindepth 1 -delete || :
 
 serve:
 	cd $(OUTPUTDIR) && python -m SimpleHTTPServer
