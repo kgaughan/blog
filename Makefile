@@ -40,7 +40,7 @@ clean:
 	test -e $(OUTPUTDIR) && find $(OUTPUTDIR) -mindepth 1 -delete || :
 
 serve:
-	cd $(OUTPUTDIR) && python -m SimpleHTTPServer
+	cd $(OUTPUTDIR) && python2 -m SimpleHTTPServer
 
 devserver:
 	$(BASEDIR)/develop_server.sh restart
