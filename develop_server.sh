@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 ##
 # This section should match your Makefile
 ##
@@ -17,67 +17,62 @@ CONFFILE=$BASEDIR/pelicanconf.py
 SRV_PID=$BASEDIR/srv.pid
 PELICAN_PID=$BASEDIR/pelican.pid
 
-function usage(){
-  echo "usage: $0 (stop) (start) (restart)"
-  echo "This starts pelican in debug and reload mode and then launches"
-  echo "A SimpleHTTP server to help site development. It doesn't read"
-  echo "your pelican options so you edit any paths in your Makefile"
-  echo "you will need to edit it as well"
-  exit 3
+usage () {
+	cat <<FIN
+Usage: $(basename $0) stop|start|restart
+
+This starts pelican in debug and reload mode and then launches a webserver to
+help site development. It doesn't read your pelican options so you edit any
+paths in your Makefile you will need to edit it as well.
+FIN
+	exit 3
 }
 
-function shut_down(){
-  if [[ -f $SRV_PID ]]; then
-    PID=$(cat $SRV_PID)
-    PROCESS=$(ps -p $PID | tail -n 1 | awk '{print $4}')
-    if [[ $PROCESS == python2 ]]; then
-      echo "Killing SimpleHTTPServer"
-      kill $PID
-    else
-      echo "Stale PID, deleting"
-    fi
-    rm $SRV_PID
-  else
-    echo "SimpleHTTPServer PIDFile not found"
-  fi
-
-  if [[ -f $PELICAN_PID ]]; then
-    PID=$(cat $PELICAN_PID)
-    PROCESS=$(ps -p $PID | tail -n 1 | awk '{print $4}')
-    if [[ $PROCESS != "" ]]; then
-      echo "Killing Pelican"
-      kill $PID
-    else
-      echo "Stale PID, deleting"
-    fi
-    rm $PELICAN_PID
-  else
-    echo "Pelican PIDFile not found"
-  fi
+get_command_by_pid () {
+	ps -o pid,comm | tail -n+2 | awk "/\\s*$1 / {print substr(\$0, 7)}"
 }
 
-function start_up(){
-  echo "Starting up Pelican and SimpleHTTPServer"
-  shift
-  $PELICAN --debug --autoreload -r $INPUTDIR -o $OUTPUTDIR -s $CONFFILE $PELICANOPTS &
-  echo $! > $PELICAN_PID
-  cd $OUTPUTDIR
-  python2 -m SimpleHTTPServer &
-  echo $! > $SRV_PID
-  cd $BASEDIR
+kill_by_pidfile () {
+	if test -f $1; then
+		PID=$(cat $1)
+		PROCESS=$(get_command_by_pid $PID)
+		if test $PROCESS = pelican; then
+			echo "Killing $2"
+			kill $PID
+		else
+			echo "Stale PID, deleting"
+		fi
+		rm $1
+	else
+		echo "$2 PIDFile not found"
+	fi
 }
 
-###
-#  MAIN
-###
-[[ $# -ne 1 ]] && usage
-if [[ $1 == "stop" ]]; then
-  shut_down
-elif [[ $1 == "restart" ]]; then
-  shut_down
-  start_up
-elif [[ $1 == "start" ]]; then
-  start_up
-else
-  usage
-fi
+shut_down () {
+	kill_by_pidfile $SRV_PID "Pelican server"
+	kill_by_pidfile $PELICAN_PID "Pelican"
+}
+
+start_up () {
+	echo "Starting up Pelican and Pelican server"
+	$PELICAN --debug --autoreload -r $INPUTDIR -o $OUTPUTDIR -s $CONFFILE $PELICANOPTS &
+	echo $! > $PELICAN_PID
+	$PELICAN --listen &
+	echo $! > $SRV_PID
+}
+
+case "$1" in
+	stop)
+		shut_down
+		;;
+	start)
+		start_up
+		;;
+	restart)
+		shut_down
+		start_up
+		;;
+	*)
+		usage
+		;;
+esac
