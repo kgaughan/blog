@@ -8,7 +8,7 @@ On a bare bones FreeBSD box, you will need to install a few prerequisites::
 
 Then you can install Pelican itself::
 
-    $ pip install --user pelican Markdown
+    $ pip install --user pelican Markdown typogrify
 
 You should also ensure that the pelican-plugins repo is checked out in the
 same directory as the repo::
