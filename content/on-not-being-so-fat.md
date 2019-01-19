@@ -3,8 +3,7 @@ Date: 2016-03-28 19:00
 Category: Health
 Status: draft
 
-Since last summer, I've been trying my best to lose weight. I started at around 105kg, and I'm currently at about 80kg, with another 10kg to go. I'm happy with that progress: it's in or about where I expected to be by now, and I'm really hoping I'll be able to hit 70kg before
-summer starts.
+Since last summer, I've been trying my best to lose weight. I started at around 105kg, and I'm currently at about 80kg, with another 10kg to go. I'm happy with that progress: it's in or about where I expected to be by now, and I'm really hoping I'll be able to hit 70kg before summer starts.
 
 I don't think I've been doing anything exceptional in that time, though I have some personal physiological quirks that have meant I've had to do things a little differently from how most people would. Here's what I've been doing.
 
@@ -38,7 +37,7 @@ One of the reasons why I tracked my weight from the beginning is that I knew tha
 What doesn't lie is your weight trend: if you're even semi-regularly weighing yourself and logging that, you can take a weighted mean over time of your weight to see how you're actually doing. Sometimes it'll go up, sometimes it'll go down, but at least if you're looking at that rather than the fact that today you just happen to be half a kilo heavier than yesterday, you'll see you're still making progress overall and there's nothing to get panicked about.
 
 You'll plateau, but don't worry about it
-------------------------------------------
+----------------------------------------
 
 The single most annoying thing I found was that even if I barely changed my routine, my weightloss would be punctuated with plateaus followed by sudden drops.
 
@@ -63,8 +62,8 @@ This doesn't mean going on some crazy diet. Don't do that. You're just going to 
 
 All of that sounds hard when taken together, but there's no reason why you can't ease into it over time. Portion moderation and chewing are probably the most important points though.
 
-How I excercise
----------------
+How I exercise
+--------------
 
 This is actually a big problem for me. I needed something I could do consistently that would help with aerobic fitness. The obvious choice there is to either run or jog, but owing to the fact that I have stupidly short Achilles tendons in both my legs, I can't do either for any length of time without ending up in agony.
 
