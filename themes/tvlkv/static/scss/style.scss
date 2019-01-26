@@ -52,8 +52,8 @@ p {
 }
 
 sup {
-  vertical-align: super;
-  font-size: 80%;
+	vertical-align: super;
+	font-size: 80%;
 }
 .rubric {
 	font-weight: 500;
@@ -204,11 +204,6 @@ td.label {
 	padding-right: 1em;
 }
 
-aside {
-  background: #eee;
-  padding: 1ex;
-}
-
 /* Admonitions */
 
 .note {
@@ -218,6 +213,7 @@ aside {
 
 	p {
 		margin: 1ex;
+		font-size: 80%;
 	}
 
 	.admonition-title {

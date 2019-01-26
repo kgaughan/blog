@@ -5,9 +5,8 @@ Status: published
 
 I haven't posted here in two years. This site was meant to be a way for me to start writing something more than post random crap on Twitter. I've failed at that, but I'd like to try again.
 
-<aside>
-What's written above was accurate when I wrote it and referred to "[Esperanto orthography is terrible]({filename}/esperanto-orthography.rst)", but I'm currently moving posts and other bits of content over here in an effort to consolidate everything together, hence why the archive here might look incongruous.
-</aside>
+!!! note
+    What's written above was accurate when I wrote it and referred to "[Esperanto orthography is terrible]({filename}/esperanto-orthography.rst)", but I'm currently moving posts and other bits of content over here in an effort to consolidate everything together, hence why the archive here might look incongruous.
 
 I've a couple of small projects that I think I can use to get started again.  I haven't been able to get a start on this year's [Advent of Code](https://adventofcode.com/), but I'd like to do as much of them through until the end of the year as I can, and write posts about the problems, any issues I ran into, and how I solved them.
 

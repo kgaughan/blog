@@ -3,9 +3,8 @@ Date: 2019-01-18 23:10
 Category: Health
 Status: published
 
-<aside>
-I've had a post sitting here, waiting to be finished for almost three years. It concerns my previous attempt to fix my weight issues. There's no sense in trying to post it now, but I might work it into a few different posts. There's some stuff in there that's worth salvaging at least.
-</aside>
+!!! note
+    I've had a post sitting here, waiting to be finished for almost three years. It concerns my previous attempt to fix my weight issues. There's no sense in trying to post it now, but I might work it into a few different posts. There's some stuff in there that's worth salvaging at least.
 
 ## Fifteen years of failure
 

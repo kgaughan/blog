@@ -11,7 +11,7 @@ import sys
 AUTHOR = u'Keith Gaughan'
 SITENAME = u"Can’t Hack It"
 TAGLINE = "...but trying to"
-SITEURL = ''
+SITEURL = '/'
 
 PATH = 'content'
 
@@ -48,6 +48,16 @@ PLUGINS = [
     # https://github.com/getpelican/pelican-plugins/tree/master/simple_footnotes
     'simple_footnotes',
 ]
+
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+        'markdown.extensions.admonition': {},
+    },
+    'output_format': 'html5',
+}
 
 STATIC_PATHS = (
     'images',
