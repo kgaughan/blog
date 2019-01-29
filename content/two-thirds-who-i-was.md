@@ -58,7 +58,7 @@ So I hit upon a way to hack my brain: I'd use money as my limiter.
 
 The supermarket near my work has an extensive salad bar and they provide two kinds of container: one a large round bowl, and the other a smaller rectangular bowl. The salads are sold by weight. I knew that up till then, I'd managed to spend the best part of maybe EUR8 there every time I got something, so I decided to instead always use the smaller bowl and limit myself to EUR5, give or take a bit, of food.
 
-As I was also treating this as my main meal for the day, I needed to make sure that what I was getting would be enough, so did a bit of research and figured that if I used a combination of a boiled egg, some kind of leafy green (typically spinach, but sometimes rocket), some bell peppers and jalapenos, a bit of falafel, some avocado, some chicken, and a few other bits and pieces, I could at least make sure I was getting everything I needed to avoid accidental deficiencies while I was doing this.
+As I was also treating this as my main meal for the day, I needed to make sure that what I was getting would be enough, so did a bit of research and figured that if I used a combination of a boiled egg, some kind of leafy green (typically spinach, but sometimes rocket), some bell peppers and jalapeños, some tomato, a bit of falafel, some avocado, some chicken, and a few other bits and pieces, I could at least make sure I was getting everything I needed to avoid accidental deficiencies while I was doing this.
 
 A stereotyped diet isn't fun, but at least the stuff I was getting was stuff I liked and could change things up from time to time, and I wasn't doing it _every_ day, just most days, unless I forgot to eat for some reason or somebody wanted to grab some food with me.
 
