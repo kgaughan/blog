@@ -35,4 +35,5 @@ But regardless, I'm going to soldier on. This is, at least in part, a chance to 
 
 I stayed in late at work, reading all the feeds I hadn't read earlier. I'm feeling a bit peckish now, but I'm not going to give in. Next, I might detail part of my plan of attack that isn't explicitly stated in the book.
 
-**Update:** If you're doing it, you might be interested in the exercise and weight log and fitness ladder PDFs I've thrown up [here](https://web.archive.org/web/20080829000908/http://talideon.com/weblog/2004/10/hackers-diet-downloads.cfm).
+
+**Update:** If you're doing it, you might be interested in the [exercise and weight log]({attach}attachments/hackers-diet/log.pdf) and [fitness ladder]({attach}attachments/hackers-diet/ladder.pdf) PDFs I've done up.
