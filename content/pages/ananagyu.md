@@ -2,6 +2,7 @@ Title: The Ananagyu
 Date: 2006-05-18
 Slug: ananagyu
 Status: published
+Menu: no
 
 This is the race of vampires I outlined a while ago in my weblog. Since mentioning them, I've been playing around with them a bit more and I'm currently sketching a language for them. There are several different subgroups I know of at the moment, like the elegant *Ennyos Vladyu* ('Nosferatu') and the *Wambilyu* ('Vampire'). Humans are known to them as Romyu, a word derived from the name early humans gave to themselves.
 

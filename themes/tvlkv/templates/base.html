@@ -38,13 +38,17 @@
 			{% endfor %}
 			{% if DISPLAY_PAGES_ON_MENU %}
 				{% for p in pages %}
-					<li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+					{% if p.metadata.get('menu', 'yes').lower() == 'yes' %}
+						<li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+					{% endif %}
 				{% endfor %}
-				<li><a href="{{ SITEURL }}/categories.html">Categories</a></li>
-			{% else %}
+			{% endif %}
+			{% if DISPLAY_CATEGORIES_ON_MENU %}
 				{% for cat, null in categories %}
 					<li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
 				{% endfor %}
+			{% else %}
+				<li><a href="{{ SITEURL }}/categories.html">Categories</a></li>
 			{% endif %}
 			{% for name, link in LINKS %}
 				<li><a href="{{ link }}">{{ name }}</a></li>
