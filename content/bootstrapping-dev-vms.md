@@ -1,11 +1,13 @@
 Title: Bootstrapping development VMs with Ansible
-Date: 2019-03-08 16:42
+Date: 2019-03-09 23:00
 Category: Systems Administration
 Status: published
 
 I often need VMs set up locally for development purposes. Setting these up manually can be time-consuming and error-prone, so I use [Ansible](https://www.ansible.com/) to almost entirely automate the process.
 
-There are two problems that need to be solved when initially doing something like this: (a)  a minimal bootstrap that makes the VM useful for ongoing maintenance, and (b) the subsequent maintenance of the VM. I'll be covering the first part in this post.
+\[Aside: This post assumes you know how to use Ansible, and also doesn't go into a tonne of detail on the mechanics behind everything. If you're not, start with Ansible's [Getting Started](https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html) documentation.\]
+
+There are two problems that need to be solved when initially doing something like this: (a) a minimal bootstrap that makes the VM useful for ongoing maintenance, and (b) the subsequent maintenance of the VM. I'll be covering the first part in this post.
 
 I'm using VMWare Fusion currently and will be setting up Cent OS 7, but these steps largely generalise across any Unix-like operating system.
 
