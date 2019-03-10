@@ -60,6 +60,7 @@ This installs some very basic packages to get started:
 To make EPEL useful, we need to ensure its key is installed.
 
 We can then upgrade all the installed packages to the latest versions:
+
 ```yaml
 - name: upgrade installed packages
   yum:
@@ -71,6 +72,7 @@ We can then upgrade all the installed packages to the latest versions:
 ```
 
 Notice the two handlers mentioned at the end? Those do some cleanup at the end, and should go into ``roles/bootstrap/handlers/main.yml``:
+
 ```yaml
 - name: reboot
   reboot:
@@ -82,6 +84,7 @@ Notice the two handlers mentioned at the end? Those do some cleanup at the end, 
 The the first does a reboot of the machine if any of the packages were upgraded, and the second cleans out any older kernels, ensuring that there's always at least one older kernel present, so that if the latest kernel has issues, you can alway boot into an older one that's known to work.
 
 We can now install some basic packages to make the VM useful:
+
 ```yaml
 - name: install basic tools
   yum:
@@ -98,6 +101,7 @@ We can now install some basic packages to make the VM useful:
 * And finally, _sudo_, which will come in useful after we've bootstrapped everything.
 
 While Avahi will advertise itself initially, after a while, it will stop. To allow access after the VM has been running for a while, you'll need to open the firewall up to multicast DNS traffic:
+
 ```yaml
 - name: open the firewall for avahi
   firewalld:
@@ -108,6 +112,7 @@ While Avahi will advertise itself initially, after a while, it will stop. To all
 ```
 
 If you were happy running everything as root, you could stop here, but that's not a great idea. Instead, let's create a user:
+
 ```yaml
 - name: create a user
   user:
@@ -129,6 +134,7 @@ If you were happy running everything as root, you could stop here, but that's no
 ```
 
 You'll notice several variables defined here. Let's add them to ``group_vars/all``:
+
 ```yaml
 username: charlie
 full_name: Charlie User
@@ -141,6 +147,7 @@ Most of these are obvious, but ``key_name`` is special. It refers to what you ca
 We also create ``~/.ssh`` for the new user.
 
 If ``key_name`` is defined, then we copy it into ``~/.ssh`` in the VM:
+
 ```yaml
 - name: copy up local ssh key
   copy:
@@ -158,6 +165,7 @@ If ``key_name`` is defined, then we copy it into ``~/.ssh`` in the VM:
 ```
 
 I like to populate my ``~/.ssh/authorized_keys`` file from Github:
+
 ```yaml
 - name: populate authorized_keys
   authorized_key:
@@ -173,6 +181,7 @@ I like to populate my ``~/.ssh/authorized_keys`` file from Github:
 For this, you'll need to have a setting in ``group_vars/all`` called ``github_user`` that gives your Github username.
 
 Finally, just to make life easy, allow our user, which is a member of the _wheel_ group, to run commands with _sudo_ without any password prompt:
+
 ```yaml
 - name: give sudo to wheel group
   lineinfile:
@@ -182,13 +191,15 @@ Finally, just to make life easy, allow our user, which is a member of the _wheel
 ```
 
 Finally, ensure the VM runs in the One True Timezone:
-```
+
+```yaml
 - name: ensure timezone is UTC
   timezone:
     name: UTC
 ```
 
 You'll need to create a small playbook to use the role now:
+
 ```yaml
 ---
 - hosts: bootstrap
@@ -199,11 +210,13 @@ You'll need to create a small playbook to use the role now:
 ```
 
 And then run it:
+
 ```sh
 ansible-playbook -i hosts bootstrap.yml --ask-pass
 ```
 
 You can now edit ``hosts``, removing the explicit IP address, as once your VM is running, it should be resolvable:
+
 ```ini
 patrick.local
 
