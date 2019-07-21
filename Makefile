@@ -25,7 +25,7 @@ help:
 	@echo '   make categories             list categories alphabetically'
 
 drafts:
-	@grep -rl '^:status: *draft$$' $(INPUTDIR)
+	@egrep -ril '^:?status: *draft$$' $(INPUTDIR) || echo None
 
 categories:
 	@find $(INPUTDIR) \( -name \*.rst -o -name \*.md \) -exec sed -n -E 's/^(:c|C)ategory: *(.*)/\2/p' {} \; | sort -u
