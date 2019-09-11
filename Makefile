@@ -7,9 +7,9 @@ OUTPUTDIR:=$(BASEDIR)/output
 CONFFILE:=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF:=$(BASEDIR)/publishconf.py
 
-SSH_HOST:=cian.talideon.com
-SSH_USER:=freebsd
-SSH_TARGET_DIR:=/home/$(SSH_USER)/sites/canthack.it/web
+SSH_HOST:=lir.talideon.com
+SSH_USER:=keith
+SSH_TARGET_DIR:=/usr/local/www/canthack.it/web
 
 help:
 	@echo 'Makefile for a pelican Web site'
