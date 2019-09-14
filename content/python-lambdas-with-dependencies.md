@@ -18,9 +18,10 @@ pip install -r requirements.txt -t "$tmp_dir"
 cp -R mylambda "$tmp_dir/mylambda"
 
 here=$(pwd)
-pushd $tmp_dir
-zip -r -9 $here/lambda.zip .
-popd
+(
+    cd $tmp_dir
+    zip -r -9 $here/lambda.zip .
+)
 ```
 
 For installation of the dependencies to work, you need this `setup.cfg` file in the same directory as `build.sh` so pip can find it:
