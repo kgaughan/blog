@@ -7,10 +7,6 @@ OUTPUTDIR:=$(BASEDIR)/output
 CONFFILE:=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF:=$(BASEDIR)/publishconf.py
 
-SSH_HOST:=lir.talideon.com
-SSH_USER:=keith
-SSH_TARGET_DIR:=/usr/local/www/canthack.it/web
-
 help:
 	@echo 'Makefile for a pelican Web site'
 	@echo
@@ -48,8 +44,8 @@ devserver:
 publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
-upload: publish
-	rsync -P -rvczz --delete --exclude=.DS_Store --cvs-exclude $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
+upload:
+	ansible-playbook deploy.yml -i lir.talideon.com, --diff
 
 .PHONY: html help clean regenerate serve devserver publish upload
 .PHONY: drafts categories
