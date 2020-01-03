@@ -7,6 +7,10 @@ OUTPUTDIR:=$(BASEDIR)/output
 CONFFILE:=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF:=$(BASEDIR)/publishconf.py
 
+SSH_HOST:=lir.talideon.com
+SSH_USER:=keith
+SSH_TARGET_DIR:=/usr/local/www/canthack.it/web
+
 help:
 	@echo 'Makefile for a pelican Web site'
 	@echo
@@ -19,6 +23,7 @@ help:
 	@echo '   make upload                 upload the web site via rsync+ssh'
 	@echo '   make drafts                 list draft posts'
 	@echo '   make categories             list categories alphabetically'
+	@echo '   make deploy                 initially deploy the site'
 
 drafts:
 	@egrep -ril '^:?status: *draft$$' $(INPUTDIR) || echo None
@@ -36,7 +41,7 @@ clean:
 	test -e $(OUTPUTDIR) && find $(OUTPUTDIR) -mindepth 1 -delete || :
 
 serve:
-	cd $(OUTPUTDIR) && python2 -m SimpleHTTPServer
+	cd $(OUTPUTDIR) && python3 -m http.server
 
 devserver:
 	$(BASEDIR)/develop_server.sh restart
@@ -44,8 +49,11 @@ devserver:
 publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
-upload:
-	ansible-playbook deploy.yml -i lir.talideon.com, --diff
+upload: publish
+	rsync -P -rvczz --delete --exclude=.DS_Store --cvs-exclude $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
+
+deploy:
+	ansible-playbook deploy.yml -i $(SSH_HOST), --diff
 
 .PHONY: html help clean regenerate serve devserver publish upload
-.PHONY: drafts categories
+.PHONY: drafts categories deploy
