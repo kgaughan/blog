@@ -19,13 +19,20 @@ body > header, main, footer, .paginator {
   max-width: 80ch;
   margin: 0 auto;
   position: relative;
+  padding-left: 1ch;
+  padding-right: 1ch;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 1ch 0;
   margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+nav * {
+  white-space: nowrap;
 }
 
 nav ul {
@@ -42,6 +49,13 @@ nav li {
 
 nav ul.social {
   justify-content: flex-end;
+}
+
+@media (max-width: 540px) {
+  nav ul {
+    flex-direction: column;
+    line-height: 1.4;
+  }
 }
 
 nav ul.social li {
@@ -130,4 +144,14 @@ th, td {
 }
 th {
   text-align: left;
+}
+
+pre, code {
+  font-family: Inconsolata, monospace;
+  background: #eee;
+}
+
+pre {
+  padding: 0.5ch;
+  overflow-x: scroll;
 }
