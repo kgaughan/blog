@@ -67,10 +67,3 @@ this to become a chore itself, as that would defeat the purpose.
 
 I'm Irish, and I write in my own voice, and so it's possible some of my usages
 might be unfamiliar if you're not used to Irish English.
-
-**What are you using?**
-
-`Pelican <http://getpelican.com/>`_, and I'm `keeping it on GitHub
-<https://github.com/kgaughan/canthack>`_. The theme is currently based on the
-`svbtle <https://github.com/wting/pelican-svbtle/>`_ theme for Pelican, tweaked
-for my own use.
