@@ -48,8 +48,6 @@ PLUGINS = [
     "sitemap",
     # https://github.com/getpelican/pelican-plugins/tree/master/simple_footnotes
     "simple_footnotes",
-    # https://github.com/getpelican/pelican-plugins/tree/master/sub_parts
-    "sub_parts",
 ]
 
 MARKDOWN = {
