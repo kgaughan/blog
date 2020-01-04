@@ -44,8 +44,6 @@ PLUGINS = [
     "code_include",
     # https://github.com/getpelican/pelican-plugins/tree/master/readtime
     "readtime",
-    # https://github.com/getpelican/pelican-plugins/tree/master/series
-    "series",
     # https://github.com/getpelican/pelican-plugins/tree/master/sitemap
     "sitemap",
     # https://github.com/getpelican/pelican-plugins/tree/master/simple_footnotes
