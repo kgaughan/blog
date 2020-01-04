@@ -42,8 +42,8 @@ sys.path += PLUGIN_PATHS
 PLUGINS = [
     # https://github.com/getpelican/pelican-plugins/tree/master/code_include
     "code_include",
-    # https://github.com/getpelican/pelican-plugins/tree/master/headerid
-    "headerid",
+    # https://github.com/getpelican/pelican-plugins/tree/master/readtime
+    "readtime",
     # https://github.com/getpelican/pelican-plugins/tree/master/series
     "series",
     # https://github.com/getpelican/pelican-plugins/tree/master/sitemap
