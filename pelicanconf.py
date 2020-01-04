@@ -10,7 +10,7 @@ import sys
 
 AUTHOR = "Keith Gaughan"
 SITENAME = "Can’t Hack It"
-TAGLINE = "...but trying to"
+TAGLINE = "An attempt at public introspection"
 SITEURL = "/"
 
 PATH = "content"
