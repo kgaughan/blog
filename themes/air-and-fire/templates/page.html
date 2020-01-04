@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }}{% endblock %}
+{% block content %}
+<article>
+	<header>
+		<h1><a href="{{ SITEURL }}/{{ page.url }}" rel="bookmark">{{ page.title }}</a></h1>
+	</header>
+	<section>{{ page.content }}</section>
+</article>
+{% endblock %}

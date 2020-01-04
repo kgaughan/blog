@@ -8,80 +8,86 @@ import os.path
 import sys
 
 
-AUTHOR = u'Keith Gaughan'
-SITENAME = u"Can’t Hack It"
+AUTHOR = "Keith Gaughan"
+SITENAME = "Can’t Hack It"
 TAGLINE = "...but trying to"
-SITEURL = '/'
+SITEURL = "/"
 
-PATH = 'content'
+PATH = "content"
 
-TIMEZONE = 'Europe/Dublin'
+TIMEZONE = "Europe/Dublin"
 
-DEFAULT_LANG = u'en'
+DEFAULT_LANG = "en"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
+TRANSLATION_FEED_ATOM = None
 
 DEFAULT_METADATA = {
-    'status': 'draft',
+    "status": "draft",
 }
 
-LINKS = (
-    ('Main site', 'https://stereochro.me/'),
-)
+LINKS = []
 
-SOCIAL = (
-    ('Github', 'https://github.com/kgaughan/'),
-    ('Twitter', 'https://twitter.com/talideon/'),
-)
+SOCIAL = [
+    ("Github", "https://github.com/kgaughan/"),
+    ("Twitter", "https://twitter.com/talideon/"),
+]
 
-PLUGIN_PATHS = [os.path.abspath('../pelican-plugins')]
+PLUGIN_PATHS = [os.path.abspath("../pelican-plugins")]
 sys.path += PLUGIN_PATHS
 PLUGINS = [
     # https://github.com/getpelican/pelican-plugins/tree/master/code_include
-    'code_include',
+    "code_include",
     # https://github.com/getpelican/pelican-plugins/tree/master/headerid
-    'headerid',
+    "headerid",
     # https://github.com/getpelican/pelican-plugins/tree/master/series
-    'series',
+    "series",
     # https://github.com/getpelican/pelican-plugins/tree/master/sitemap
-    'sitemap',
+    "sitemap",
     # https://github.com/getpelican/pelican-plugins/tree/master/simple_footnotes
-    'simple_footnotes',
+    "simple_footnotes",
     # https://github.com/getpelican/pelican-plugins/tree/master/sub_parts
-    'sub_parts',
+    "sub_parts",
 ]
 
 MARKDOWN = {
-    'extension_configs': {
-        'markdown.extensions.codehilite': {'css_class': 'highlight'},
-        'markdown.extensions.extra': {},
-        'markdown.extensions.meta': {},
-        'markdown.extensions.admonition': {},
+    "extension_configs": {
+        "markdown.extensions.codehilite": {"css_class": "highlight"},
+        "markdown.extensions.extra": {},
+        "markdown.extensions.meta": {},
+        "markdown.extensions.admonition": {},
     },
-    'output_format': 'html5',
+    "output_format": "html5",
 }
 
-STATIC_PATHS = (
-    'images',
-    'extra/robots.txt',
-)
+STATIC_PATHS = [
+    "images",
+    "extra/robots.txt",
+]
 EXTRA_PATH_METADATA = {
-    'extra/robots.txt': {'path': 'robots.txt'},
+    "extra/robots.txt": {"path": "robots.txt"},
 }
 
-THEME = os.path.join(os.curdir, 'themes', 'tvlkv')
+THEME = os.path.join(os.curdir, "themes", "air-and-fire")
 
 SITEMAP = {
-    'format': 'xml',
+    "format": "xml",
 }
 
 DEFAULT_PAGINATION = 20
 
 # Pages to disable.
-AUTHORS_SAVE_AS = ''
-AUTHOR_SAVE_AS = ''
+ARCHIVES_SAVE_AS = ""
+AUTHORS_SAVE_AS = ""
+AUTHOR_SAVE_AS = ""
+TAGS_SAVE_AS = ""
+TAG_SAVE_AS = ""
+
+DEFAULT_DATE_FORMAT = "%d %B %Y"
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
