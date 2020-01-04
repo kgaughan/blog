@@ -29,6 +29,7 @@ nav {
   padding: 1ch 0;
   margin-bottom: 4rem;
   flex-wrap: wrap;
+  border-bottom: 1px solid #802;
 }
 
 nav * {
