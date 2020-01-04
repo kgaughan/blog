@@ -10,6 +10,12 @@ Then you can install Pelican itself::
 
     $ pip install --user pelican Markdown typogrify html5lib
 
+On MacOS, using pipx is preferable::
+
+    $ brew install pipx
+    $ pipx install pelican
+    $ pipx inject pelican Markdown typogrify html5lib
+
 You should also ensure that the pelican-plugins repo is checked out in the
 same directory as the repo::
 
