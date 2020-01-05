@@ -17,7 +17,6 @@ poem.
 After some messing around, I came up with this bit of CSS:
 
 .. code-block:: css
-   :linenos: table
 
    .centred {
        /* Make the element only as wide as it needs to be. */
