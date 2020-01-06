@@ -7,7 +7,8 @@
 
 	<meta charset="utf-8">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css" integrity="sha256-fhWmpLsbRLY5xcogEY/DTY2aUDu5sd1Y/vxj9XtJMAQ=" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css">
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 
@@ -47,6 +48,7 @@
 		{% for name, link in SOCIAL %}
 			<li><a href="{{ link }}">{{ name }}</a></li>
 		{% endfor %}
+			<li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}"><i class="fa fa-rss" aria-hidden="true" title="Feed"></i></a></li>
 		</ul>
 	</nav>
 

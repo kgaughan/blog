@@ -1,11 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
-from __future__ import unicode_literals
-
 import os
 import os.path
 import sys
+
+import markupsafe
+
+
+def social(fa, title, url):
+    markup = f'<i class="fa fa-{fa}" aria-hidden="true" title="{title}"></i>'
+    return (markupsafe.Markup(markup), url)
 
 
 AUTHOR = "Keith Gaughan"
@@ -32,9 +37,16 @@ DEFAULT_METADATA = {
 
 LINKS = []
 
+
 SOCIAL = [
-    ("Github", "https://github.com/kgaughan/"),
-    ("Twitter", "https://twitter.com/talideon/"),
+    social(
+        "stack-overflow",
+        "Stack Overflow",
+        "https://stackoverflow.com/users/8342/keith-gaughan",
+    ),
+    social("linkedin", "LinkedIn", "https://www.linkedin.com/in/keithgaughan"),
+    social("github", "Github", "https://github.com/kgaughan/"),
+    social("twitter", "Twitter", "https://twitter.com/talideon/"),
 ]
 
 PLUGIN_PATHS = [os.path.abspath("../pelican-plugins")]
