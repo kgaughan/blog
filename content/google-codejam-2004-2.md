@@ -1,5 +1,5 @@
 Title: Google Code Jam 2004, The Middle
-Date: 2001-09-15 20:05
+Date: 2004-09-15 20:05
 Slug: google-codejam-2004-2
 Category: Coding
 Status: published
