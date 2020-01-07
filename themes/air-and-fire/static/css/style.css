@@ -156,3 +156,11 @@ pre {
   padding: 0.5ch;
   overflow-x: scroll;
 }
+
+.figure {
+  text-align: center;
+}
+.figure img {
+  border: 1px solid #eee;
+  padding: 1px;
+}
