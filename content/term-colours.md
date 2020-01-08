@@ -1,6 +1,5 @@
 Title: I'm finally happy with my terminal colours
 Date: 2007-10-05 15:02
-Category: Miscellaneous
 Slug: term-colours
 Status: published
 
