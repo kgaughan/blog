@@ -4,11 +4,15 @@ draft posts that might be checked in.
 
 On a bare bones FreeBSD box, you will need to install a few prerequisites::
 
-    $ sudo pkg install rsync gmake py27-pip
+    $ sudo pkg install rsync gmake py37-pip
+
+On Ubuntu and Debian, avoid the packaged version of Pelican and do this::
+
+    4 sudo apt install rsync python3-pip
 
 Then you can install Pelican itself::
 
-    $ pip install --user pelican Markdown typogrify html5lib
+    $ pip3 install --user pelican Markdown typogrify html5lib
 
 On MacOS, using pipx is preferable::
 
