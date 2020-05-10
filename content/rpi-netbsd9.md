@@ -6,7 +6,7 @@ Category: Hacks
 
 One of the consequences of being on a lockdown is that you find time to do things you've been putting off for a while. One of mine is setting up a small bastion server on my home network. Having already set up dynamic DNS with [Duck DNS](https://www.duckdns.org/), I found one of my old Raspberry Pis when I was digging through some unopened boxes from when I'd last moved. I spent an inordinate amount of time getting an OS onto it after spending far too long believing that it was a RPi 2 B rather than the original B+ it actually was. Unfortunately the Pibow case it's in obscured that particular bit of information.
 
-Still, I managed to get NetBSD 9.0 up and running on it after going through my cache of micro SD cards to find a healthy one and following sometimes obtuse "[NetBSD/evbarm on Raspberry Pi](https://wiki.netbsd.org/ports/evbarm/raspberry_pi/)" page, I got it booting. The initial experience was slightly better. I recall when I first used NetBSD on a MiniITX box about a decade ago that I had to do some weird USB-related device wrangling, but everything just worked. Well, almost: the USB WiFi dongle in the RPi was recognised but couldn't scan for networks successfully, so had to drop back to wired access. Not the end of the world, mind.
+Still, I managed to get NetBSD 9.0 up and running on it after going through my cache of micro SD cards to find a healthy one and following the sometimes obtuse "[NetBSD/evbarm on Raspberry Pi](https://wiki.netbsd.org/ports/evbarm/raspberry_pi/)" page, I got it booting. The initial experience was slightly better. I recall when I first used NetBSD on a MiniITX box about a decade ago that I had to do some weird USB-related device wrangling, but everything just worked. Well, almost: the USB WiFi dongle in the RPi was recognised but couldn't scan for networks successfully, so had to drop back to wired access. Not the end of the world, mind.
 
 I set up a user:
 
@@ -139,3 +139,13 @@ Starting ntpd.
 It's all working now, until I next reboot at least.
 
 It'd be really good if NetBSD produced a smaller 'headless' image that lacked X11, as that would knock a significant chunk off the image, and if `pkgin` could bootstrap itself like FreeBSD's `pkgng`. Some day, maybe. I'd settle for `pkg_add` in base having properly functioning TLS support though.
+
+## Addendum
+
+I ran into some issues with the [`authorized_key`](https://docs.ansible.com/ansible/latest/modules/authorized_key_module.html) Ansible module. The solution was this:
+
+```sh
+sudo pkgin install mozilla-rootcerts-openssl
+```
+
+It'd be interesting if downloading and installing this _first_ would've fixed `pkg_add`'s issues installing `pkgin` in the first place.
