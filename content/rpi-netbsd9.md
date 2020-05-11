@@ -140,6 +140,8 @@ It's all working now, until I next reboot at least.
 
 It'd be really good if NetBSD produced a smaller 'headless' image that lacked X11, as that would knock a significant chunk off the image, and if `pkgin` could bootstrap itself like FreeBSD's `pkgng`. Some day, maybe. I'd settle for `pkg_add` in base having properly functioning TLS support though.
 
+Next up: using BIND 9, dhcpd, and bozohttpd to effectively build a [Pi-hole](https://pi-hole.net/), and configure [blacklistd](https://netbsd.gw.com/cgi-bin/man-cgi?blacklistd+8) to protect it from the big wide world.
+
 ## Addendum
 
 I ran into some issues with the [`authorized_key`](https://docs.ansible.com/ansible/latest/modules/authorized_key_module.html) Ansible module. The solution was this:
