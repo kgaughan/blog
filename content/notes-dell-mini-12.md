@@ -235,7 +235,7 @@ $ mpc play
 I installed `rxvt`, gave it a sensible configuration in [.Xdefaults](https://github.com/kgaughan/dotfiles/blob/master/common/.Xdefaults), and ran:
 
 ```console
-$ xrdb -merge ~/.Xdefaults
+$ xrdb ~/.Xdefaults
 # update-alternatives --config x-terminal-emulator
 ```
 
@@ -243,7 +243,6 @@ I also installed:
 
  * hsetroot
  * moreutils
- * xfonts-terminus
  * valac
 
 I ran this to attempt to give the machine booting with plymouth rather than the text console:
@@ -280,6 +279,7 @@ Here's `~/.xsession`:
 #!/bin/sh
 export MPD_HOST=$HOME/.cache/mpd.sock
 test -e ~/.config/wallpaper && hsetroot -center ~/.config/wallpaper
+test -e ~/.Xdefaults && xrdb ~/.Xdefaults
 exec /usr/bin/x-window-manager
 ```
 
