@@ -109,6 +109,14 @@ article .published {
 article > section {
   line-height: 1.4;
 }
+article .series {
+  font-size: 80%;
+  font-style: italic;
+  color: #888;
+}
+article .series .active {
+  font-weight: bold;
+}
 
 article:after {
   content: "❧ ";

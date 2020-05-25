@@ -3,6 +3,7 @@ Slug: notes-dell-mini-12
 Category: Hacks
 Date: 2020-05-23 21:09
 Status: published
+Series: Dell Mini 12
 
 (These are some rough, unedited notes from when I was rebuilding the machine today.)
 
