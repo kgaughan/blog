@@ -8,6 +8,6 @@ This is an excellent explaination about what must be one of the most puzzling pa
 
 The original was an MS Word file. I converted it to LaTeX for my own use, but I think others might find it useful too. I redid the the diagrams to make them clearer, and reworded the text ever-so-slightly because I was, ahem, too lazy to use crossreferences. Enjoy!
 
-* [Demystifying the GridBagLayout Layout Manager by Peter Haggar]({attach}/attachments/gridbag.pdf) (PDF)
+* [Demystifying the GridBagLayout Layout Manager by Peter Haggar]({attach}attachments/gridbag.pdf) (PDF)
 
 If Peter or anybody from IBM would like me to take this down, I'll do so as soon as possible after I'm contacted.

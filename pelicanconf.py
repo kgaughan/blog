@@ -18,6 +18,8 @@ SITENAME = "Can’t Hack It"
 TAGLINE = "An attempt at public introspection"
 SITEURL = "/"
 
+SLUGIFY_SOURCE = "basename"
+
 PATH = "content"
 
 TIMEZONE = "Europe/Dublin"
@@ -105,5 +107,10 @@ RELATIVE_URLS = True
 
 DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = False
+
+CATEGORIES_URL = "categories/"
+CATEGORIES_SAVE_AS = "categories/index.html"
+CATEGORY_URL = "categories/{slug}/"
+CATEGORY_SAVE_AS = "categories/{slug}/index.html"
 
 TYPOGRIFY = True

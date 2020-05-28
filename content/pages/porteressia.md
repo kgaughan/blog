@@ -2,6 +2,8 @@ Title: The Porteressia
 Slug: porteressia
 Status: published
 Menu: no
+Save_As: conlanging/porteressia/index.html
+URL: conlanging/porteressia/
 
 ![The word 'eretas' in its native script]({static}../images/eretas_e1.png){: align="right" }
 You're mainly going to find stuff on Eretas here for the moment. I'm not confident enough to put anything on the Porteressia themselves online yet.

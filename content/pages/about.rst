@@ -4,6 +4,8 @@ About
 :date: 2016-03-02 01:44
 :modified: 2018-12-22 00:38
 :status: published
+:save_as: about/index.html
+:url: about/
 
 A self-improvement project by `Keith Gaughan <https://stereochro.me/>`_.
 

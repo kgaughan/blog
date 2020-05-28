@@ -1,6 +1,8 @@
 Title: Conlanging
 Date: 2019-02-04 19:33
 Status: published
+Save_As: conlanging/index.html
+URL: conlanging/
 
 Once upon a time, I was a relatively active [conlanger](https://en.wikipedia.org/wiki/Constructed_language), and was active in the conculture community, particularly the [Ill Bethisad](http://ib.frath.net/w/Ill_Bethisad) shared universe, and had some of my own.
 
