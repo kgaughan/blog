@@ -37,7 +37,7 @@
 				<li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
 			{% endfor %}
 		{% else %}
-			<li><a href="{{ SITEURL }}/categories.html">Categories</a></li>
+			<li><a href="{{ SITEURL }}/{{ CATEGORIES_URL }}">Categories</a></li>
 		{% endif %}
 		{% for title, link in MENUITEMS %}
 			<li><a href="{{ link }}">{{ title }}</a></li>
