@@ -77,6 +77,15 @@ MARKDOWN = {
     "output_format": "html5",
 }
 
+DOCUTILS_SETTINGS = {
+    "restructuredtext parser": {
+        "smart_quotes": True,
+    },
+    "html5 writer": {
+        "table_style": "colwidths-auto",
+    },
+}
+
 STATIC_PATHS = [
     "images",
     "extra/robots.txt",
