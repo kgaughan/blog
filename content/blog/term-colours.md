@@ -30,4 +30,4 @@ used to have back then. Here&#8217;s what I&#8217;m using now:</p>
 
 Here's what it looks like. The screen shot is of Vim with the koehler colour scheme running in a terminal displaying some of the templating code in AFK:
 
-![What my terminal looks like]({attach}images/afk-term-cs.png)
+![What my terminal looks like]({static}../images/afk-term-cs.png)

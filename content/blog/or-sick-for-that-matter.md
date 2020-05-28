@@ -10,7 +10,7 @@ I pity the poor chamber maids though: I would _not_ want want to be the person s
 
 ## Ye Olde HTML Scrubber
 
-On the plus side, though my weekend's pretty much screwed, I _did_ buckle down and start coding the HTML scrubber I've been [threatening to write]({filename}/java-html-scrubber.md) for months now. I'm starting it with a cut-down SAX-style liberal SGML parser, which is currently about 10% of the way done. I have the parsed character data part of it done (and was more awkward to do properly for a liberal parser than I'd expected), and the next bit will be to do the tag parser (which I've done the background work for), and finally, I'll need to wire all that together and get it firing events.
+On the plus side, though my weekend's pretty much screwed, I _did_ buckle down and start coding the HTML scrubber I've been [threatening to write]({filename}java-html-scrubber.md) for months now. I'm starting it with a cut-down SAX-style liberal SGML parser, which is currently about 10% of the way done. I have the parsed character data part of it done (and was more awkward to do properly for a liberal parser than I'd expected), and the next bit will be to do the tag parser (which I've done the background work for), and finally, I'll need to wire all that together and get it firing events.
 
 Once the parser is done, I'll concentrate on the the scrubber itself. It'll use a stack to keep track of the tags and fire off events when it encounters start tags or unbalanced tags to some other bit of code which'll know which tags to keep, which ones to ditch, and how to resolve the unbalanced tags.
 

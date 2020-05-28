@@ -5,7 +5,7 @@ Date: 2020-05-25 21:22
 Series: Dell Mini 12
 Status: published
 
-[Last time]({filename}/notes-dell-mini-12.md), I got my old Dell Mini 12 up and running again. Well, the fates did not smile kindly on me, and through my own clumsiness, it ended up slipping off my lap, leaving it with some very, very unhappy spinning rust.
+[Last time]({filename}notes-dell-mini-12.md), I got my old Dell Mini 12 up and running again. Well, the fates did not smile kindly on me, and through my own clumsiness, it ended up slipping off my lap, leaving it with some very, very unhappy spinning rust.
 
 And yes, it contains a regular HDD, and not an SSD of some kind. That didn't bother me terribly up until now, but if that's not working, the machine is pretty much junk. Still, it turns out that the machine is has a pretty good service manual [here]({attach}attachments/dell-mini-12/inspiron-1210_service manual_en-us.pdf), so fixing it is at least feasible.
 

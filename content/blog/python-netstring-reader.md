@@ -4,7 +4,7 @@ Category: Coding
 Slug: python-netstring-reader
 Status: published
 
-I'm writing a proof-of-concept server for a less jokey version of the [SRGP]({filename}/srgp.md). The protocol is more or less SRGP, but it doesn't use MIME-style headers each request is made up of a series of [netstrings](http://cr.yp.to/proto/netstrings.txt). The header and body sections are terminated with empty netstrings, i.e., `0:,`.
+I'm writing a proof-of-concept server for a less jokey version of the [SRGP]({filename}srgp.md). The protocol is more or less SRGP, but it doesn't use MIME-style headers each request is made up of a series of [netstrings](http://cr.yp.to/proto/netstrings.txt). The header and body sections are terminated with empty netstrings, i.e., `0:,`.
 
 The proof-of-concept server is being written in Python. Here's the netstring reader generator function, in case it might be of use to somebody else out there:
 

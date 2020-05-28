@@ -12,4 +12,4 @@ With any luck, I should have the modem within two days and all this will be behi
 
 For the full story, read [this thread](http://boards.ie/vbulletin/showthread.php?t=2054883830) on Boards.
 
-**Update:** [I have the modem]({filename}/dsl-modem-arrives.md)! Hurray!
+**Update:** [I have the modem]({filename}dsl-modem-arrives.md)! Hurray!

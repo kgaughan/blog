@@ -36,7 +36,7 @@ There's also a bunch of helper functions covering a bunch of things I keep on ha
 While the stuff outlined above covers a lot of the annoying boilerplate I've ended up writing in the past, there's a few ancilliary things I'd like to add to the library.
 
 *   A base class for making alternative session serialisation stratagies easier to write. I'll also write a filter class using this to implement database session serialisation. It's low priority.
-*   [Formkey]({filename}/formkeys.md) generation and validation. Formkeys make forms that have them one-shot, helping to avoid double submits, makes programmatic submission of forms a little more difficult, helps prevent spoofing of credentials, and can be used for throttling overactive posters. I have some ColdFusion code that does this already and though it's no panacea, it's _very_ useful. This is medium priority, but I'd really like this sometime.
+*   [Formkey]({filename}formkeys.md) generation and validation. Formkeys make forms that have them one-shot, helping to avoid double submits, makes programmatic submission of forms a little more difficult, helps prevent spoofing of credentials, and can be used for throttling overactive posters. I have some ColdFusion code that does this already and though it's no panacea, it's _very_ useful. This is medium priority, but I'd really like this sometime.
 *   Some simple authentification code. High priority, but only because I need it for something I'm doing right now. I'll probably use something from PEAR though.
 *   Role-based authorisation. Also high priority, but I'll probably find something for doing this on PEAR too.
 *   PHPUnit coverage. For my sins, there isn't any just yet, and there really should be.

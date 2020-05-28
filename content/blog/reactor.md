@@ -7,7 +7,7 @@ Status: published
 
 Here's some graphics I knocked out showing the various grid square states:
 
-![Image showing the various states a grid square can be in]({attach}/images/reactor-states.png)
+![Image showing the various states a grid square can be in]({static}../images/reactor-states.png)
 {: .figure }
 
 I think I'll make them smaller, but they're fine for now.

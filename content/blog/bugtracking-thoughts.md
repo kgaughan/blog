@@ -3,7 +3,7 @@ Date: 2008-05-29 15:48
 Slug: bugtracking-thoughts
 Status: published
 
-At [Blacknight](http://blacknight.com/), we use our own custom bugtracking software, [GrassSnake]({filename}/grasssnake.md). It's something I wrote over the course of a few days on my own time and which I've been working on whenever I've had a free moment, which, in fairness, isn't all that often.
+At [Blacknight](http://blacknight.com/), we use our own custom bugtracking software, [GrassSnake]({filename}grasssnake.md). It's something I wrote over the course of a few days on my own time and which I've been working on whenever I've had a free moment, which, in fairness, isn't all that often.
 
 It's worked pretty well for us so far, but the design is beginning to hit a few limitations. Before I get to that, it's best if I explain its current design.
 

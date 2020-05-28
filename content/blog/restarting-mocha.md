@@ -13,7 +13,7 @@ I've tried so many of the blasted things and a few things have been confirmed fo
 *   The [Comments API](https://web.archive.org/web/20080829004451/http://wellformedweb.org/story/9) is nothing but a good idea.
 *   [Bloglines](http://www.bloglines.com/) is pretty close to what I wanted Mocha to be, but it's a webapp, so it sucks.
 
-I've been dithering, as I'm wont to do, about [finishing Mocha]({filename}/always-finish-projects.md), but being a bit of an [Architecture Astronaut](http://www.joelonsoftware.com/articles/fog0000000018.html), I have a tendancy to get lots of [good ideas]({filename}/idea-aggregator-server.md) that don't really go anywhere.
+I've been dithering, as I'm wont to do, about [finishing Mocha]({filename}always-finish-projects.md), but being a bit of an [Architecture Astronaut](http://www.joelonsoftware.com/articles/fog0000000018.html), I have a tendancy to get lots of [good ideas]({filename}idea-aggregator-server.md) that don't really go anywhere.
 
 I started Mocha before all the desktop aggregators started coming out, but never finished it. Everybody has those projects that they start, but never get around to finishing, but this one really burns me. I know _what_ I want, but I keep putting off actually getting it.
 

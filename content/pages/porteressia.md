@@ -12,4 +12,4 @@ Well, no more diereses to worry about. I've coopted the letter 'j' to do palatal
 
 I've started making a lot of changes to Eretas. I'm also designing a set of TeX macros to let me typeset conlangs effectively.
 
-I've slapped the latest collected notes on [Eretas]({attach}../attachments/eretas/eretas.pdf) here, so download, read, and have fun.
+I've slapped the latest collected notes on [Eretas]({attach}attachments/eretas/eretas.pdf) here, so download, read, and have fun.

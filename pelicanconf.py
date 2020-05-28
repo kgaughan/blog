@@ -100,6 +100,9 @@ AUTHOR_SAVE_AS = ""
 TAGS_SAVE_AS = ""
 TAG_SAVE_AS = ""
 
+ARTICLE_PATHS = ["blog"]
+PAGE_PATHS = ["pages"]
+
 DEFAULT_DATE_FORMAT = "%d %B %Y"
 
 # Uncomment following line if you want document-relative URLs when developing

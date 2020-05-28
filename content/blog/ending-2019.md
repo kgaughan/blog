@@ -3,7 +3,7 @@ Date: 2020-01-02 23:53
 Category: Life
 Status: published
 
-Following on from [last year's post]({filename}/ending-2018.md), it's time to re-examine where I am in my life once more.
+Following on from [last year's post]({filename}ending-2018.md), it's time to re-examine where I am in my life once more.
 
 ## The good
 
@@ -37,7 +37,7 @@ As I've said, I have too many unread books. I am hoping to read the books that I
 
 I took some tentative steps back into dating. Nothing even remotely successful yet, but that'll take time and lots of inevitable disappointment.
 
-Connected to this is that I need to be less wishy-washy. There are reasons why I ended up like this, and it came out of good intentions on my part to control some of my less admirable aspects, but the whole exercise was naive and misguided, only really serving to isolate me. I don't speak my mind as much as I should, nor am I assertive enough. I need to find a way to fix this aspect of who I am. I think it makes me boring and has held me back so much from where I ought to be. Mind, there's no reason why doing so should be paired up with a lack of kindness, but I also need to be less of a push-over. I still haven't learned how to [ask for things]({filename}/on-asking-for-things.md).
+Connected to this is that I need to be less wishy-washy. There are reasons why I ended up like this, and it came out of good intentions on my part to control some of my less admirable aspects, but the whole exercise was naive and misguided, only really serving to isolate me. I don't speak my mind as much as I should, nor am I assertive enough. I need to find a way to fix this aspect of who I am. I think it makes me boring and has held me back so much from where I ought to be. Mind, there's no reason why doing so should be paired up with a lack of kindness, but I also need to be less of a push-over. I still haven't learned how to [ask for things]({filename}on-asking-for-things.md).
 
 I need to finish projects, and I need to make fewer excuses for not finishing them.
 
