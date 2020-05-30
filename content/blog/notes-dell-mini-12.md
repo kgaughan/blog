@@ -225,7 +225,7 @@ log_file "~/.cache/mpd.log"
 db_file "~/.cache/mpd.db"
 bind_to_address "~/.cache/mpd.sock"
 ^D
-$ systemctl --user disable --now mpd
+$ systemctl --user enable --now mpd
 $ export MPD_HOST=$HOME/.cache/mpd.sock
 $ mpc add ~/Music/65daysofstatic\ -\ Crash\ Tactics.mp3
 $ mpc play
