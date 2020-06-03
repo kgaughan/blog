@@ -15,6 +15,8 @@ I'm about half-way through my probable lifespan, and there are certain things I 
 
 I'm not _deleting_ my account, but I can't see myself ever posting there again. I'm doing everything short of making it private, which will include shutting of my DMs; there's no sense in leaving them open when there's nobody on the other end. I don't plan on purging everything; while I understand what motivates people to do that, it's best for me not to as in my case it would be hiding from past mistakes. I might set up a simple bot to take a newsfeed and repost it in an edited form, but that's it. If I do put the bot in place, I can't see it being busy.
 
+This will have to wait until I stop being afraid of opening the Twitter client, though. The fear makes it easier to stay away, but harder to finalise things.
+
 By no longer using Twitter, it means losing contact with a lot of people. If you have my email or phone number, keep in touch. I'm not going to post it here explicitly, but its _firstname_@_surname_.ie, substituting my first and last names for the bits in italics.
 
 The practice of microblogging has not been a good one. It's been too easy to type up some half-considered notion and send it out to the world, hardly edited. I might post here more, but I have doubts. At least this puts a layer of friction between the often stupid ideas that pop into my head and what actually escapes to the world. It's one less avenue to damage others and damage myself.
