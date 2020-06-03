@@ -6,6 +6,9 @@ server {
 	root {{ vhosts_root }}/{{ domain_name }}/web;
 	index index.html index.htm;
 
+	rewrite ^/pages/(about|conlanging)\.html$ /$1/ permanent;
+	rewrite ^/pages/(ananagyu|porteressia|sketches)\.html$ /conlanging/$1/ permanent;
+
 	ssl_certificate {{ tls_root }}/{{ domain_name }}/fullchain.pem;
 	ssl_certificate_key {{ tls_root }}/private/{{ domain_name }}.pem;
 

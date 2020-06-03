@@ -1,12 +1,11 @@
 ---
 - name: build i.canthack.it
-  hosts: all
+  hosts: targets
   remote_user: keith
   become: true
   gather_facts: false
 
   vars:
-    ansible_python_interpreter: /usr/local/bin/python3
     domain_name: canthack.it
     vhosts_root: /usr/local/www
     webserver_config_root: /usr/local/etc/nginx

@@ -1,5 +1,5 @@
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   display: block;
   position: relative;
   width: 100%;
@@ -128,8 +128,6 @@ article:after {
 }
 
 footer {
-  border-top: 1px solid #802;
-  padding: 1ch 0 0 0;
   text-align: center;
   margin: 2rem auto;
 }

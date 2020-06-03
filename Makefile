@@ -53,7 +53,7 @@ upload: publish
 	rsync -P -rvczz --delete --exclude=.DS_Store --exclude='.*.sw?' --cvs-exclude $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
 
 deploy:
-	ansible-playbook deploy.yml -i $(SSH_HOST), --diff
+	ansible-playbook deploy.yml -i hosts.ini --diff
 
 .PHONY: html help clean regenerate serve devserver publish upload
 .PHONY: drafts categories deploy
