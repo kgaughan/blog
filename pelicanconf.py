@@ -49,7 +49,6 @@ SOCIAL = [
     ),
     social("linkedin", "LinkedIn", "https://www.linkedin.com/in/keithgaughan"),
     social("github", "Github", "https://github.com/kgaughan/"),
-    social("twitter", "Twitter", "https://twitter.com/talideon/"),
 ]
 
 PLUGIN_PATHS = [os.path.abspath("../pelican-plugins")]
