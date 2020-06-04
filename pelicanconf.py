@@ -37,8 +37,9 @@ DEFAULT_METADATA = {
     "status": "draft",
 }
 
-LINKS = []
-
+LINKS = [
+    ("Inklings", "https://talideon.com/inklings/"),
+]
 
 SOCIAL = [
     social(
