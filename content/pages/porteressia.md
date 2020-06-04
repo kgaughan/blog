@@ -1,5 +1,4 @@
 Title: The Porteressia
-Slug: porteressia
 Status: published
 Menu: no
 Save_As: conlanging/porteressia/index.html

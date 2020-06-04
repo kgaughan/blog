@@ -33,10 +33,10 @@ followers' timelines with nonsense that way.
 **How do I contact you?**
 
 I couldn't fathom why you'd want to: frankly, I'm not all that interesting.
-That said, my Twitter handle, if you want to make noises at me, is
-`@talideon`__. I don't give out my email address, but I'm sure you can either
-find it online somewhere or at the very least guess it. If you know me, you
-probably already know what it is already.
+My Twitter handle is `@talideon`__, but I don't post there anymore. I don't
+give out my email address, but I'm sure you can either find it online somewhere
+or at the very least guess it. If you know me, you probably already know what
+it is already.
 
 .. __: https://twitter.com/talideon
 

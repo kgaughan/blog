@@ -1,4 +1,4 @@
-This is the Pelican_ source for my `Can't Hack` blog. I can't see there being
+This is the Pelican_ source for `my blog`_. I can't see there being
 anything terribly interesting here except maybe to poke around some unpublished
 draft posts that might be checked in.
 
@@ -34,4 +34,4 @@ Finally, ensure that reST smart quotes are switched on in ``~/.docutils``::
 The makefile should be portable, so it'll work with both GNU make and BSD make.
 
 .. _Pelican: https://github.com/getpelican/pelican
-.. _Can't Hack: https://i.canthack.it/
+.. _my blog: https://keith.gaughan.ie/

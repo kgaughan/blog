@@ -14,7 +14,7 @@ def social(fa, title, url):
 
 
 AUTHOR = "Keith Gaughan"
-SITENAME = "Can’t Hack It"
+SITENAME = AUTHOR
 TAGLINE = "An attempt at public introspection"
 SITEURL = "/"
 

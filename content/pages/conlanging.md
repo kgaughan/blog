@@ -18,5 +18,6 @@ I was stopped in my tracks when I heard about Michael Moorcock's _Eternal Champi
 
 ## Miscellaneous concultures and conlangs
 
-* [The Ananagyu]({filename}ananagyu.md), and their language a-Illiyar.
-* [Sketchlangs]({filename}sketchlangs.md).
+* [Tèrnaru]({filename}ternaru.md)
+* [The Ananagyu]({filename}ananagyu.md), and their language a-Illiyar
+* [Sketchlangs]({filename}sketchlangs.md)
