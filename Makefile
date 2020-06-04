@@ -9,7 +9,7 @@ PUBLISHCONF:=$(BASEDIR)/publishconf.py
 
 SSH_HOST:=lir.talideon.com
 SSH_USER:=keith
-SSH_TARGET_DIR:=/usr/local/www/canthack.it/web
+SSH_TARGET_DIR:=/usr/local/www/keith.gaughan.ie/web
 
 help:
 	@echo 'Makefile for a pelican Web site'

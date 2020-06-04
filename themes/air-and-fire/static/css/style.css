@@ -132,6 +132,22 @@ footer {
   margin: 2rem auto;
 }
 
+blockquote {
+  font-style: italic;
+}
+blockquote em {
+  font-style: normal;
+}
+
+.footnote {
+  font-size: 80%;
+  font-style: italic;
+  color: #888;
+}
+.footnote hr {
+  display: none;
+}
+
 .paginator {
   display: flex;
   justify-content: space-around;
