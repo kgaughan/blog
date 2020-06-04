@@ -1,12 +1,12 @@
 ---
-- name: build i.canthack.it
+- name: build keith.gaughan.ie
   hosts: targets
   remote_user: keith
   become: true
   gather_facts: false
 
   vars:
-    domain_name: canthack.it
+    domain_name: keith.gaughan.ie
     vhosts_root: /usr/local/www
     webserver_config_root: /usr/local/etc/nginx
     logs_root: /var/log/www
@@ -39,11 +39,20 @@
         group: www
         mode: 0755
 
+    - name: populate domains.txt (legacy)
+      lineinfile:
+        dest: "{{ acme_client_root }}/domains.txt"
+        create: true
+        line: "canthack.it i.canthack.it www.canthack.it"
+      notify:
+        - generate missing certificates
+        - reload nginx
+
     - name: populate domains.txt
       lineinfile:
         dest: "{{ acme_client_root }}/domains.txt"
         create: true
-        line: "{{ domain_name }} i.{{ domain_name }} www.{{ domain_name }}"
+        line: "{{ domain_name }}"
       notify:
         - generate missing certificates
         - reload nginx
