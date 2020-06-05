@@ -11,7 +11,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = "https://i.canthack.it"
+SITEURL = "https://keith.gaughan.ie"
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = "feeds/all.xml"
