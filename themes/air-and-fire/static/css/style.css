@@ -71,10 +71,13 @@ body > header a {
   font-weight: bold;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #802;
+}
+
 body > header h1, body > header h2 {
   font-weight: 400;
   margin: 0;
-  color: #802;
   text-align: center;
 }
 body > header h1 {
