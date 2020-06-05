@@ -13,4 +13,4 @@ Additionally, [Pelican](https://getpelican.com/), which is what I use, does not 
 
 I intend this new location to be the final time I move my blog. I'm letting as many of my domains as possible expire. If I could whittle the list down to just talideon.com and gaughan.ie, I would, but I'll need to keep stereochro.me for email and canthack.it for redirects. I very much wish I'd never used those gimmicky domain hacks in the first place.
 
-Also, if you're a relative of mine and would like a gaughan.ie subdomain, [ping me]({filename}../pages/about.rst). If you're more technical, open a pull request against my [zones](https://github.com/kgaughan/zones) repo: you'll need to modify `group_vars/all/main.yml`, adding an entry to the `zone_cnames` mapping.
+Also, if you're a relative of mine and would like a gaughan.ie subdomain, [ping me]({filename}../pages/about.md). If you're more technical, open a pull request against my [zones](https://github.com/kgaughan/zones) repo: you'll need to modify `group_vars/all/main.yml`, adding an entry to the `zone_cnames` mapping.
