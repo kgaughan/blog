@@ -133,7 +133,7 @@ backend = "glx";
 ```
 
 My `~/.config/i3/config` file is similar to what I set up on the
-[Dell Mini 12]({filename}/notes-dell-mini-12.md) when I tried getting it
+[Dell Mini 12]({filename}notes-dell-mini-12.md) when I tried getting it
 working again. I added/modified:
 
 ```text
