@@ -7,7 +7,7 @@ I have to apologise to anybody who follows my feed as you have no doubt just bee
 
 I'll explain.
 
-I've moved this site to [keith.gaughan.ie](https://keith.gaughan.ie/). I indend for this to be its final location. I've added permanent redirects for _everything_. Unfortunately, not everything respects permanent redirects, so whatever software you use to subscribe to my feed will likely be hitting the old feed URL. You would be doing me a favour if you were to update the URL in your feed reader.
+I've moved this site to [keith.gaughan.ie](https://keith.gaughan.ie/). I intend for this to be its final location. I've added permanent redirects for _everything_. Unfortunately, not everything respects permanent redirects, so whatever software you use to subscribe to my feed will likely be hitting the old feed URL. You would be doing me a favour if you were to update the URL in your feed reader.
 
 Additionally, [Pelican](https://getpelican.com/), which is what I use, does not give any way to give entries and feeds IDs, which makes it impossible for me to prevent old entries from showing up.
 

@@ -16,7 +16,7 @@ On MacOS, using pipx is preferable::
     $ pipx install pelican
     $ pipx inject pelican Markdown typogrify html5lib
 
-On Ubuntu::
+On Ubuntu and Debian::
 
     $ sudo apt install rsync pelican
     $ sudo apt install python3-markdown python3-typogrify python3-html5lib

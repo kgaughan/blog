@@ -10,15 +10,15 @@ Still, I managed to get NetBSD 9.0 up and running on it after going through my c
 
 I set up a user:
 
-```sh
-useradd -m -G wheel keith
-passwd keith
+```console
+# useradd -m -G wheel keith
+# passwd keith
 ```
 
 Ensured multicast DNS would work on the next reboot:
 
-```sh
-echo "mdnsd=YES" >> /etc/rc.conf
+```console
+# echo "mdnsd=YES" >> /etc/rc.conf
 ```
 
 And edited `/etc/ssh/sshd_config` to allow password-based login.
@@ -29,7 +29,7 @@ I shut down the RPi (with `shutdown -p now`), wired it up, waited a while, and s
 
 I tried typing [`pkgin`](http://pkgin.net/), with no luck. I recalled that NetBSD still has [`pkg_add`](https://netbsd.gw.com/cgi-bin/man-cgi?pkg_add++NetBSD-current), so switched to root with `su` and ran `pkg_add pkgin`. Here's what happened:
 
-```text
+```console
 # pkg_add pkgin
 pkg_add: no pkg found for 'pkgin', sorry.
 pkg_add: 1 package addition failed
@@ -44,7 +44,7 @@ pkg_add: 1 package addition failed
 
 After some flailing around, I gave up on expecting `pkg_add` to be network aware, so resorted to downloading packages and installing them (I'm omitting a lot here):
 
-```text
+```console
 # ftp https://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/9.0/All/pkgin-0.14.0.tgz
 # ftp https://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/earmv6hf/9.0/All/pkg_install-20191008.tgz
 # pkg_add pkg_install-20191008.tgz
@@ -53,7 +53,7 @@ After some flailing around, I gave up on expecting `pkg_add` to be network aware
 
 Progress! So, let's download the repo database:
 
-```text
+```console
 # pkgin update
 reading local summary...
 processing local summary...
@@ -69,7 +69,7 @@ Eh... OK. Did I choose the wrong image? Why is this somehow working?!
 
 I need Python so I can later pave the machine properly with Ansible, so:
 
-```text
+```console
 # pkgin install python37
 calculating dependencies...done.
 
@@ -114,7 +114,7 @@ Just... why?! If `pkgin` can look up the correct ABI, why does `$host` in its co
 
 I edited `/usr/pkg/etc/pkgin/repositories.conf` to replace `$arch` with `earmv6hf`, and tried again. This time, I was successful. And so it became time to tackle that one annoying part of every RPi: the (understandable) lack of a battery-backed clock:
 
-```text
+```console
 # service ntpd stop
 Stopping ntpd.
 rpi# ntpd -gq
@@ -146,8 +146,8 @@ Next up: using BIND 9, dhcpd, and bozohttpd to effectively build a [Pi-hole](htt
 
 I ran into some issues with the [`authorized_key`](https://docs.ansible.com/ansible/latest/modules/authorized_key_module.html) Ansible module. The solution was this:
 
-```sh
-sudo pkgin install mozilla-rootcerts-openssl
+```console
+# pkgin install mozilla-rootcerts-openssl
 ```
 
 It'd be interesting if downloading and installing this _first_ would've fixed `pkg_add`'s issues installing `pkgin` in the first place.

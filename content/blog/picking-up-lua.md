@@ -63,4 +63,4 @@ cover most of my other needs, if need be.
 
 Still, these odd omissions aside, it seems fine so far. Maybe this'll be the
 thing that gets me to revisit using AwesomeWM on some low-powered device again.
-After all, I've a Raspberry Pi 4 on the way.
+After all, [I've a Raspberry Pi 4 on the way]({filename}/rpi4-setup.md).
