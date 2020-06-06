@@ -1,7 +1,7 @@
 Title: PLGX: a DHTML-based presentation system to put me to sleep
 Slug: plgx
 Date: 2006-04-19 19:50
-Category: Hacks
+Category: Tools
 Status: published
 
 My sleep patterns are really screwed up.

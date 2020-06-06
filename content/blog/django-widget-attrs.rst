@@ -3,7 +3,7 @@ Custom attribute values in Django form field widgets
 
 :slug: django-widget-attrs
 :date: 2016-06-11 11:08:24
-:category: Django
+:category: Coding
 :status: published
 
 This has frustrated me for so long.

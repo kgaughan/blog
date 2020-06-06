@@ -1,6 +1,6 @@
 Title: RIP, spinning rust...
 Slug: dell-mini-12-spinning-rust
-Category: Hacks
+Category: Tech
 Date: 2020-05-25 21:22
 Series: Dell Mini 12
 Status: published

@@ -2,7 +2,7 @@ Title: Fun installing NetBSD 9.0 on a Raspberry Pi B+
 Slug: rpi-netbsd9
 Date: 2020-05-07 22:00
 Status: published
-Category: Hacks
+Category: Tech
 
 One of the consequences of being on a lockdown is that you find time to do things you've been putting off for a while. One of mine is setting up a small bastion server on my home network. Having already set up dynamic DNS with [Duck DNS](https://www.duckdns.org/), I found one of my old Raspberry Pis when I was digging through some unopened boxes from when I'd last moved. I spent an inordinate amount of time getting an OS onto it after spending far too long believing that it was a RPi 2 B rather than the original B+ it actually was. Unfortunately the Pibow case it's in obscured that particular bit of information.
 

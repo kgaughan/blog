@@ -1,6 +1,6 @@
 Title: Notes on breathing life back into a Dell Mini 12
 Slug: notes-dell-mini-12
-Category: Hacks
+Category: Tech
 Date: 2020-05-23 21:09
 Status: published
 Series: Dell Mini 12
