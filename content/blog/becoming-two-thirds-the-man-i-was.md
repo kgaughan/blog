@@ -78,7 +78,7 @@ If you do take some inspiration from any of this, I'd recommend you find a more 
 
 ## And what's next?
 
-I listed a lot of this in my [new years post]({filename}ending-2018.md), but there's no harm in reiterating the relevant details.
+I listed a lot of this in my [new years post](/ending-2018.html), but there's no harm in reiterating the relevant details.
 
 The main one is to get rid of those last few kilos so I hit my target.
 

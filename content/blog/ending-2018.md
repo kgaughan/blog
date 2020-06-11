@@ -23,7 +23,7 @@ I still haven't dealt with my anxiety yet, and that gets in the way of me being 
 
 ## What I'm planning on doing
 
-The big one if finding better coping mechanisms for my flaws. In addition to [the books I mentioned previously]({filename}starting-again.md), I'm reading [_Are U Ok?: A Guide to Caring for Your Mental Health_](https://www.hachettebookgroup.com/titles/kati-morton/are-u-ok/9780738234991/) by Katy Morgan, and hope to reach a point where I'm happier with myself.
+The big one if finding better coping mechanisms for my flaws. In addition to [the books I mentioned previously](/starting-again.html), I'm reading [_Are U Ok?: A Guide to Caring for Your Mental Health_](https://www.hachettebookgroup.com/titles/kati-morton/are-u-ok/9780738234991/) by Katy Morgan, and hope to reach a point where I'm happier with myself.
 
 I want to start swimming again. When I tried last time, I discovered how out of practice I am now. I used to be a strong swimmer, so that was embarrassing. That means taking lessons to get myself back to where I was.
 
