@@ -9,6 +9,8 @@ server {
 
 	ssl_certificate {{ tls_root }}/canthack.it/fullchain.pem;
 	ssl_certificate_key {{ tls_root }}/private/canthack.it.pem;
+
+	access_log off;
 }
 
 server {
@@ -19,6 +21,8 @@ server {
 
 	server_name .canthack.it;
 	return 301 https://{{ domain_name }}$request_uri;
+
+	access_log off;
 }
 
 # keith.gaughan.ie
@@ -29,6 +33,11 @@ server {
 
 	rewrite ^/pages/(about|conlanging)\.html$ /$1/ permanent;
 	rewrite ^/pages/(ananagyu|porteressia|sketches)\.html$ /conlanging/$1/ permanent;
+	rewrite ^/(porteressia)\.html$ /conlanging/$1/ permanent;
+	rewrite ^/category/([^.]+)\.html$ /categories/$1/ permanent;
+	rewrite ^/pages/eretas\.pdf$ /conlanging/porteressia/attachments/eretas/eretas.pdf permanent;
+	# Some bizarrely truncated Facebook link
+	rewrite ^/leaving-twi$ /leaving-twitter.html permanent;
 
 	server_name {{ domain_name }};
 	root {{ vhosts_root }}/{{ domain_name }}/web;
@@ -49,4 +58,6 @@ server {
 
 	server_name {{ domain_name }};
 	return 301 https://{{ domain_name }}$request_uri;
+
+	access_log off;
 }
