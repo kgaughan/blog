@@ -31,6 +31,12 @@ server {
 	include common_params;
 	include ssl_params;
 
+	location ~ "/wp-login\.php$" {
+		return 410;
+		access_log off;
+	}
+
+	rewrite ^/categories\.html$ /categories/ permanent;
 	rewrite ^/pages/(about|conlanging)\.html$ /$1/ permanent;
 	rewrite ^/pages/(ananagyu|porteressia|sketches)\.html$ /conlanging/$1/ permanent;
 	rewrite ^/(porteressia)\.html$ /conlanging/$1/ permanent;
