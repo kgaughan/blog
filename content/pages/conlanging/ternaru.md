@@ -1,8 +1,6 @@
 Title: Tèrnaru
 Status: published
 Menu: no
-Save_As: conlanging/ternaru/index.html
-URL: conlanging/ternaru/
 
 Consider this an attempt to remake my old Tèrnaru language from scratch.
 

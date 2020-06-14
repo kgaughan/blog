@@ -56,6 +56,8 @@ sys.path += PLUGIN_PATHS
 PLUGINS = [
     # https://github.com/getpelican/pelican-plugins/tree/master/code_include
     "code_include",
+    # https://github.com/akhayyat/pelican-page-hierarchy/
+    "pelican-page-hierarchy",
     # https://github.com/getpelican/pelican-plugins/tree/master/readtime
     "readtime",
     # https://github.com/getpelican/pelican-plugins/tree/master/series
@@ -120,6 +122,8 @@ RELATIVE_URLS = True
 DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = False
 
+PAGE_URL = "{slug}/"
+PAGE_SAVE_AS = "{slug}/index.html"
 CATEGORIES_URL = "categories/"
 CATEGORIES_SAVE_AS = "categories/index.html"
 CATEGORY_URL = "categories/{slug}/"

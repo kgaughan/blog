@@ -2,8 +2,6 @@ Title: About
 Date: 2016-03-02 01:44
 Modified: 2018-12-22 00:38
 Status: published
-Save_As: about/index.html
-Url: about/
 
 A self-improvement project by [Keith Gaughan](https://stereochro.me/).
 

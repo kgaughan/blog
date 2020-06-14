@@ -1,8 +1,6 @@
 Title: Sketchlangs
 Status: published
 Menu: no
-Save_As: conlanging/sketches/index.html
-URL: conlanging/sketches/
 
 ## An Isolating Language (2002-03-12)
 

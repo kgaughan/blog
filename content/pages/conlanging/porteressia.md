@@ -1,10 +1,8 @@
 Title: The Porteressia
 Status: published
 Menu: no
-Save_As: conlanging/porteressia/index.html
-URL: conlanging/porteressia/
 
-![The word 'eretas' in its native script]({static}../images/eretas_e1.png){: align="right" }
+![The word 'eretas' in its native script]({static}../../images/eretas_e1.png){: align="right" }
 The Porteressia (meaning, 'The People of Portu') was a [conculture](http://en.wikipedia.org/wiki/Constructed_culture) I worked on some years back. It's far from finished, but I figure I ought to put my notes up online.
 
 The language and culture were developed for a set of stories I'd intended to write revolving initially about a messiah-like figure called _Portu_ and later on the effect he had on the culture he was part of. The stories were intended to be part of a metaseries centring on something called _The Weave_, and was meant to deal with themes like the resolution of the ideas of pre-destination and free will, the heroism of small actions, and other such lofty things.
@@ -13,7 +11,7 @@ I got as far as developing a complete [writing system](http://en.wikipedia.org/w
 
 > Fenaïr[^articles] is essentially badly scrawled Nestorian masquerading as Manchu.
 
-Feel free to download [my unfinished notes on Eretas]({attach}attachments/eretas/eretas.pdf) in PDF form. Some day, I'd like to revisit Eretas and the Porteressia when I've time and some inspiration.
+Feel free to download [my unfinished notes on Eretas]({attach}attachments/eretas.pdf) in PDF form. Some day, I'd like to revisit Eretas and the Porteressia when I've time and some inspiration.
 
 For a rough idea of what the language looks like, here's a slightly updated version of the CONLANG t-shirt fragment, which translates as 'Fight language death: invent a language': _Mjulhin eretasséan sjessonde; eretas ellonde_. I'm pretty sure that's out of date though. Here's the interlinear:
 
