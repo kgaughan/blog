@@ -31,9 +31,14 @@ server {
 	include common_params;
 	include ssl_params;
 
-	location ~ "/wp-login\.php$" {
+	location ~ "^.*/wp-login\.php$" {
 		return 410;
 		access_log off;
+	}
+
+	location = /feeds/all.xml {
+		types {}
+		default_type "application/atom+xml; charset=utf-8";
 	}
 
 	rewrite ^/categories\.html$ /categories/ permanent;
@@ -41,7 +46,7 @@ server {
 	rewrite ^/pages/(ananagyu|porteressia|sketches)\.html$ /conlanging/$1/ permanent;
 	rewrite ^/(porteressia)\.html$ /conlanging/$1/ permanent;
 	rewrite ^/category/([^.]+)\.html$ /categories/$1/ permanent;
-	rewrite ^/pages/eretas\.pdf$ /conlanging/porteressia/attachments/eretas/eretas.pdf permanent;
+	rewrite ^/pages/eretas\.pdf$ /conlanging/porteressia/attachments/eretas.pdf permanent;
 	# Some bizarrely truncated Facebook link
 	rewrite ^/leaving-twi$ /leaving-twitter.html permanent;
 
