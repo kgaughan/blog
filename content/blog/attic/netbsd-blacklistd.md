@@ -3,7 +3,7 @@ Date: 2020-06-09 22:30
 Status: draft
 Category: Tech
 
-Last time, [I worked on getting ipfilter and sshguard working]({filename}netbsd-sshguard.md), but thought I should give [blacklistd](https://netbsd.gw.com/cgi-bin/man-cgi?blacklistd) a go at some point. Well, why not now? It's part of the base system, and ought to be a bit more efficient than sshguard as it doesn't need to do any log parsing.
+Last time, [I worked on getting ipfilter and sshguard working]({filename}../netbsd-sshguard.md), but thought I should give [blacklistd](https://netbsd.gw.com/cgi-bin/man-cgi?blacklistd) a go at some point. Well, why not now? It's part of the base system, and ought to be a bit more efficient than sshguard as it doesn't need to do any log parsing.
 
 I tried running it, and didn't expect it to start right out of the box. I wasn't disappointed:
 
