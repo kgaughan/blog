@@ -33,6 +33,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 TRANSLATION_FEED_ATOM = None
 
+# fmt: off
 DEFAULT_METADATA = {
     "status": "draft",
 }
@@ -50,6 +51,7 @@ SOCIAL = [
     social("linkedin", "LinkedIn", "https://www.linkedin.com/in/keithgaughan"),
     social("github", "Github", "https://github.com/kgaughan/"),
 ]
+# fmt: on
 
 PLUGIN_PATHS = [os.path.abspath("../pelican-plugins")]
 sys.path += PLUGIN_PATHS
@@ -80,14 +82,11 @@ MARKDOWN = {
 }
 
 DOCUTILS_SETTINGS = {
-    "restructuredtext parser": {
-        "smart_quotes": True,
-    },
-    "html5 writer": {
-        "table_style": "colwidths-auto",
-    },
+    "restructuredtext parser": {"smart_quotes": True},
+    "html5 writer": {"table_style": "colwidths-auto"},
 }
 
+# fmt: off
 STATIC_PATHS = [
     "images",
     "extra/robots.txt",
@@ -95,12 +94,11 @@ STATIC_PATHS = [
 EXTRA_PATH_METADATA = {
     "extra/robots.txt": {"path": "robots.txt"},
 }
+# fmt: on
 
 THEME = os.path.join(os.curdir, "themes", "air-and-fire")
 
-SITEMAP = {
-    "format": "xml",
-}
+SITEMAP = {"format": "xml"}
 
 DEFAULT_PAGINATION = 20
 
