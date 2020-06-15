@@ -38,7 +38,7 @@ The other thing I did was to go on a quasi-ketogenic diet, which was primarily a
 
 I recorded my measurements using [Libra](https://play.google.com/store/apps/details?id=net.cachapa.libra), so I could see how things were going.
 
-One odd thing that I found helped was to give the project a name. I called it _Operation Fat Bastard_[ref]A self-deprecating [Alexei Sayle](https://en.m.wikipedia.org/wiki/Alexei_Sayle) reference, and not me being mean to myself.[/ref]. It meant I could pigeonhole everything I was doing, which acted as an intrinsic motivator for me.
+One odd thing that I found helped was to give the project a name. I called it _Operation Fat Bastard_[^sayle]. It meant I could pigeonhole everything I was doing, which acted as an intrinsic motivator for me.
 
 Over the course of a year, starting in July 2015 and ending in July 2016 or so, I had managed to wipe out 30kg, which was almost a third of my starting weight. I was still technically overweight, but only by a small bit.
 
@@ -87,3 +87,5 @@ I also want to take up swimming again. However, the last time I swam, I discover
 I want to learn how to maintain my weight, and maybe get a bit stronger, just to make life easier.
 
 I'd like to do something about my sleep patterns so they're more regular. I'd like to take steps to improve my general mental health so that I can deal with life and other people better. This last one will be difficult, probably much more difficult than this project has been. I've been trying to work on that by myself in fits and starts for a while, and I can't say I've exactly succeeded at much of it. But like with everything else, it'll take work, and probably some help.
+
+[^sayle]: A self-deprecating [Alexei Sayle](https://en.m.wikipedia.org/wiki/Alexei_Sayle) reference, and not me being mean to myself.
