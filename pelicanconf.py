@@ -58,6 +58,8 @@ sys.path += PLUGIN_PATHS
 PLUGINS = [
     # https://github.com/getpelican/pelican-plugins/tree/master/code_include
     "code_include",
+    # https://github.com/getpelican/pelican-plugins/tree/master/more_categories
+    "more_categories",
     # https://github.com/akhayyat/pelican-page-hierarchy/
     "pelican-page-hierarchy",
     # https://github.com/getpelican/pelican-plugins/tree/master/readtime
