@@ -1,6 +1,6 @@
 Title: A time server for the ZX Spectrum Next
 Date: 2020-06-22 20:39:00
-Category: Hacks, Spectrum Next, NetBSD
+Category: Projects, Spectrum Next, NetBSD
 Status: published
 
 I recently received my Spectrum Next. I'd been waiting three years for it, and they started sending them out just as the lockdown started. Thankfully, even though I wasn't able to update the address, they were able to receive it at the office, and drop it over, which relieved me no end.
