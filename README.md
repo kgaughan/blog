@@ -15,7 +15,7 @@ Then you can install Pelican itself:
 $ pip3 install --user pelican Markdown typogrify html5lib
 ```
 
-On MacOS, using pipx is preferable:
+On MacOS, using [pipx][] is preferable:
 
 ```console
 $ brew install pipx
@@ -30,11 +30,11 @@ $ sudo apt install rsync pelican
 $ sudo apt install python3-markdown python3-typogrify python3-html5lib
 ```
 
-You should also ensure that the pelican-plugins repo is checked out in
+You should also ensure that the [pelican-plugins repo][] is checked out in
 the same directory as the repo:
 
 ```console
-$ git clone https://github.com/getpelican/pelican-plugins.git
+$ git clone --recursive https://github.com/getpelican/pelican-plugins.git
 ```
 
 The makefile should be portable, so it'll work with both GNU make and
@@ -42,3 +42,5 @@ BSD make.
 
 [Pelican]: https://github.com/getpelican/pelican
 [my blog]: https://keith.gaughan.ie/
+[pipx]: https://pipxproject.github.io/pipx/
+[pelican-plugins repo]: https://github.com/getpelican/pelican-plugins
