@@ -7,12 +7,11 @@
 
 	<meta charset="utf-8">
 
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,400i,600">
-	<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css" integrity="sha256-fhWmpLsbRLY5xcogEY/DTY2aUDu5sd1Y/vxj9XtJMAQ=" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css">
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous" defer></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,400i,600">
+	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css" integrity="sha256-fhWmpLsbRLY5xcogEY/DTY2aUDu5sd1Y/vxj9XtJMAQ=" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous" defer></script>
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 	{% if FEED_ALL_ATOM %}
 		<link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed">
@@ -67,7 +66,7 @@
 	Copyright &copy; Keith Gaughan, 2001-2020
 </footer>
 
-<script type="text/javascript">
+<script>
 // Humanise any timestamps
 window.addEventListener("DOMContentLoaded", () => {
 	document.querySelectorAll("time").forEach((elem, _) => {
