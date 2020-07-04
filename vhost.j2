@@ -41,6 +41,10 @@ server {
 		default_type "application/atom+xml; charset=utf-8";
 	}
 
+	location ~ ".*\.(css|jpg|png|js)" {
+		add_header Cache-Control 'public,immutable,max-age=7200'; # two hours
+	}
+
 	rewrite ^/categories\.html$ /categories/ permanent;
 	rewrite ^/pages/(about|conlanging)\.html$ /$1/ permanent;
 	rewrite ^/pages/(ananagyu|porteressia|sketches)\.html$ /conlanging/$1/ permanent;
