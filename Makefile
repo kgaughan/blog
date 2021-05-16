@@ -29,7 +29,7 @@ drafts:
 	@egrep -ril '^:?status: *draft$$' $(INPUTDIR) || echo None
 
 categories:
-	@find $(INPUTDIR) \( -name \*.rst -o -name \*.md \) -exec sed -n -E 's/^(:c|C)ategory: *(.*)/\2/p' {} \; | sort -u
+	@find $(INPUTDIR) \( -name \*.rst -o -name \*.md \) -exec sed -n -E 's/^(:c|C)ategory: *(.*)/\2/p' {} \; | sed 's/, /\n/g' | sort -u
 
 html: clean $(OUTPUTDIR)/index.html
 	@echo 'Done'
