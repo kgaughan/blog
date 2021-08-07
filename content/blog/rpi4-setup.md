@@ -1,7 +1,7 @@
 Title: Configuring a Raspberry Pi 4 as a desktop replacement
 Date: 2020-06-06 21:00
 Status: published
-Category: Tech
+Category: Raspberry Pi
 
 I gave in to getting a Raspberry Pi 4 last month, and I've tried using it as a
 desktop replacement over the past week or so. It hasn't been going so badly!
