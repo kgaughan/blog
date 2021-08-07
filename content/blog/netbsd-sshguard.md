@@ -1,7 +1,7 @@
 Title: Awkwardly flailing around to get sshguard working on NetBSD
 Date: 2020-06-09 22:05
 Status: published
-Category: Tech
+Category: NetBSD
 
 When [I previously configured NetBSD 9]({filename}rpi-netbsd9.md), I'd forgotten that I should configure [sshguard](https://www.sshguard.net/) and a firewall on the Raspberry Pi. It's time to fix that.
 

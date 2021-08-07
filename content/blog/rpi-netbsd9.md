@@ -2,7 +2,7 @@ Title: Fun installing NetBSD 9.0 on a Raspberry Pi B+
 Slug: rpi-netbsd9
 Date: 2020-05-07 22:00
 Status: published
-Category: Tech
+Category: NetBSD, Raspberry PI
 
 One of the consequences of being on a lockdown is that you find time to do things you've been putting off for a while. One of mine is setting up a small bastion server on my home network. Having already set up dynamic DNS with [Duck DNS](https://www.duckdns.org/), I found one of my old Raspberry Pis when I was digging through some unopened boxes from when I'd last moved. I spent an inordinate amount of time getting an OS onto it after spending far too long believing that it was a RPi 2 B rather than the original B+ it actually was. Unfortunately the Pibow case it's in obscured that particular bit of information.
 
@@ -117,7 +117,7 @@ I edited `/usr/pkg/etc/pkgin/repositories.conf` to replace `$arch` with `earmv6h
 ```console
 # service ntpd stop
 Stopping ntpd.
-rpi# ntpd -gq
+# ntpd -gq
 14 Feb 10:03:17 ntpd[790]: ntpd 4.2.8p11-o Sat Sep 29 17:04:56 EDT 2018 (import): Starting
 14 Feb 10:03:17 ntpd[790]: Command line: ntpd -gq
 14 Feb 10:03:17 ntpd[790]: proto: precision = 4.000 usec (-18)
