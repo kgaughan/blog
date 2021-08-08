@@ -151,3 +151,11 @@ I ran into some issues with the [`authorized_key`](https://docs.ansible.com/ansi
 ```
 
 It'd be interesting if downloading and installing this _first_ would've fixed `pkg_add`'s issues installing `pkgin` in the first place.
+
+## Addendum 2 (2012-08-08)
+
+I decided to decommission the Raspberry Pi on Friday. I hadn't had time to do much on the project, and some months ago, it'd become uncommunicative to SSH traffic. What I discovered when I hooked a keyboard and monitor to it was a bit odd. It was as if somebody had ran `sysinst` on it again, wiping out the non-root users and restoring the contents of `/etc` to its pristine form. I still don't know what happened. Either NetBSD commits seppuku if you don't pay it enough attention, or somebody managed to get onto the RPi and teach me a lesson. Neither are pleasant thoughts.
+
+Regardless, I don't think there's much sense in keeping it running. If I were to go back now, there are some things I'd do differently, such as disabling swap (which probably isn't something anything) with `no_swap=YES`, disabling codedumps with `savecore=NO` (not that this ever cropped up, but still...), preventing `vi` from creating recovery files with `virecover=NO`, configuring syslog to forward its logs elsewhere, and no doubt other things too. Another idea might be to move `/var/run` to tmpfs, and add it to `critical_filesystems_local`, though I'm not sure of what the effect would be: I would _hope_ anything under `/var/run` would be treated as ephemeral between reboots, and double-check that `/tmp` uses tmpfs too, which would allow `clear_tmp=NO`, as clearing it would be unnecessary. From [this page](https://rich-tbp.blogspot.com/2013/03/netbsd-on-rpi-minimizing-disk-writes.html), it seems like using the `union` flag with tmpfs preserves the underlying filesystem structure, so that might help with `/var/run` and others at least. Setting `nodevmtime` on `/` in addition to `noatime`, which I did have set would probably be wise.
+
+I may revisit things after I inspect the SD card I had in the Pi, if only to see if I can do a better job next time around.
