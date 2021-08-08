@@ -152,7 +152,7 @@ I ran into some issues with the [`authorized_key`](https://docs.ansible.com/ansi
 
 It'd be interesting if downloading and installing this _first_ would've fixed `pkg_add`'s issues installing `pkgin` in the first place.
 
-## Addendum 2 (2012-08-08)
+## Addendum 2 (2021-08-08)
 
 I decided to decommission the Raspberry Pi on Friday. I hadn't had time to do much on the project, and some months ago, it'd become uncommunicative to SSH traffic. What I discovered when I hooked a keyboard and monitor to it was a bit odd. It was as if somebody had ran `sysinst` on it again, wiping out the non-root users and restoring the contents of `/etc` to its pristine form. I still don't know what happened. Either NetBSD commits seppuku if you don't pay it enough attention, or somebody managed to get onto the RPi and teach me a lesson. Neither are pleasant thoughts.
 
