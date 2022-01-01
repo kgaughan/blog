@@ -16,7 +16,7 @@ def social(fa, title, url):
 AUTHOR = "Keith Gaughan"
 SITENAME = AUTHOR
 TAGLINE = "An attempt at public introspection"
-SITEURL = "/"
+SITEURL = "."
 
 SLUGIFY_SOURCE = "basename"
 
