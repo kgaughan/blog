@@ -122,6 +122,10 @@ article .series {
 article .series .active {
   font-weight: bold;
 }
+article li {
+  margin-top: 1ex;
+  margin-bottom: 1ex;
+}
 
 article:after {
   content: "❧ ";
