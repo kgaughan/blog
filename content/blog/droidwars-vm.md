@@ -1,6 +1,6 @@
 Title: Old Ideas: My DroidWars VM
 Date: 2008-06-04 19:25
-Category: Project Ideas
+Category: Projects
 Slug: droidwars-vm
 Status: published
 

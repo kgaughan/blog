@@ -2,6 +2,7 @@ Title: The lot of you can bugger off back to Northern Ireland
 Slug: bugger-off-back-up-north
 Date: 2006-02-25 18:08
 Status: published
+Category: Ireland, Politics, Asshats
 
 [Clashes in Dublin over loyalist march](http://www.rte.ie/news/2006/0225/loyalist.html).
 

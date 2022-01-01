@@ -1,7 +1,7 @@
 Title: KWiki becomes FusionWiki
 Date: 2004-12-08 22:28
 Slug: kwiki-fusionwiki
-Category: Project Ideas
+Category: Projects
 Status: published
 
 I'm changing the name of my ColdFusion-based wiki engine to _FusionWiki_. Why? I want to put it up on SourceForge, and _KWiki_ was already taken. And it's a cool name.

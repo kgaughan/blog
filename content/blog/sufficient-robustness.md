@@ -2,6 +2,7 @@ Title: Irreducible Complexity? Feh! Think Sufficient Robustness
 Slug: sufficient-robustness
 Date: 2006-01-20 13:58
 Status: published
+Category: Screeds
 
 I promised myself I wouldn't get involved in this rubbish again, but I can't help myself: I'm just a glutton for punishment.
 

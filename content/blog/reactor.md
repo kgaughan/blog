@@ -1,5 +1,5 @@
 Title: Reactor
-Category: Project Ideas
+Category: Projects
 Date: 2006-05-09 18:28
 Status: published
 

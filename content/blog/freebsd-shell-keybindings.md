@@ -2,6 +2,7 @@ Title: Fixing a FreeBSD annoyance: shell editing keybindings
 Slug: freebsd-shell-keybindings
 Date: 2008-02-04 13:28
 Status: published
+Category: FreeBSD
 
 Unlike all the other systems I use, FreeBSD is lacking in one tiny little area: default shell keybindings. Specifically, there's no keybindings associated with the arrow keys when _CTRL_ is held down.
 

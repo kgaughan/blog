@@ -2,6 +2,7 @@ Title: McDowell says Gardai 'were unprepared for Dublin riot'
 Slug: mcdowell-riot-unexpected-crap
 Date: 2006-02-26 18:02
 Status: published
+Category: Ireland, Politics, Asshats
 
 [Here](https://web.archive.org/web/20081006211548/http://www.breakingnews.ie/2006/02/26/story246554.html)'s the Breaking News article.
 

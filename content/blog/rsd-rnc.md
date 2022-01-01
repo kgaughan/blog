@@ -2,6 +2,7 @@ Title: A RELAX NG compact schema for RSD
 Slug: rsd-rnc
 Date: 2007-10-25 10:24
 Status: published
+Category: Coding
 
 I was feeling a bit bored last night and decided to write a schema for [RSD](https://github.com/danielberlinger/rsd) in [RELAX NG](http://relaxng.org/) [compact syntax](http://relaxng.org/compact-tutorial-20030326.html). RSD is about five years old at this point, and nobody ever seems to have got around to writing one, so this might help somebody who wanted to make sure they’re producing valid RSD files:
 

@@ -2,6 +2,7 @@ Title: GrassSnake, my bug tracker
 Slug: grasssnake
 Date: 2007-08-29 15:05
 Status: published
+Category: Projects
 
 [Note: I haven't been able to recover the screenshots.]
 

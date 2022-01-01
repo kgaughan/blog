@@ -2,6 +2,7 @@ Title: I'm finally happy with my terminal colours
 Date: 2007-10-05 15:02
 Slug: term-colours
 Status: published
+Category: Tech
 
 It&#8217;s been seven years since I&#8217;ve had a set of terminal colours that
 I&#8217;ve liked, but I think I&#8217;ve finally worked out the colour scheme I

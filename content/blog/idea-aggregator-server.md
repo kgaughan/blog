@@ -1,6 +1,6 @@
 Title: On Writing an Aggregator Server
 Date: 2004-09-20 12:26
-Category: Project Ideas
+Category: Projects
 Slug: idea-aggregator-server
 Status: published
 

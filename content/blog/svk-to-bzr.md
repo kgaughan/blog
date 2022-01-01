@@ -2,6 +2,7 @@ Title: Moving from SVK to Bazaar-NG
 Date: 2007-10-08 10:17
 Slug: svk-to-bzr
 Status: published
+Category: Coding
 
 I exported my projects from [SVK](https://web.archive.org/web/20080828070002/http://svk.bestpractical.com/)'s hidden Subeversion repository on Saturday using [tailor](https://web.archive.org/web/20080828070002/http://progetti.arstecnica.it/tailor). I was expecting it to be simple, but it was anything but! Mind you, this is probably my fault.
 

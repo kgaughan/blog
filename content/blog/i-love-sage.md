@@ -1,7 +1,7 @@
 Title: Sage
 Slug: i-love-sage
 Date: 2004-08-26 13:10
-Category: Project Ideas
+Category: Projects
 Status: published
 
 A while back, I downloaded a copy of [RSS Bandit](http://www.rssbandit.org/) as I need/wanted an RSS aggregator. I'd heard good things about it, so I thought it would be a good idea to give it a try.

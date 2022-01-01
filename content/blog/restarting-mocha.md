@@ -1,6 +1,6 @@
 Title: Restarting Mocha
 Date: 2005-02-16 23:52
-Category: Project Ideas
+Category: Projects
 Status: published
 
 While [Sage](http://sagerss.com/) is the closest I've ever got to an RSS aggregator I actually liked, it's still not right. There are just too many things about it that irk me somewhat.

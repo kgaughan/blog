@@ -1,6 +1,6 @@
 Title: On Starting a New Project
 Date: 2004-10-11 16:28
-Category: Project Ideas
+Category: Projects
 Status: published
 
 I was talking to Peter last night about [Laszlo](https://www.openlaszlo.org/). There are these times you need confirmation of why you have difficulty going off and either learning or writing something. I've a few projects like this, and something he said, quite off the cuff mind you, was a trigger.
