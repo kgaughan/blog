@@ -1,23 +1,34 @@
 <!DOCTYPE html>
-<html lang="{{ DEFAULT_LANG }}"><head>
+<html lang="{{ DEFAULT_LANG }}">
 
+<head>
 	{% block head %}
 		<title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
 	{% endblock head %}
 
 	<meta charset="utf-8">
-
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700%7CRaleway:400,400i,600&amp;display=swap" crossorigin="anonymous" referrerpolicy="no-referrer">
-	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css" media="screen,print">
+	<link rel="stylesheet"
+		  crossorigin="anonymous" referrerpolicy="no-referrer" media="screen,print"
+		  href="https://fonts.googleapis.com/css?family=Inconsolata:400,700%7CRaleway:400,400i,600">
+	<link rel="stylesheet"
+		  crossorigin="anonymous" referrerpolicy="no-referrer" media="screen,print"
+		  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		  integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+			integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
 	{% if FEED_ALL_ATOM %}
 		<link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed">
 	{% endif %}
 
-</head><body>
+</head>
 
+<body>
 <header>
 	<nav>
 		<ul>
@@ -76,4 +87,5 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
-</body></html>
+</body>
+</html>
