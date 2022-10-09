@@ -53,20 +53,16 @@ SOCIAL = [
 ]
 # fmt: on
 
-PLUGIN_PATHS = [os.path.abspath("../pelican-plugins")]
+PLUGIN_PATHS = [os.path.abspath("plugins")]
 sys.path += PLUGIN_PATHS
+
+import page_hierarchy, readtime
+
 PLUGINS = [
-    # https://github.com/getpelican/pelican-plugins/tree/master/code_include
-    "code_include",
-    # https://github.com/getpelican/pelican-plugins/tree/master/more_categories
+    page_hierarchy,
+    readtime,
     "more_categories",
-    # https://github.com/akhayyat/pelican-page-hierarchy/
-    "pelican-page-hierarchy",
-    # https://github.com/getpelican/pelican-plugins/tree/master/readtime
-    "readtime",
-    # https://github.com/getpelican/pelican-plugins/tree/master/series
     "series",
-    # https://github.com/getpelican/pelican-plugins/tree/master/sitemap
     "sitemap",
 ]
 

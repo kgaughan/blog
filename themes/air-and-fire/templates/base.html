@@ -9,6 +9,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous" referrerpolicy="no-referrer">
 	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css" media="screen,print">
 	<link rel="stylesheet"
 		  crossorigin="anonymous" referrerpolicy="no-referrer" media="screen,print"
@@ -18,9 +20,7 @@
 		  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		  integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==">
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
-			integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
-			crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+	<script src="{{ SITEURL }}/theme/luxon.min.js" integrity="sha384-Z/CjPPwcFtY/yzyek5pMDDeLyIIgPlUht1Ycq6QFB+wgzeBAaPMMDjwS1r1YCED9" defer></script>
 
 	{% if FEED_ALL_ATOM %}
 		<link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed">
@@ -42,7 +42,7 @@
 			{% endfor %}
 		{% endif %}
 		{% if DISPLAY_CATEGORIES_ON_MENU %}
-			{% for cat, null in categories %}
+			{% for cat, _ in categories %}
 				<li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
 			{% endfor %}
 		{% else %}
@@ -73,19 +73,10 @@
 </main>
 
 <footer>
-	Copyright &copy; Keith Gaughan, 2001-2020
+	Copyright &copy; Keith Gaughan, 2001-2022
 </footer>
 
-<script>
-// Humanise any timestamps
-window.addEventListener("DOMContentLoaded", () => {
-	document.querySelectorAll("time").forEach((elem, _) => {
-		if (elem.dateTime != "") {
-			elem.innerText = moment(elem.dateTime).fromNow();
-		}
-	});
-});
-</script>
+<script src="{{ SITEURL }}/theme/common.js" integrity="sha384-T/oKOcHbLpnDOxUepjLxYIXYQMb1a4xE+AJZ2imaQU2h0ffX77fSgv+CunwXBCzZ"></script>
 
 </body>
 </html>

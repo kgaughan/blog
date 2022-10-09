@@ -6,35 +6,15 @@ On a bare bones FreeBSD box, you will need to install a few
 prerequisites:
 
 ```console
-$ sudo pkg install rsync gmake py37-pip
+$ sudo pkg install rsync gmake py39-pipx
 ```
 
 Then you can install Pelican itself:
 
 ```console
-$ pip3 install --user pelican Markdown typogrify html5lib
-```
-
-On MacOS, using [pipx][] is preferable:
-
-```console
-$ brew install pipx
 $ pipx install pelican
 $ pipx inject pelican Markdown typogrify html5lib
-```
-
-On Ubuntu and Debian:
-
-```console
-$ sudo apt install rsync pelican
-$ sudo apt install python3-markdown python3-typogrify python3-html5lib
-```
-
-You should also ensure that the [pelican-plugins repo][] is checked out in
-the same directory as the repo:
-
-```console
-$ git clone --recursive https://github.com/getpelican/pelican-plugins.git
+$ pipx inject pelican pelican-more-categories pelican-sitemap pelican-series
 ```
 
 The makefile should be portable, so it'll work with both GNU make and
