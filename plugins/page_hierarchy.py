@@ -12,7 +12,7 @@ class UnexpectedException(Exception): pass
 
 def get_path(page, settings):
     ''' Return the dirname relative to PAGE_PATHS prefix. '''
-    path = os.path.split(page.get_relative_source_path())[0] + '/'
+    path = f'{os.path.split(page.get_relative_source_path())[0]}/'
     path = path.replace( os.path.sep, '/' )
     # Try to lstrip the longest prefix first
     for prefix in sorted(settings['PAGE_PATHS'], key=len, reverse=True):
@@ -38,11 +38,11 @@ def override_metadata(content_object):
         # We have to account for non-default language and format either,
         # e.g., PAGE_SAVE_AS or PAGE_LANG_SAVE_AS
         infix = '' if in_default_lang(page) else 'LANG_'
-        return page.settings['PAGE_' + infix + key.upper()].format(**metadata)
+        return page.settings[f'PAGE_{infix}{key.upper()}'].format(**metadata)
 
     for key in ('save_as', 'url'):
-        if not hasattr(page, 'override_' + key):
-            setattr(page, 'override_' + key, _override_value(page, key))
+        if not hasattr(page, f'override_{key}'):
+            setattr(page, f'override_{key}', _override_value(page, key))
 
 def set_relationships(generator):
     def _all_pages():
