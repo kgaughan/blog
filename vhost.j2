@@ -46,6 +46,8 @@ server {
 		add_header Cache-Control 'public, immutable, max-age=7200'; # two hours
 	}
 
+	rewrite ^/archives\.html$ / permanent;
+	rewrite ^/contact$ /about/ permanent;
 	rewrite ^/categories\.html$ /categories/ permanent;
 	rewrite ^/pages/(about|conlanging)\.html$ /$1/ permanent;
 	rewrite ^/pages/(ananagyu|porteressia|sketches)\.html$ /conlanging/$1/ permanent;
@@ -54,6 +56,22 @@ server {
 	rewrite ^/pages/eretas\.pdf$ /conlanging/porteressia/attachments/eretas.pdf permanent;
 	# Some bizarrely truncated Facebook link
 	rewrite ^/leaving-twi$ /leaving-twitter.html permanent;
+	# Some random stuff
+	rewrite ^/detecting-broken-images-jsn\.html$ /detecting-broken-images-js.html permanent;
+	rewrite ^/javascript-memoisation\.html$ /javascript-memoization.html permanent;
+	rewrite ^/javascript-memoization\.htm$ /javascript-memoization.html permanent;
+	rewrite ^/mosml-pt1\.htm$ /mosml-pt1.html permanent;
+	rewrite ^/conlanging/porteressia/attachments/eretas/eretas\.pdf$ /conlanging/porteressia/attachments/eretas.pdf permanent;
+	rewrite ^/JS-memory-leaks\.html$ /js-memory-leaks.html permanent;
+	rewrite ^/feed/?$ /feeds/all.xml permanent;
+	rewrite ^/rss$ /feeds/all.xml permanent;
+	rewrite ^/atom$ /feeds/all.xml permanent;
+	rewrite ^/atom\.xml$ /feeds/all.xml permanent;
+	rewrite ^/rss\.(php|xml)$ /feeds/all.xml permanent;
+	rewrite ^/atom\.xml$ /feeds/all.xml permanent;
+	rewrite ^/index\.(rdf|rss|xml)$ /feeds/all.xml permanent;
+	rewrite ^/inklings/feed$ https://talideon.com/inklings/feed permanent;
+	rewrite ^/attachments/star-w\.pdf$ https://mirrors.talideon.com/articles/star-w.pdf permanent;
 
 	server_name {{ domain_name }};
 	root {{ vhosts_root }}/{{ domain_name }}/web;
