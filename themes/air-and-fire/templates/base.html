@@ -57,7 +57,7 @@
 		</ul>
 		<ul class="social">
 		{% for name, link in SOCIAL %}
-			<li><a href="{{ link }}">{{ name }}</a></li>
+			<li><a rel="me" href="{{ link }}">{{ name }}</a></li>
 		{% endfor %}
 			<li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}"><i class="fa fa-rss" aria-hidden="true" title="Feed"></i></a></li>
 		</ul>

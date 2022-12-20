@@ -75,8 +75,18 @@
         rsync_opts:
           - "--exclude=.DS_Store"
           - "--cvs-exclude"
+      notify:
+        - fix permissions
 
   handlers:
+    - name: fix permissions
+      file:
+        path: "{{ vhosts_root }}/{{ domain_name }}/web"
+        owner: keith
+        group: www
+        recurse: true
+        state: directory
+
     - name: generate missing certificates
       command:
         argv:

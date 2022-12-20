@@ -50,6 +50,7 @@ SOCIAL = [
     ),
     social("linkedin", "LinkedIn", "https://www.linkedin.com/in/keithgaughan"),
     social("github", "Github", "https://github.com/kgaughan/"),
+    social("elephant", "Mastodon", "https://mastodon.sdf.org/@talideon/"),
 ]
 # fmt: on
 
