@@ -107,6 +107,7 @@ article .category a {
   padding: 0 0.25rem;
   text-decoration: none;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 article .published {
   font-size: 80%;
