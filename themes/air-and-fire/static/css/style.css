@@ -13,7 +13,7 @@ body {
 }
 
 body > header {
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
 }
 
 body > header, main, footer, .paginator {
@@ -28,7 +28,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 1ch 0;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   flex-wrap: wrap;
   border-bottom: 1px solid #802;
 }
