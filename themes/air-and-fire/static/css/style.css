@@ -92,6 +92,9 @@ body > header h2 {
   line-height: 1.2;
 }
 
+article {
+  margin: 1rem 0 2rem;
+}
 article > header h1 {
   margin: 0;
 }
@@ -129,6 +132,7 @@ article li {
   margin-bottom: 1ex;
 }
 
+/*
 article:after {
   content: "❧ ";
   text-align: center;
@@ -136,7 +140,7 @@ article:after {
   color: #802;
   font-size: 150%;
   margin: 2rem 0;
-}
+}*/
 
 footer {
   text-align: center;
