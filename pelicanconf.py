@@ -76,6 +76,7 @@ PLUGINS = [
 MARKDOWN = {
     "extension_configs": {
         "markdown.extensions.attr_list": {},
+        "markdown.extensions.def_list": {},
         "markdown.extensions.codehilite": {"css_class": "highlight"},
         "markdown.extensions.extra": {},
         "markdown.extensions.meta": {},

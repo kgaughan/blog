@@ -182,6 +182,10 @@ th {
   text-align: left;
 }
 
+dl dt {
+  font-weight: 700;
+}
+
 pre, code {
   font-family: Inconsolata, monospace;
   font-display: swap;

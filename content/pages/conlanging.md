@@ -19,3 +19,4 @@ I was stopped in my tracks when I heard about Michael Moorcock's _Eternal Champi
 * [Tèrnaru]({filename}conlanging/ternaru.md)
 * [The Ananagyu]({filename}conlanging/ananagyu.md), and their language a-Illiyar
 * [Sketchlangs]({filename}conlanging/sketches.md)
+* [Aonsdát Éireann]({filename}conlanging/ae.md)
