@@ -54,12 +54,8 @@ server {
 	rewrite ^/conlanging/porteressia/attachments/eretas/eretas\.pdf$ /conlanging/porteressia/attachments/eretas.pdf permanent;
 	rewrite ^/JS-memory-leaks\.html$ /js-memory-leaks.html permanent;
 	rewrite ^/rpm-unwilling\.html$ /rpm-for-the-unwilling.html permanent;
-	rewrite ^/feed/?$ /feeds/all.xml permanent;
-	rewrite ^/rss$ /feeds/all.xml permanent;
-	rewrite ^/atom$ /feeds/all.xml permanent;
-	rewrite ^/atom\.xml$ /feeds/all.xml permanent;
-	rewrite ^/rss\.(php|xml)$ /feeds/all.xml permanent;
-	rewrite ^/atom\.xml$ /feeds/all.xml permanent;
+	rewrite ^/(feed|rss|atom)/?$ /feeds/all.xml permanent;
+	rewrite ^/(feed|rss|atom)\.(xml|php)$ /feeds/all.xml permanent;
 	rewrite ^/index\.(rdf|rss|xml)$ /feeds/all.xml permanent;
 	rewrite ^/inklings/feed$ https://talideon.com/inklings/feed permanent;
 	rewrite ^/attachments/star-w\.pdf$ https://mirrors.talideon.com/articles/star-w.pdf permanent;
