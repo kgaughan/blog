@@ -1,7 +1,6 @@
 # canthack.it (legacy)
 
 server {
-	include common_params;
 	include ssl_params;
 
 	server_name .canthack.it;
@@ -14,8 +13,6 @@ server {
 }
 
 server {
-	include common_params;
-
 	listen 80;
 	listen [::]:80;
 
@@ -30,11 +27,6 @@ server {
 server {
 	include common_params;
 	include ssl_params;
-
-	location ~ "^.*/wp-login\.php$" {
-		return 410;
-		access_log off;
-	}
 
 	location = /feeds/all.xml {
 		types {}
@@ -90,8 +82,6 @@ server {
 }
 
 server {
-	include common_params;
-
 	listen 80;
 	listen [::]:80;
 

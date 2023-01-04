@@ -132,19 +132,10 @@ article li {
   margin-bottom: 1ex;
 }
 
-/*
-article:after {
-  content: "❧ ";
-  text-align: center;
-  display: block;
-  color: #802;
-  font-size: 150%;
-  margin: 2rem 0;
-}*/
-
 footer {
   text-align: center;
   margin: 2rem auto;
+  font-size: 90%;
 }
 
 blockquote {
