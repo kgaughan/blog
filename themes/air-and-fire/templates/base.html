@@ -72,7 +72,12 @@
 </main>
 
 <footer>
-	Copyright &copy; Keith Gaughan, 2001-2022<br>
+	Copyright &copy; Keith Gaughan
+	{%- if article is defined %},
+		{{ article.date.strftime("%Y") }}
+	{%- elif page is defined and page.date is defined %},
+		{{ page.date.strftime("%Y") }}
+	{% endif %}<br>
 	<a href="{{ SITEURL }}/colophon/">Colophon</a>
 </footer>
 
