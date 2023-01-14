@@ -4,9 +4,7 @@ Slug: term-colours
 Status: published
 Category: Tech
 
-It&#8217;s been seven years since I&#8217;ve had a set of terminal colours that
-I&#8217;ve liked, but I think I&#8217;ve finally worked out the colour scheme I
-used to have back then. Here&#8217;s what I&#8217;m using now:</p>
+It's been seven years since I've had a set of terminal colours that I've liked, but I think I've finally worked out the colour scheme I used to have back then. Here's what I'm using now:
 
 | Palette element | Colour  | Description                         |
 | --------------- | ------- | ----------------------------------- |
