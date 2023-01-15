@@ -41,7 +41,7 @@ clean:
 	test -e $(OUTPUTDIR) && find $(OUTPUTDIR) -mindepth 1 -delete || :
 
 serve:
-	cd $(OUTPUTDIR) && python3 -m http.server
+	cd $(OUTPUTDIR) && python3 -m http.server --bind 127.0.0.1 
 
 devserver:
 	$(BASEDIR)/develop_server.sh restart

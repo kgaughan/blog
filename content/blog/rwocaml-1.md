@@ -457,3 +457,12 @@ Total 16.
 ```
 
 Seems to work!
+
+**Addendum:** I double-checked my suspicion regarding `=`:
+
+``` { use_pygments=false }
+utop # (=);;
+- : int -> int -> bool = <fun>
+```
+
+It appears I was correct. Interestingly, this is not [the signature reported in the documentation for Core](https://ocaml.org/p/core/v0.15.0/doc/Core/index.html#comparisons), but it does correspond to [the signature reported for Base](https://ocaml.org/p/base/v0.15.0/doc/Base/index.html#val-(=)). To restore this, you need to use [Base.Poly](https://ocaml.org/p/base/v0.15.0/doc/Base/Poly/index.html). I'm sure there's some kind of rationale for this.
