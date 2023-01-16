@@ -33,12 +33,12 @@ get_command_by_pid () {
 }
 
 kill_by_pidfile () {
-	if test -f $1; then
-		PID=$(cat $1)
-		PROCESS=$(get_command_by_pid $PID)
-		if test $PROCESS = pelican; then
+	if test -f "$1"; then
+		PID="$(cat $1)"
+		PROCESS="$(get_command_by_pid $PID)"
+		if test "$PROCESS" = pelican; then
 			echo "Killing $2"
-			kill $PID
+			kill "$PID"
 		else
 			echo "Stale PID, deleting"
 		fi
@@ -49,8 +49,8 @@ kill_by_pidfile () {
 }
 
 shut_down () {
-	kill_by_pidfile $SRV_PID "Pelican server"
-	kill_by_pidfile $PELICAN_PID "Pelican"
+	kill_by_pidfile "$SRV_PID" "Pelican server"
+	kill_by_pidfile "$PELICAN_PID" "Pelican"
 }
 
 start_up () {
