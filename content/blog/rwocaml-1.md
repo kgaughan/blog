@@ -2,6 +2,7 @@ Title: Notes from Real World OCaml, first edition
 Slug: rwocaml-1
 Category: Coding
 Date: 2023-01-14 23:10
+Modified: 2023-01-20 23:07
 Series: Real World OCaml
 Status: published
 
@@ -10,6 +11,8 @@ Because it's been so long since I've done anything in OCaml, I'm going through [
 I'll be checking everything on both MacOS 12.6 (Monterey) and Ubuntu 22.10 (Kinetic Kudu), and documenting anything odd I ran into.
 
 I'll just be going over chapter 1 ("A guided tour") in this entry.
+
+## MacOS
 
 On MacOS, install `opam`, which will also install `ocaml` itself from Homebrew:
 
@@ -62,7 +65,48 @@ Done.
 
 Note that I use [fish](https://fishshell.com/). This will vary for you depending on your shell.
 
+## Ubuntu (and pretty much any other Debian-based distro)
+
+It's not tremendously different from MacOS:
+
+```console
+$ sudo apt install opam
+[sudo] password for keith:
+...
+$ opam init
+
+<><> Required setup - please read <><><><><><><><><><><><><><><><><><><><><><><>
+
+  In normal operation, opam only alters files within ~/.opam.
+
+  However, to best integrate with your system, some environment variables
+  should be set. If you allow it to, this initialisation step will update
+  your fish configuration by adding the following line to ~/.config/fish/config.fish:
+
+    source $HOME/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
+
+  Otherwise, every time you want to access your opam installation, you will
+  need to run:
+
+    eval (opam env)
+
+  You can always re-run this setup with 'opam init' later.
+
+Do you want opam to modify ~/.config/fish/config.fish? [N/y/f]
+(default is 'no', use 'f' to choose a different file) y
+A hook can be added to opam's init scripts to ensure that the shell remains in sync with the opam environment when they are loaded. Set that up? [y/N] y
+
+User configuration:
+  ~/.config/fish/config.fish is already up-to-date.
+```
+
+Much the same as on MacOS.
+
+## Potential MANPATH corruption with older versions of OPAM
+
 Previously, I've found that running `eval $(opam env)` has corrupted `MANPATH`. If you hit this issue, then try `eval (opam env | sed "s/MANPATH '\//MANPATH ':\//")` instead. This inserts a colon at the start of `MANPATH` so the default manpage paths are still included. [This issue was fixed in opam](https://github.com/ocaml/opam/issues/3878) a few years ago, but if you're working with an older version, it still may affect you.
+
+## OPAM
 
 Here's what packages are installed for me by default:
 
@@ -340,6 +384,8 @@ Done.
 
 If you try `open Core` in `utop` now, it'll work.
 
+## Fixes and observations
+
 I noticed something peculiar with one of the examples where the type inference engine looks to misbehave if `Core` is important. Take the following:
 
 ```ocaml
@@ -458,7 +504,41 @@ Total 16.
 
 Seems to work!
 
-**Addendum:** I double-checked my suspicion regarding `=`:
+## Upgrading installed packages
+
+If you've upgraded OCaml, you'll likely need to upgrade any installed packages. Normally, to update everything, you run:
+
+```console
+$ opam update
+$ opam upgrade
+```
+
+After an upgrade of OCaml itself, the second command will give you a message like the following:
+
+```console
+[WARNING] File /usr/bin/ocamlc, which package ocaml-system.4.05.0 depends upon, was changed on your system.
+          The package will need to be reinstalled.
+[WARNING] Upgrade is not possible because of conflicts or packages that are no longer available:
+    - Incompatible packages:
+    - (invariant) → ocaml-system
+    - base-num → ocaml < 4.06.0 → ocaml-base-compiler = 3.08.1
+    You can temporarily relax the switch invariant with `--update-invariant'
+  - Missing dependency:
+    - base-num → ocaml < 4.06.0 → ocaml-variants → ocaml-beta
+    unmet availability conditions: 'enable-ocaml-beta-repository'
+
+You may run "opam upgrade --fixup" to let opam fix the current state.
+```
+
+In this case, you can run:
+
+```console
+$ opam upgrade --fixup
+```
+
+## Addendum
+
+I double-checked my suspicion regarding `=`:
 
 ``` { use_pygments=false }
 utop # (=);;
