@@ -9,7 +9,11 @@
 			{% endfor %}
 			</section>
 			<h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title | striptags }}">{{ article.title }}</a></h1>
-			<div class="published"><time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time> &middot; {{ article.readtime.minutes }}min</div>
+			<div class="dates">
+				Published <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+				{% if article.modified is defined %}&middot; updated <time datetime="{{ article.modified.isoformat() }}">{{ article.locale_modified }}</time>{% endif %}
+				&middot; {{ article.readtime.minutes }}min
+			</div>
 		</header>
 		<section>{{ article.summary }}</section>
 	</article>

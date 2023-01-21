@@ -170,7 +170,7 @@ article .category a {
   text-transform: uppercase;
   white-space: nowrap;
 }
-article .published {
+article .dates {
   font-size: 80%;
   color: #888;
 }
