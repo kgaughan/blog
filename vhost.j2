@@ -66,7 +66,7 @@ server {
 	root {{ vhosts_root }}/{{ domain_name }}/web;
 	index index.html index.htm;
 
-	add_header Content-Security-Policy "default-src 'none'; base-uri 'self'; form-action 'none'; script-src https://*.talideon.com https://*.gaughan.ie 'self'; style-src https://fonts.googleapis.com https://cdnjs.cloudflare.com 'self'; font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com 'self'; object-src https://*.talideon.com https://www.youtube-nocookie.com; img-src https://*.gaughan.ie https://*.talideon.com https://i.ytimg.com 'self'; frame-src https:" always;
+	add_header Content-Security-Policy "default-src 'none'; connect-src 'self'; base-uri 'self'; form-action 'none'; script-src https://*.talideon.com https://*.gaughan.ie 'self'; style-src https://fonts.googleapis.com 'self'; font-src https://fonts.gstatic.com 'self'; object-src https://*.talideon.com https://www.youtube-nocookie.com; img-src https://*.gaughan.ie https://*.talideon.com https://i.ytimg.com 'self'; frame-src https:" always;
 
 	add_header Permissions-Policy "geolocation=(), autoplay=()" always;
 
