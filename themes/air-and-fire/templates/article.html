@@ -1,5 +1,14 @@
 {% extends "base.html" %}
 {% block title %}{{ article.title | striptags | e }}{%if article.subtitle %} - {{ article.subtitle | striptags | e }} {% endif %}{% endblock title %}
+{% block head %}
+	{{ super() }}
+	<meta name="date" value="{{ article.date.isoformat() }}">
+	{% if article.modified is defined %}<meta name="modified" value="{{ article.modified.isoformat() }}">{% endif %}
+{#
+<!-- need a way to strip tags from the summary... -->
+	<meta name="description" content="{{ article.summary }}">
+#}
+{% endblock %}
 {% block content %}
 <article>
 	<header>
