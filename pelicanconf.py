@@ -14,7 +14,7 @@ def social(url, svg):
 
 AUTHOR = "Keith Gaughan"
 SITENAME = AUTHOR
-TAGLINE = "An attempt at public introspection"
+TAGLINE = "100% guaranteed AI-free organic content or your money back!"
 SITEURL = "."
 
 SLUGIFY_SOURCE = "basename"
