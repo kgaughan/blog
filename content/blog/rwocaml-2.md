@@ -4,6 +4,7 @@ Category: Coding
 Date: 2023-01-15 13:43
 Series: Real World OCaml
 Status: published
+Summary: Covers lists and patterns.
 
 I didn't notice any issues with chapter 2, but in chapter 3, it expects [_core_bench_](https://opam.ocaml.org/packages/core_bench/) to be installed. Similarly to `Core`, you'll want to replace mentions of `Core_bench.Std` with simply `Core_bench`.
 

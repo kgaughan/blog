@@ -4,6 +4,7 @@ Category: Coding
 Date: 2023-01-21 19:23
 Series: Real World OCaml
 Status: published
+Summary: Covers the first prat of chapter 7: error-aware datatypes and exceptions.
 
 In `compute_bounds`, `cmp` should be replaced with `compare`:
 

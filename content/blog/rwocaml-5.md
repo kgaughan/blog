@@ -4,6 +4,7 @@ Category: Coding
 Date: 2023-01-21 21:45
 Series: Real World OCaml
 Status: published
+Summary: Covering the second part of chapter 7, which deal with exceptions and backtraces.
 
 This finishes up [my earlier post on chapter 7]({filename}rwocaml-4.md). I was feeling a bit tired at the time, so needed a break.
 

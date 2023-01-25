@@ -1,9 +1,10 @@
-Title: Notes from Real World OCaml, chapters 4, 5, and 6
+Title: Notes from Real World OCaml, chapters 4 and 5
 Slug: rwocaml-3
 Category: Coding
 Date: 2023-01-16 17:03
 Series: Real World OCaml
 Status: published
+Summary: Covers records and program structure (files, modules, and programs).
 
 ## Chapter 4
 
@@ -49,7 +50,3 @@ Notice how I've substituted `sh_first_line_exn` for `sh_one_exn`? The latter is 
 For `host_info_to_string`, you'll need to do `open Printf` to include `sprintf` in the REPL's namespace.
 
 For the `get_users` function, it tells you to add `with fields` at the end of the `Login module`. This no longer works. Instead, you need the [`ppx_jane`](https://opam.ocaml.org/packages/ppx_jane/) package, which appears to have superceded `fieldslib` for this purpose, and rather than the `with fields`, you put the annotation `[@@deriving fields]` after the type. `ppx_janne` should already be installed as a dependency previously. Recember that if you want its contents available within `utop`, you'll need to run `#require "ppx_jane"`. If you don't, the annotation won't result in any code being generated.
-
-## Chapter 6
-
-This worked without issue.
