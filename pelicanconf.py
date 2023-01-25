@@ -1,15 +1,43 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*- #
 
+from html.parser import HTMLParser
 import os
 import os.path
+import re
 import sys
 
 import markupsafe
 
 
+COLLAPSE = re.compile(r"\s+", re.MULTILINE)
+
+
+class TagStripper(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.collected = []
+
+    def get_data(self) -> str:
+        return "".join(self.collected)
+
+    def handle_data(self, data: str):
+        self.collected.append(data)
+
+    @staticmethod
+    def strip_tags(doc: str) -> str:
+        stripper = TagStripper()
+        stripper.feed(doc)
+        return COLLAPSE.sub(" ", stripper.get_data()).strip()
+
+
 def social(url, svg):
     return (markupsafe.Markup(svg), url)
+
+
+JINJA_FILTERS = {
+    "strip_tags": TagStripper.strip_tags,
+}
 
 
 AUTHOR = "Keith Gaughan"
