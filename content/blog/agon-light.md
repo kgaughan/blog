@@ -6,7 +6,7 @@ Status: published
 
 I ordered an [Agon Light 2] recently from Olimex, which is a modification of [Bernardo Kastrup's original Agon Light](https://github.com/TheByteAttic/AgonLight).
 
-![A still-bagged Agon Light 2]({attach}attachments/agon-light-2.jpg){: align="center" width="832" style="max-width:100%" }
+![A still-bagged Agon Light 2]({attach}attachments/agon-light-2.jpg){: class="fig" width="832" style="aspect-ratio:4/3" }
 
 It's a small, inexpensive [Z80]-based board with a GPIO port, allowing it to be used as a microcontroller board, but it can also be used similarly to an old-school 8-bit microcomputer, as it has an ESP32 that also acts as an IO and VGA controller, and can be programmed with BBC BASIC. Finding a VGA cable was a bit of an ordeal!
 
