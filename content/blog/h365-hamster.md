@@ -7,7 +7,7 @@ Status: published
 !!! note
     The original post is [here](https://web.archive.org/web/20080828062852/http://talideon.com/weblog/2007/06/h365-hamster.cfm).
 
-![I is yr redundant powur suplai, powurin' yr datacentur (hai, I can has break now?)]({static}../images/redundant-powur-suplai.jpg)
+![I is yr redundant powur suplai, powurin' yr datacentur (hai, I can has break now?)]({attach}attachments/redundant-powur-suplai.jpg){: .fig width="500" height="375" }
 
 Not that this has anything to do with the [power supply problems](https://web.archive.org/web/20080828062852/http://hosting365status.com/2007/06/15/power-issues-15th-june-1035am/) a [certain Irish hosting company](https://web.archive.org/web/20080828062852/http://www.hosting365.com/) had recently or anything... 
 

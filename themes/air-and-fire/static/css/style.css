@@ -261,6 +261,7 @@ pre {
   object-fit: contain;
   border: 1px solid #eee;
   padding: 1px;
+  display: block;
   margin: 0 auto;
 }
 
