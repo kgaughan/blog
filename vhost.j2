@@ -35,7 +35,11 @@ server {
 	}
 
 	location ~ ".*\.(css|jpg|png|js)" {
-		add_header Cache-Control 'public, immutable, max-age=7200'; # two hours
+		add_header Cache-Control 'public, immutable, max-age=28800'; # eight hours
+	}
+
+	location ~ ".*\.(woff2)" {
+		add_header Cache-Control 'public, immutable, max-age=1209600'; # two weeks
 	}
 
 	rewrite ^/archives\.html$ / permanent;
@@ -66,7 +70,7 @@ server {
 	root {{ vhosts_root }}/{{ domain_name }}/web;
 	index index.html index.htm;
 
-	add_header Content-Security-Policy "default-src 'none'; connect-src 'self'; base-uri 'self'; form-action 'none'; script-src https://*.talideon.com https://*.gaughan.ie 'self'; style-src https://fonts.googleapis.com 'self'; font-src https://fonts.gstatic.com 'self'; object-src https://*.talideon.com https://www.youtube-nocookie.com; img-src https://*.gaughan.ie https://*.talideon.com https://i.ytimg.com 'self'; frame-src https:" always;
+	add_header Content-Security-Policy "default-src 'none'; connect-src 'self'; base-uri 'self'; form-action 'none'; script-src https://*.talideon.com https://*.gaughan.ie 'self'; style-src 'unsafe-inline' 'self'; font-src 'self'; object-src https://*.talideon.com https://www.youtube-nocookie.com; img-src https://*.gaughan.ie https://*.talideon.com https://i.ytimg.com 'self'; frame-src https:" always;
 
 	add_header Permissions-Policy "geolocation=(), autoplay=()" always;
 
