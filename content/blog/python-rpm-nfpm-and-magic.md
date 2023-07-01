@@ -6,7 +6,7 @@ Status: published
 
 I'd an awkward problem to solve recently: how do you build a relatively cross-platform fat RPM for a Python application without having to build out a bunch of extra build infrastructure.
 
-On the face of it, this is easy, and this is [something I've partially solved before](python-lambdas-with-dependencies.md). I've used the same trick umpteen times before, but I hit a problem recently that has to do with how clever [rpmbuild(8)] tries to be.
+On the face of it, this is easy, and this is [something I've partially solved before]({filename}python-lambdas-with-dependencies.md). I've used the same trick umpteen times before, but I hit a problem recently that has to do with how clever [rpmbuild(8)] tries to be.
 
 Normally, this cleverness---`AutoReq` and company---is a boon: it's clever enough to pick up some packages that you'd easily forget were actual dependencies and add them, as well as making sure that the right version of the runtime you're building the package against is also an automatic dependency. But it sometimes gets in the way.
 
