@@ -1,7 +1,7 @@
 Title: Social media broke my brain
 Date: 2023-04-30 22:00
 Category: Meta, Life, Tech, Screeds
-Status: published
+Status: draft
 
 Or, why it might be a good idea to have more friction in "communication".
 
