@@ -109,6 +109,8 @@ if __name__ == "__main__":
     asyncio.run(main())
 ```
 
+(You might be wondering "Keith, why didn't you think to call `server.serve_forever()` in the first place?" Well, that's because I leaned on VS Code's intellisense a little too hard, and without the `await`, it gave nothing of use. And yes, I should've looked at the docs and noticed that the API works just the same as [`socketserver`](https://docs.python.org/3/library/socketserver.html)...)
+
 While simply running `await server.serve_forever()` seems like it should be enough, [`Server`](https://docs.python.org/3/library/asyncio-eventloop.html#asyncio.Server) objects are context managers and using them with `async with` means they'll be cleaned up properly.
 
 Protocols seem pretty similar to the old asyncore `dispatcher` class, albeit somewhat more abstracted away from the underlying network I/O.
