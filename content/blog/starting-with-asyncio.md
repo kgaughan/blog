@@ -129,7 +129,7 @@ class EchoProtocol(asyncio.Protocol):
 After spinning up a telnet client, I typed in some nonsense and got this:
 
 ```console
-> python3 -m aiotest
+$ python3 -m aiotest
 received [b'fdasfdskl\r\n']
 received [b'jklfdsa\r\n']
 received [b'kflds\r\n']
