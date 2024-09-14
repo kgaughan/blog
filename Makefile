@@ -25,35 +25,48 @@ help:
 	@echo '   make categories             list categories alphabetically'
 	@echo '   make deploy                 initially deploy the site'
 
+.PHONY: drafts
 drafts:
 	@egrep -ril '^:?status: *draft$$' $(INPUTDIR) || echo None
 
+.PHONY: categories
 categories:
 	@find $(INPUTDIR) \( -name \*.rst -o -name \*.md \) -exec sed -n -E 's/^(:c|C)ategory: *(.*)/\2/p' {} \; | sed 's/, /\n/g' | sort -u
 
+.PHONY: html
 html: clean $(OUTPUTDIR)/index.html
 	@echo 'Done'
 
-$(OUTPUTDIR)/%.html:
+$(OUTPUTDIR)/%.html: develop
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
+.PHONY: clean
 clean:
 	test -e $(OUTPUTDIR) && find $(OUTPUTDIR) -mindepth 1 -delete || :
 
+.phony: serve
 serve:
 	cd $(OUTPUTDIR) && python3 -m http.server --bind 127.0.0.1 
 
+.PHONY: devserver
 devserver:
 	$(BASEDIR)/develop_server.sh restart
 
-publish:
+.PHONY: publish
+publish: develop
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
+.PHONY: upload
 upload: publish
 	rsync -P -rvczz --delete --exclude=.DS_Store --exclude='.*.sw?' --cvs-exclude $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
 
+.PHONY: deploy
 deploy:
 	ansible-playbook deploy.yml -i hosts.ini --diff
 
-.PHONY: html help clean regenerate serve devserver publish upload
-.PHONY: drafts categories deploy
+.PHONY: develop
+develop: requirements.txt
+	uv tool install --with-requirements requirements.txt pelican
+
+requirements.txt: requirements.in
+	uv pip compile $< > $@
