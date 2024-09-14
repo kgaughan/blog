@@ -11,11 +11,10 @@ The first bit is at least easy enough, but I need to get something I can write o
 
 ```python
 import asyncio
-import typing as t
 
 
 class EchoProtocol(asyncio.Protocol):
-    __slot__: t.ClassVar = ["transport"]
+    __slots__ = ["transport"]
 
     def connection_made(self, transport: asyncio.BaseTransport) -> None:
         self.transport: asyncio.Transport = transport  # type: ignore
@@ -60,11 +59,10 @@ Next up, I'll need to implement some actual parsing of the data received. asynci
 
 ```python
 import asyncio
-import typing as t
 
 
 class ChatProtocol(asyncio.Protocol):
-    __slot__: t.ClassVar = ["transport", "delimiter", "buffer"]
+    __slots__ = ["transport", "delimiter", "buffer"]
 
     def __init__(self, delimiter: bytes = b"\r\n"):
         self.buffer = bytearray()
