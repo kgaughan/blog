@@ -1,5 +1,6 @@
 Title: Setting up redshift
 Date: 2024-09-15 17:00
+Modified: 2024-09-15 21:58
 Slug: redshift
 Category: Health, Tools
 Status: published
@@ -35,7 +36,7 @@ Description=redshift
 After=graphical-session.target
 
 [Service]
-Type=notify
+Type=simple
 Environment=DISPLAY=:0
 ExecStart=/usr/bin/redshift
 Restart=always
@@ -43,8 +44,6 @@ Restart=always
 [Install]
 WantedBy=default.target
 ```
-
-Of note is `Type=notify`: this should ensure that the service only starts when X itself is ready.
 
 After that, it was a matter of running:
 
