@@ -1,5 +1,5 @@
 Title: A simple asyncio client
-Date:2024-09-14 22:16
+Date: 2024-09-14 22:16
 Slug: asyncio-client
 Category: Coding, Projects, Python
 Status: published
