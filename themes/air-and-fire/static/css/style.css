@@ -95,7 +95,7 @@ nav * {
   white-space: nowrap;
 }
 
-nav ul {
+nav menu {
   display: inline-flex;
   justify-content: flex-start;
   list-style: none;
@@ -107,18 +107,18 @@ nav li {
   padding: 0 1rem 0 0;
 }
 
-nav ul.social {
+nav menu.social {
   justify-content: flex-end;
 }
 
 @media (max-width: 540px) {
-  nav ul {
+  nav menu {
     flex-direction: column;
     line-height: 1.4;
   }
 }
 
-nav ul.social li {
+nav menu.social li {
   padding: 0 0 0 1rem;
 }
 

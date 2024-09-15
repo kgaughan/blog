@@ -22,9 +22,8 @@
 <body>
 <header>
 	<nav>
-		<ul>
-		<li><a class="site-name" href="{{ SITEURL }}">{{ SITENAME }}</a></li>
-
+		<menu>
+			<li><a class="site-name" href="{{ SITEURL }}">{{ SITENAME }}</a></li>
 		{% if DISPLAY_PAGES_ON_MENU %}
 			{% for p in pages %}
 				{% if p.metadata.get('menu', 'yes').lower() == 'yes' %}
@@ -45,19 +44,14 @@
 		{% for name, link in LINKS %}
 			<li><a href="{{ link }}">{{ name }}</a></li>
 		{% endfor %}
-		</ul>
-		<ul class="social">
+		</menu>
+		<menu class="social">
 		{% for name, link in SOCIAL %}
 			<li><a rel="me" href="{{ link }}">{{ name }}</a></li>
 		{% endfor %}
-			<li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" title="Feed"><svg xmlns="http://www.w3.org/2000/svg" height="1em" width="1em" viewBox="0 0 448 512"><path d="M0 64C0 46.3 14.3 32 32 32c229.8 0 416 186.2 416 416c0 17.7-14.3 32-32 32s-32-14.3-32-32C384 253.6 226.4 96 32 96C14.3 96 0 81.7 0 64zM128 416c0 35.3-28.7 64-64 64s-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64zM32 160c159.1 0 288 128.9 288 288c0 17.7-14.3 32-32 32s-32-14.3-32-32c0-123.7-100.3-224-224-224c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg></a></li>
-		</ul>
+			<li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" title="Feed"><svg xmlns="http://www.w3.org/2000/svg" height="1em" width="1em" viewBox="0 0 448 512"><title>Feed</title><path d="M0 64C0 46.3 14.3 32 32 32c229.8 0 416 186.2 416 416c0 17.7-14.3 32-32 32s-32-14.3-32-32C384 253.6 226.4 96 32 96C14.3 96 0 81.7 0 64zM128 416c0 35.3-28.7 64-64 64s-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64zM32 160c159.1 0 288 128.9 288 288c0 17.7-14.3 32-32 32s-32-14.3-32-32c0-123.7-100.3-224-224-224c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg></a></li>
+		</menu>
 	</nav>
-
-	<!--
-	<h1>{{ SITENAME }}</h1>
-	<h2>{{ TAGLINE }}</h2>
-	-->
 </header>
 
 <main>
@@ -66,6 +60,7 @@
 </main>
 
 <footer>
+	<small>
 	Copyright &copy; Keith Gaughan
 	{%- if article is defined %},
 		{{ article.date.strftime("%Y") }}
@@ -73,6 +68,7 @@
 		{{ page.date.strftime("%Y") }}
 	{% endif %}<br>
 	<a href="{{ SITEURL }}/colophon/">Colophon</a>
+	</small>
 </footer>
 
 <script src="{{ SITEURL }}/theme/common.js" integrity="sha384-T/oKOcHbLpnDOxUepjLxYIXYQMb1a4xE+AJZ2imaQU2h0ffX77fSgv+CunwXBCzZ"></script>
