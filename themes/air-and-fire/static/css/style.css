@@ -245,7 +245,7 @@ pre, code {
 
 pre {
   padding: 0.5ch;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .figure {
