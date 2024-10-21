@@ -40,6 +40,9 @@ if __name__ == "__main__":
     asyncio.run(main())
 ```
 
+!!! note
+    There's a silly bug here, and the fix is covered in [the next entry]({filename}asyncio-interlude-1.md).
+
 This is far from perfect--it contains blocking code in the form of `input()`--but it's enough to get things working. If this were a real-life situation, the synchronous code would need to be [run in an executor](https://docs.python.org/3/library/asyncio-eventloop.html#executing-code-in-thread-or-process-pools), and that won't necessarily work for something like `input()`.
 
 Here's the output:

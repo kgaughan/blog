@@ -265,4 +265,23 @@ pre {
   margin: 0 auto;
 }
 
+.admonition {
+  font-size: 80%;
+  padding: 0 1rem;
+}
+.admonition-title {
+  font-weight: bold;
+  border-bottom: 1px solid #802;
+  color: #802;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+p.admonition-title + p {
+  margin-top: 0.25rem;
+}
+.admonition p {
+  padding: 0 0.25rem;
+}
+
+
 /*! Pygments */.hll{background-color:#ffc}.c{color:#488;font-style:italic}.err{border:1px solid red}.k{color:#080;font-weight:700}.o{color:#666}.ch{color:#488;font-style:italic}.cm{color:#488;font-style:italic}.cp{color:#BC7A00}.cpf{color:#488;font-style:italic}.c1{color:#488;font-style:italic}.cs{color:#488;font-style:italic}.gd{color:#A00}.ge{font-style:italic}.gr{color:red}.gh{color:#008;font-weight:700}.gi{color:#0A0}.go{color:#888}.gp{color:#008;font-weight:700}.gs{font-weight:700}.gu{color:#808;font-weight:700}.gt{color:#04D}.kc{color:#080;font-weight:700}.kd{color:#080;font-weight:700}.kn{color:#080;font-weight:700}.kp{color:#080}.kr{color:#080;font-weight:700}.kt{color:#B04}.m{color:#666}.s{color:#BA2121}.na{color:#7D9029}.nb{color:#080}.nc{color:#00F;font-weight:700}.no{color:#800}.nd{color:#A2F}.ni{color:#999;font-weight:700}.ne{color:#D2413A;font-weight:700}.nf{color:#00F}.nl{color:#AA0}.nn{color:#00F;font-weight:700}.nt{color:#080;font-weight:700}.nv{color:#19177C}.ow{color:#A2F;font-weight:700}.w{color:#bbb}.mb{color:#666}.mf{color:#666}.mh{color:#666}.mi{color:#666}.mo{color:#666}.sa{color:#B22}.sb{color:#B22}.sc{color:#B22}.dl{color:#B22}.sd{color:#B22;font-style:italic}.s2{color:#B22}.se{color:#B62;font-weight:700}.sh{color:#B22}.si{color:#B68;font-weight:700}.sx{color:#080}.sr{color:#B68}.s1{color:#B22}.ss{color:#19177C}.bp{color:#080}.fm{color:#00F}.vc{color:#19177C}.vg{color:#19177C}.vi{color:#19177C}.vm{color:#19177C}.il{color:#666}
