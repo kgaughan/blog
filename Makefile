@@ -69,4 +69,4 @@ develop: requirements.txt
 	uv tool install --with-requirements requirements.txt pelican
 
 requirements.txt: requirements.in
-	uv pip compile $< > $@
+	uv pip compile -q $< -o $@
