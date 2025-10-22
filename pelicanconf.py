@@ -87,7 +87,8 @@ SOCIAL = [
 PLUGIN_PATHS = [os.path.abspath("plugins")]
 sys.path += PLUGIN_PATHS
 
-import page_hierarchy, readtime
+import page_hierarchy
+import readtime
 
 PLUGINS = [
     page_hierarchy,
