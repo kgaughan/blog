@@ -2,7 +2,7 @@
 ##
 # This section should match your Makefile
 ##
-PELICAN=pelican
+PELICAN=uv run pelican
 PELICANOPTS=
 
 BASEDIR=$(pwd)

@@ -5,8 +5,9 @@ draft posts that might be checked in.
 I use [uv][] for my tooling these days. That must be installed for anything
 else to work.
 
-The makefile should be portable, so it'll work with both GNU make and BSD make.
+The [justfile][] has a set of recipies that can be used for site maintenance.
 
 [Pelican]: https://github.com/getpelican/pelican
 [my blog]: https://keith.gaughan.ie/
 [uv]: https://docs.astral.sh/uv/
+[justfile]: https://just.systems/
