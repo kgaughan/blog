@@ -29,19 +29,14 @@ build cfg:
 [group("Build")]
 html: (build "pelicanconf.py")
 
-# Serve the site at http://localhost:8000
-[group("Testing")]
-serve: html
-	@cd output && uv run -m http.server --bind 127.0.0.1
-
-# Start/restart the development server
-[group("Testing")]
-devserver: html
-	@./develop_server.sh restart
-
 # Generate using production settings
 [group("Build")]
 publish: (build "publishconf.py")
+
+# Serve the site in development mode at http://localhost:8000
+[group("Testing")]
+serve:
+	@uv run pelican content -o output --autoreload --listen --settings pelicanconf.py
 
 # Upload website via rsync+ssh
 [group("Deployment")]

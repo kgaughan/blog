@@ -5,6 +5,7 @@ requires-python = ">=3.11"
 dependencies = [
     "html5lib>=1.1",
     "markdown>=3.9",
+    "pelican==4.11.0",
     "pelican-more-categories>=0.1.0",
     "pelican-series>=3.0.0",
     "pelican-sitemap>=1.2.2",

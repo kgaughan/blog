@@ -15,21 +15,11 @@
     acme_challenge_dir: /usr/local/www/acme
 
   tasks:
-    - name: create local build directory
-      local_action:
-        module: tempfile
-        state: directory
-      become: false
-      register: build_dir
-
     - name: build site
-      local_action:
-        module: make
-        target: publish
-        chdir: .
-        params:
-          OUTPUTDIR: "{{ build_dir.path }}"
+      command:
+        cmd: just publish
       become: false
+      delegate_to: localhost
 
     - name: ensure web site root directory exists
       file:
@@ -66,7 +56,7 @@
 
     - name: copy up site
       synchronize:
-        src: "{{ build_dir.path }}/"
+        src: "output/"
         dest: "{{ vhosts_root }}/{{ domain_name }}/web"
         group: false
         owner: false

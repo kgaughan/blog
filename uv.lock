@@ -32,6 +32,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "html5lib" },
     { name = "markdown" },
+    { name = "pelican" },
     { name = "pelican-more-categories" },
     { name = "pelican-series" },
     { name = "pelican-sitemap" },
@@ -42,6 +43,7 @@ dependencies = [
 requires-dist = [
     { name = "html5lib", specifier = ">=1.1" },
     { name = "markdown", specifier = ">=3.9" },
+    { name = "pelican", specifier = "==4.11.0" },
     { name = "pelican-more-categories", specifier = ">=0.1.0" },
     { name = "pelican-series", specifier = ">=3.0.0" },
     { name = "pelican-sitemap", specifier = ">=1.2.2" },
@@ -50,11 +52,11 @@ requires-dist = [
 
 [[package]]
 name = "docutils"
-version = "0.22.2"
+version = "0.22.3"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/4a/c0/89fe6215b443b919cb98a5002e107cb5026854ed1ccb6b5833e0768419d1/docutils-0.22.2.tar.gz", hash = "sha256:9fdb771707c8784c8f2728b67cb2c691305933d68137ef95a75db5f4dfbc213d", size = 2289092, upload-time = "2025-09-20T17:55:47.994Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d9/02/111134bfeb6e6c7ac4c74594e39a59f6c0195dc4846afbeac3cba60f1927/docutils-0.22.3.tar.gz", hash = "sha256:21486ae730e4ca9f622677b1412b879af1791efcfba517e4c6f60be543fc8cdd", size = 2290153, upload-time = "2025-11-06T02:35:55.655Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/66/dd/f95350e853a4468ec37478414fc04ae2d61dad7a947b3015c3dcc51a09b9/docutils-0.22.2-py3-none-any.whl", hash = "sha256:b0e98d679283fc3bb0ead8a5da7f501baa632654e7056e9c5846842213d674d8", size = 632667, upload-time = "2025-09-20T17:55:43.052Z" },
+    { url = "https://files.pythonhosted.org/packages/11/a8/c6a4b901d17399c77cd81fb001ce8961e9f5e04d3daf27e8925cb012e163/docutils-0.22.3-py3-none-any.whl", hash = "sha256:bd772e4aca73aff037958d44f2be5229ded4c09927fcf8690c577b66234d6ceb", size = 633032, upload-time = "2025-11-06T02:35:52.391Z" },
 ]
 
 [[package]]
@@ -105,11 +107,11 @@ wheels = [
 
 [[package]]
 name = "markdown"
-version = "3.9"
+version = "3.10"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/8d/37/02347f6d6d8279247a5837082ebc26fc0d5aaeaf75aa013fcbb433c777ab/markdown-3.9.tar.gz", hash = "sha256:d2900fe1782bd33bdbbd56859defef70c2e78fc46668f8eb9df3128138f2cb6a", size = 364585, upload-time = "2025-09-04T20:25:22.885Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/7d/ab/7dd27d9d863b3376fcf23a5a13cb5d024aed1db46f963f1b5735ae43b3be/markdown-3.10.tar.gz", hash = "sha256:37062d4f2aa4b2b6b32aefb80faa300f82cc790cb949a35b8caede34f2b68c0e", size = 364931, upload-time = "2025-11-03T19:51:15.007Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/70/ae/44c4a6a4cbb496d93c6257954260fe3a6e91b7bed2240e5dad2a717f5111/markdown-3.9-py3-none-any.whl", hash = "sha256:9f4d91ed810864ea88a6f32c07ba8bee1346c0cc1f6b1f9f6c822f2a9667d280", size = 107441, upload-time = "2025-09-04T20:25:21.784Z" },
+    { url = "https://files.pythonhosted.org/packages/70/81/54e3ce63502cd085a0c556652a4e1b919c45a446bd1e5300e10c44c8c521/markdown-3.10-py3-none-any.whl", hash = "sha256:b5b99d6951e2e4948d939255596523444c0e677c669700b1d17aa4a8a464cb7c", size = 107678, upload-time = "2025-11-03T19:51:13.887Z" },
 ]
 
 [[package]]
@@ -252,15 +254,14 @@ wheels = [
 
 [[package]]
 name = "pelican-series"
-version = "3.0.0"
+version = "3.1.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "docutils" },
     { name = "pelican" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/44/13/bc65ef34fbb921a8a0c56f4fc77b33fd0ebf1e8e989ef2fa24ce42e9453b/pelican_series-3.0.0.tar.gz", hash = "sha256:e44ced55b8f1459b02392a55c77f19d3e449f75cf120d5b1de6705819781e3f3", size = 8205, upload-time = "2024-04-29T10:40:50.954Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/2c/c9/f198ab0a2861ed18caa8d50fcba979b0d1ae90436ad48a181a46206d54c8/pelican_series-3.1.0.tar.gz", hash = "sha256:d2656ff855a9ea48e6bc80ba0ba9178a5077eba093d8e6423d3335300280184a", size = 5992, upload-time = "2025-10-30T11:33:56.975Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/73/d1/07daf1c643cc090f15641e8160bd7e5a8687cb6f71b121f789069829b154/pelican_series-3.0.0-py3-none-any.whl", hash = "sha256:dc6cd93690afeb5336d867e702070396ca0a465fba1976083281e01a346ed882", size = 10842, upload-time = "2024-04-29T10:40:48.833Z" },
+    { url = "https://files.pythonhosted.org/packages/3c/1b/465ddf3d5eb8a450320ed0b736e838ef236a72fe5ed7a23364b39ed2dacc/pelican_series-3.1.0-py3-none-any.whl", hash = "sha256:049cccc89f03bc00349af89d190b97b04b0242ecee676272612d492d563d2dda", size = 7425, upload-time = "2025-10-30T11:33:55.957Z" },
 ]
 
 [[package]]
