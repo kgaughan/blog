@@ -70,7 +70,7 @@ server {
 	root {{ vhosts_root }}/{{ domain_name }}/web;
 	index index.html index.htm;
 
-	add_header Content-Security-Policy "default-src 'none'; connect-src 'self'; base-uri 'self'; form-action 'none'; script-src https://*.talideon.com https://*.gaughan.ie 'self'; style-src 'unsafe-inline' 'self'; font-src 'self'; object-src https://*.talideon.com https://www.youtube-nocookie.com; img-src https://*.gaughan.ie https://*.talideon.com https://i.ytimg.com 'self'; frame-src https:" always;
+	add_header Content-Security-Policy "default-src 'none'; base-uri 'none'; form-action 'self'; script-src https://*.talideon.com https://*.gaughan.ie 'self'; style-src 'self'; font-src  https://fonts.bunny.net https://fonts.gstatic.com 'self'; object-src https://*.talideon.com https://www.youtube-nocookie.com; img-src https://*.gaughan.ie https://*.talideon.com https://i.ytimg.com 'self'; frame-ancestors 'none'; frame-src https:" always;
 
 	add_header Permissions-Policy "geolocation=(), autoplay=()" always;
 
