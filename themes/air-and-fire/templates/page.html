@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% block title %}{{ page.title }}{% endblock %}
 {% block content %}
-<article>
+<article itemscope itemtype="https://schema.org/WebPage" itemid="{{ SITEURL }}/{{ page.url }}">
 	<header>
-		<h1><a href="{{ SITEURL }}/{{ page.url }}" rel="bookmark">{{ page.title }}</a></h1>
+		<h1 itemprop="name"><a href="{{ SITEURL }}/{{ page.url }}" rel="bookmark">{{ page.title }}</a></h1>
 	</header>
-	<section>{{ page.content }}</section>
+	<section itemprop="text">{{ page.content }}</section>
 </article>
 {% endblock %}

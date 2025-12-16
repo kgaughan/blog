@@ -5,17 +5,17 @@
 {% endblock %}
 {% block content %}
 {% for article in articles_page.object_list %}
-	<article>
+	<article itemscope itemtype="https://schema.org/BlogPosting" itemid="{{ SITEURL }}/{{ article.url }}">
 		<header>
 			<section class="category">
 			{% for cat in article.categories or [article.category] %}
 				<a href="{{ SITEURL }}/{{ cat.url }}">{{ cat.name }}</a>
 			{% endfor %}
 			</section>
-			<h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title | striptags }}">{{ article.title }}</a></h1>
+			<h1 itemprop="name"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title | striptags }}">{{ article.title }}</a></h1>
 			<div class="dates">
-				Published <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
-				{% if article.modified is defined %}&middot; updated <time datetime="{{ article.modified.isoformat() }}">{{ article.locale_modified }}</time>{% endif %}
+				Published <time itemprop="datePublished" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+				{% if article.modified is defined %}&middot; updated <time itemprop="dateModified" datetime="{{ article.modified.isoformat() }}">{{ article.locale_modified }}</time>{% endif %}
 				&middot; {{ article.readtime.minutes }}min
 			</div>
 		</header>
