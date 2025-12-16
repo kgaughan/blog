@@ -1,7 +1,7 @@
 Title: A simple asyncio client
 Date: 2024-09-14 22:16
 Slug: asyncio-client
-Category: Coding, Projects, Python
+Category: Coding, Projects, Python, Asyncio
 Status: published
 Series: Starting with asyncio
 

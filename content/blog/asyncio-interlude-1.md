@@ -1,7 +1,7 @@
 Title: asyncio: an interlude
 Date: 2024-09-15 16:00
 Slug: asyncio-interlude-1
-Category: Coding, Projects, Python
+Category: Coding, Projects, Python, Asyncio
 Status: published
 Series: Starting with asyncio
 

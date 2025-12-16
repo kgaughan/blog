@@ -1,6 +1,7 @@
 Title: A high-level asyncio server and client
 Date: 2024-10-21 23:42
 Slug: asyncio-high-level
+Category: Coding, Projects, Python, Asyncio
 Status: published
 Series: Starting with asyncio
 

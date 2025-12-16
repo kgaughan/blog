@@ -1,7 +1,7 @@
 Title: Exploring asyncio protocols
 Date: 2024-09-13 21:50
 Slug: asyncio-protocols
-Category: Coding, Projects, Python
+Category: Coding, Projects, Python, Asyncio
 Status: published
 Series: Starting with asyncio
 

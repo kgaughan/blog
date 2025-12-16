@@ -1,5 +1,6 @@
 Title: A TOTP implementation
 Date: 2024-09-02 11:14
+Modified: 2025-12-16 13:21
 Category: Coding
 Slug: totp-implementation
 Status: published
@@ -160,3 +161,5 @@ class TOTP:
 ```
 
 The reason I wrote this is that [passlib](https://pypi.org/project/passlib/) looks to be effectively dead and combination of a lack of maintenance over the past four years and dependencies on long-deprecated features (such as `pkg_resources`) means it's increasingly unfit for purpose.
+
+Update (2025-12-16): I [merged this into my adjunct library](https://github.com/kgaughan/adjunct/pull/25) about a month ago, so you'll find a maintained version of it there with tests and documentation.

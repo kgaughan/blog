@@ -1,7 +1,7 @@
 Title: Starting with asyncio
 Date: 2024-09-12 23:14
 Slug: starting-with-asyncio-1
-Category: Coding, Projects, Python
+Category: Coding, Projects, Python, Asyncio
 Status: published
 Series: Starting with asyncio
 
