@@ -16,7 +16,7 @@ First had do to with the [`UNIQUE` constraint](https://www.firebirdsql.org/file/
 CREATE DATABASE 'localhost:/var/db/firebird/komorebi.fdb' PAGE_SIZE = 16384 DEFAULT CHARACTER SET UTF8;
 ```
 
-This at least let me increase the field length for `link` field to `1021`, which is a little more reasonable. A better solution would probably to just treat URLs as ASCII and use (Punycode)[https://en.wikipedia.org/wiki/Punycode] for the domain name where necessary.
+This at least let me increase the field length for `link` field to `1021`, which is a little more reasonable. A better solution would probably to just treat URLs as ASCII and use [Punycode](https://en.wikipedia.org/wiki/Punycode) for the domain name where necessary.
 
 ## Altering field types
 
