@@ -9,3 +9,8 @@ Disallow: /
 
 User-agent: DataForSeoBot
 Disallow: /
+
+User-agent: *
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=no
+Sitemap: https://keith.gaughan.ie/sitemap.xml
