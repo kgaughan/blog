@@ -23,7 +23,7 @@ clean:
 
 [private]
 build cfg:
-	@uv run pelican content -o output -s {{cfg}}
+	@uv run --frozen pelican content -o output -s {{cfg}}
 
 # (Re)generate the website with local settings
 [group("Build")]
@@ -36,7 +36,7 @@ publish: (build "publishconf.py")
 # Serve the site in development mode at http://localhost:8000
 [group("Testing")]
 serve:
-	@uv run pelican content -o output --autoreload --listen --settings pelicanconf.py
+	@uv run --frozen pelican content -o output --autoreload --listen --settings pelicanconf.py
 
 # Upload website via rsync+ssh
 [group("Deployment")]

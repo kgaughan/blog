@@ -37,6 +37,7 @@ dependencies = [
     { name = "pelican-series" },
     { name = "pelican-sitemap" },
     { name = "typogrify" },
+    { name = "tzdata" },
 ]
 
 [package.metadata]
@@ -48,6 +49,7 @@ requires-dist = [
     { name = "pelican-series", specifier = ">=3.0.0" },
     { name = "pelican-sitemap", specifier = ">=1.2.2" },
     { name = "typogrify", specifier = ">=2.1.0" },
+    { name = "tzdata" },
 ]
 
 [[package]]

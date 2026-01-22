@@ -10,4 +10,5 @@ dependencies = [
     "pelican-series>=3.0.0",
     "pelican-sitemap>=1.2.2",
     "typogrify>=2.1.0",
+    "tzdata",
 ]
