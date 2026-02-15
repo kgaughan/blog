@@ -3,8 +3,9 @@
 {% block head %}
 	{{ super() }}
 	<meta name="date" value="{{ article.date.isoformat() }}">
-	{%- if article.modified is defined %}<meta name="modified" value="{{ article.modified.isoformat() }}">{% endif %}
-	{%- if article.summary is defined and article.summary != "" %}<meta name="description" content="{{ article.summary | strip_tags }}">{% endif %}
+	<link rel="canonical" href="{{ SITEURL }}/{{ article.url }}">
+	{% if article.modified is defined %}<meta name="modified" value="{{ article.modified.isoformat() }}">{% endif -%}
+	{% if article.summary is defined and article.summary != "" %}<meta name="description" content="{{ article.summary | strip_tags }}">{% endif -%}
 {% endblock %}
 {% block content %}
 <article itemscope itemtype="https://schema.org/BlogPosting" itemid="{{ SITEURL }}/{{ article.url }}">

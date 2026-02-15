@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 {% block title %}{{ page.title }}{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel="canonical" href="{{ SITEURL }}/{{ page.url }}">
+{% endblock %}
 {% block content %}
 <article itemscope itemtype="https://schema.org/WebPage" itemid="{{ SITEURL }}/{{ page.url }}">
 	<header>
