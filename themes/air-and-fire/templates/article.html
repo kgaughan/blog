@@ -24,8 +24,8 @@
 	</header>
 	{% if article.series %}
 	<section class="series">
-        <p>This post is part {{ article.series.index }} of the &ldquo;{{ article.series.name }}&rdquo; series:</p>
-        <ol class="parts">
+		<p>This post is part {{ article.series.index }} of the &ldquo;{{ article.series.name }}&rdquo; series:</p>
+		<ol class="parts">
 		{% for part_article in article.series.all %}
 			{% if part_article == article %}
 			<li class="active">{{ part_article.title }}</li>
@@ -33,7 +33,7 @@
 			<li><a href="{{ SITEURL }}/{{ part_article.url }}">{{ part_article.title }}</a></li>
 			{% endif %}
 		{% endfor %}
-        </ol>
+		</ol>
 	</section>
 	{% endif %}
 	<section itemprop="articleBody">{{ article.content }}</section>

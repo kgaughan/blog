@@ -5,17 +5,14 @@
 	{% block head %}
 		<title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
 	{% endblock head %}
-
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="google-site-verification" content="KzSbN7ThsTvX_DvYQp5ppcB8J4DYcNq42u_3TJzhbOk">
-
 	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css" media="screen,print" integrity="sha384-kWd/Q8zYyEJpnNb6U486io38InMiiZjvCgdQwjDOl7Qz52UlsApVmZ9wEnBqprtM">
 	<script src="{{ SITEURL }}/theme/dayjs.min.js" integrity="sha384-qKOGKwlxNqVZhquaywex6q1R6Le1uR5tc1BYZqDKKctqN7VkuYyVUhK2dSdDIXXz" defer></script>
-
-	{% if FEED_ALL_ATOM %}
-    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed">
-	{% endif %}
+	{%- if FEED_ALL_ATOM %}
+	<link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed">
+	{%- endif %}
 </head>
 
 <body>

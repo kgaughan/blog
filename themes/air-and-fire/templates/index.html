@@ -2,11 +2,11 @@
 {% block head %}
 	{{ super() }}
 	<meta name="description" content="{{ TAGLINE }}">
-	{% if page_name == "index" %}
+	{%- if page_name == "index" %}
 	<link rel="canonical" href="{{ SITEURL }}">
-	{% else %}
+	{%- else %}
 	<meta name="robots" value="noindex">
-	{% endif %}
+	{%- endif %}
 {% endblock %}
 {% block content %}
 {% for article in articles_page.object_list %}
