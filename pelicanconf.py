@@ -129,7 +129,12 @@ EXTRA_PATH_METADATA = {
 
 THEME = os.path.join(os.curdir, "themes", "air-and-fire")
 
-SITEMAP = {"format": "xml"}
+SITEMAP = {
+    "format": "xml",
+    "exclude": [
+        "^categories/",
+    ],
+}
 
 DEFAULT_PAGINATION = 20
 
