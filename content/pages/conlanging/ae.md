@@ -8,7 +8,7 @@ Menu: no
 
 [^irony]: If you know anything about Irish history, this quote from Lloyd George has a strong tinge of irony to it.
 
-![The Sunburst Flag]({attach}attachments/ie_sunburst_med.png){: align="right" }
+![The Sunburst Flag]({attach}attachments/ie_sunburst_med.png){: align="right" width="216" height="108" }
 **Ireland** was for many centuries a colonial domain of the [Kingdom of Kemr](http://hobbit.griffler.co.nz/Kemr.html). After decades of agitation—the Irish themselves would say centuries—in 1922 the Irish won their independence from Kemr and formed the _Irish Free State_ (Saorsdát Éireann). Gaelic is the everyday language, though [Brithenig](http://hobbit.griffler.co.nz/introduction.html) is still taught in schools and is important still for economic purposes. After federalisation in 1956, which came about as a consequence of the second civil war, the country came to be called the _Irish Union_ or in Gaelic, **Aonsdát Éireann**.
 
 
@@ -52,7 +52,7 @@ Each territory is further divided into _Ceantair_ (often translated as _cantons_
 
 There are a number of districts which, while not considered large or populous enough to be considered a territory, are independent of the surrounding territory in all matters. Theses are known as _Ceantair Féinrialach_ (_autonomous districts_). They have all the right and priviledges of a territory, but do not have a seat on the Federal Commission. There are currently two such districts, namely _Ceantar an Phobail Féinrialach Eíceatópaic Corcaí_ and the island of _Montserrat_. Montserrat is provisionally an autonomous district following its accession to the AÉ, but will most likely become a territory as soon as its constitutional status is fully resolved.
 
-[![Map of the AÉ]({attach}attachments/ae-gray.png)]({attach}attachments/ae.png "Full size political map")
+[![Map of the AÉ]({attach}attachments/ae-gray.png)]({attach}attachments/ae.png "Full size political map"){: width="657" height="591" }
 
 The country currently has a population of approximately twelve and a half million (est. 2004). It is a world leader in Electronics and Computing. Other major industries include Pharmacuticals, Financial Services and Agriculture.
 
@@ -113,7 +113,7 @@ _An Grianghal_, the Sunburst, (or An Gal Gréine as it's known OTL) is the flag 
 
 #### Australasia: Tír Ghearoinn (The Irish Condominium Protectorate of Gereinti)
 
-![Tír Ghearoinn's Flag]({attach}attachments/ca_gereinti_med.png){: align="right" }
+![Tír Ghearoinn's Flag]({attach}attachments/ca_gereinti_med.png){: align="right" width="216" height="108" }
 The AÉ has one overseas protectorate—[Gereinti](http://www.geocities.com/elemtilas/ill_bethisad/asia.htm) (roughly Victoria _here_). Essentially, a special relationship exists between Ireland and Gereinti where the Australasian Commonwealth cannot pass legislation affecting Gereinti without the advice and consent of the Irish government.
 
 This situation came about shortly after the AÉ achived independence. When it did, the colonists, who there were mostly Irish or of Irish descent, threw up a ruckus to achieve self-determination themselves and closer ties to the mother country. The end result was that the colony stayed within Australasia, but partial dominion was handed by mutual agreement to the Irish. The AÉ has a say in the relations between Gereinti and Australasia, but not being an Irish colony, cannot interfere directly in internal Gereintian matters. Essentially, Ireland is a guarantor of Gereinti's autonomy with respect to the federal government.

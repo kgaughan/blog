@@ -29,4 +29,4 @@ It's been seven years since I've had a set of terminal colours that I've liked, 
 
 Here's what it looks like. The screen shot is of Vim with the koehler colour scheme running in a terminal displaying some of the templating code in AFK:
 
-![What my terminal looks like]({static}../images/afk-term-cs.png)
+![What my terminal looks like]({attach}attachments/afk-term-cs.png){: .figure width="484" height="330" }

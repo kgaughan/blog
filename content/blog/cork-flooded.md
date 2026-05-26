@@ -5,7 +5,7 @@ Category: Life
 Status: published
 
 ![Cork is buggered!]({attach}attachments/cork-flooded/flooding.jpg)
-{: .figure }
+{: .figure width="400" height="300" }
 
 Sweet mother!
 

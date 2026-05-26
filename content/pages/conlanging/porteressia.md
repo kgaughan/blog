@@ -2,7 +2,7 @@ Title: The Porteressia
 Status: published
 Menu: no
 
-![The word 'eretas' in its native script]({static}../../images/eretas_e1.png){: align="right" }
+![The word 'eretas' in its native script]({static}../../images/eretas_e1.png){: align="right" width="216" height="108" }
 The Porteressia (meaning, 'The People of Portu') was a [conculture](http://en.wikipedia.org/wiki/Constructed_culture) I worked on some years back. It's far from finished, but I figure I ought to put my notes up online.
 
 The language and culture were developed for a set of stories I'd intended to write revolving initially about a messiah-like figure called _Portu_ and later on the effect he had on the culture he was part of. The stories were intended to be part of a metaseries centring on something called _The Weave_, and was meant to deal with themes like the resolution of the ideas of pre-destination and free will, the heroism of small actions, and other such lofty things.
