@@ -196,7 +196,7 @@ $ gpg -a --export | gpg --list-packets
         data: [255 bits]
 ```
 
-It appears my assumption was correct!
+It appears my assumption was correct! If it's not clear from this, even without looking up the meaning of any of the other fields, I can tell that this is the signing key because of `key expires after 1y0d0h0m`, which is a big clue that this is the signing subkey I created.
 
 ### with nFPM itself
 
