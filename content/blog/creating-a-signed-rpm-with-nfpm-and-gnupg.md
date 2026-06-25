@@ -1,5 +1,6 @@
 Title: Creating a signed RPM with nFPM and GnuPG
 Date: 2026-06-21 22:53
+Modified: 2026-06-25 22:00
 Category: Systems Administration, DevOps, Security
 Status: published
 
@@ -93,11 +94,13 @@ I'll start with dropping a small script for invoking nFPM into the root of the r
 set -e
 
 # Extract the most recent tag number; falls back to v0.0.0 is there's none
-export VERSION=$(git describe --tags --abbrev=0 || echo "v0.0.0")
+VERSION="$(git describe --tags --abbrev=0 || echo "v0.0.0")"
 
 # Ensure the packaged files have a stable mtime based on the date of the
 # most recent commit. See: https://reproducible-builds.org/docs/source-date-epoch/
-export SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct)
+SOURCE_DATE_EPOCH="$(git log -1 --pretty=%ct)"
+
+export VERSION SOURCE_DATE_EPOCH
 
 # Trigger the build
 nfpm package --packager rpm
@@ -150,7 +153,7 @@ You must set "%_gpg_name" in your macro file
 
 Predictably, it didn't work. It looks like I'll need to put some stuff in `~/.config/rpm/macros`:
 
-```
+```text
 %_gpg_name Keith Gaughan <***@gaughan.ie>
 ```
 
@@ -251,18 +254,22 @@ while getopts "hP" opt; do
             prompt=1
             ;;
         *)
-            usage 2>&1
+            usage >&2
             exit 1
             ;;
     esac
 done
 
-if test "${prompt:-}" = "1" -a -z "${NFPM_PASSPHRASE:-}"; then
-    stty -echo
-    read -p "passphrase> " NFPM_PASSPHRASE
-    stty echo
-    echo
-    export NFPM_PASSPHRASE
+if test "${prompt:-}" = "1" && test -z "${NFPM_PASSPHRASE:-}"; then
+	orig_stty="$(stty -g)"
+	trap 'stty "$orig_stty"' INT TERM EXIT
+	stty -echo
+	printf "passphrase> "
+	read -r NFPM_PASSPHRASE
+	stty "$orig_stty"
+	trap - INT TERM EXIT
+	echo
+	export NFPM_PASSPHRASE
 fi
 ```
 
