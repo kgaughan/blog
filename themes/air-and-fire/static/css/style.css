@@ -56,7 +56,15 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+
 /*! Local */
+
+:root {
+  --background: #fff;
+  --header: #802;
+  --text: #555;
+  --metadata: #888;
+}
 
 body {
   font-family: "Raleway", sans-serif;
@@ -65,12 +73,17 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  color: #555;
-  background: white;
-}
+  color: var(--text);
+  background: var(--background);
 
-body > header {
-  padding-bottom: 1rem;
+  & > header {
+    padding-bottom: 1rem;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
 }
 
 body > header, main, footer, .paginator {
@@ -87,106 +100,98 @@ nav {
   padding: 1ch 0;
   margin-bottom: 1rem;
   flex-wrap: wrap;
-  border-bottom: 1px solid #802;
-}
+  border-bottom: 1px solid var(--header);
 
-nav * {
-  white-space: nowrap;
-}
+  * {
+    white-space: nowrap;
+  }
 
-nav menu {
-  display: inline-flex;
-  justify-content: flex-start;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+  menu {
+    display: inline-flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @media (max-width: 540px) {
+      flex-direction: column;
+      line-height: 1.4;
+    }
+  }
 
-nav li {
-  padding: 0 1rem 0 0;
-}
+  li {
+    padding: 0 1rem 0 0;
+  }
 
-nav menu.social {
-  justify-content: flex-end;
-}
+  menu.social {
+    justify-content: flex-end;
+    li {
+      padding: 0 0 0 1rem;
+    }
+  }
 
-@media (max-width: 540px) {
-  nav menu {
-    flex-direction: column;
-    line-height: 1.4;
+  & > header h1,
+  & > header h2 {
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+  }
+  & > header h1 {
+    font-size: 300%;
+    line-height: 1.1;
+  }
+  & > header h2 {
+    font-size: 100%;
+    line-height: 1.2;
   }
 }
 
-nav menu.social li {
-  padding: 0 0 0 1rem;
-}
-
-body > header a {
-  color: inherit;
-  text-decoration: none;
-}
-
 .site-name {
-  color: #802;
+  color: var(--header);
   font-weight: bold;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #802;
-}
-
-body > header h1, body > header h2 {
-  font-weight: 400;
-  margin: 0;
-  text-align: center;
-}
-body > header h1 {
-  font-size: 300%;
-  line-height: 1.1;
-}
-body > header h2 {
-  font-size: 100%;
-  line-height: 1.2;
+  color: var(--header);
 }
 
 article {
   margin: 1rem 0 2rem;
-}
-article > header h1 {
-  margin: 0;
-}
-article > header h1 a {
-  color: #802;
-  text-decoration: none;
-}
-article .category a {
-  font-size: 80%;
-  font-weight: bold;
-  background-color: #802;
-  color: #fff;
-  padding: 0 0.25rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-article .dates {
-  font-size: 80%;
-  color: #888;
-}
-article > section {
-  line-height: 1.4;
-}
-article .series {
-  font-size: 80%;
-  font-style: italic;
-  color: #888;
-}
-article .series .active {
-  font-weight: bold;
-}
-article li {
-  margin-top: 1ex;
-  margin-bottom: 1ex;
+  & > header h1 {
+    margin: 0;
+  }
+  & > header h1 a {
+    color: var(--header);
+    text-decoration: none;
+  }
+  .category a {
+    font-size: 80%;
+    font-weight: bold;
+    background-color: var(--header);
+    color: white;
+    padding: 0 0.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .dates {
+    font-size: 80%;
+    color: var(--metadata);
+  }
+  & > section {
+    line-height: 1.4;
+  }
+  .series {
+    font-size: 80%;
+    font-style: italic;
+    color: var(--metadata);
+    .active {
+      font-weight: bold;
+    }
+  }
+  li {
+    margin-top: 1ex;
+    margin-bottom: 1ex;
+  }
 }
 
 footer {
@@ -197,18 +202,18 @@ footer {
 
 blockquote {
   font-style: italic;
-}
-blockquote em {
-  font-style: normal;
+  em {
+    font-style: normal;
+  }
 }
 
 .footnote {
   font-size: 80%;
   font-style: italic;
-  color: #888;
-}
-.footnote hr {
-  display: none;
+  color: var(--metadata);
+  hr {
+    display: none;
+  }
 }
 
 .paginator {
@@ -222,10 +227,10 @@ table {
   margin: 0 auto;
 }
 thead, tbody {
-  border-bottom: 1px solid #802;
+  border-bottom: 1px solid var(--header);
 }
 tbody tr + tr {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--metadata);
 }
 th, td {
   padding: 0.5em 1em;
@@ -239,7 +244,7 @@ dl dt {
 }
 
 pre, code {
-  background: #eee;
+  background: color-mix(in srgb, white 80%, var(--metadata));
 }
 
 pre {
@@ -249,16 +254,16 @@ pre {
 
 .figure {
   text-align: center;
-}
-.figure img {
-  border: 1px solid #eee;
-  padding: 1px;
+  img {
+    border: 1px solid var(--metadata);
+    padding: 1px;
+  }
 }
 
 .fig {
   max-width: 100%;
   object-fit: contain;
-  border: 1px solid #eee;
+  border: 1px solid var(--metadata);
   padding: 1px;
   display: block;
   margin: 0 auto;
@@ -267,19 +272,19 @@ pre {
 .admonition {
   font-size: 80%;
   padding: 0 1rem;
+  p {
+    padding: 0 0.25rem;
+  }
 }
 .admonition-title {
   font-weight: bold;
-  border-bottom: 1px solid #802;
-  color: #802;
+  border-bottom: 1px solid var(--header);
+  color: var(--header);
   text-transform: uppercase;
   margin-bottom: 0;
 }
 p.admonition-title + p {
   margin-top: 0.25rem;
-}
-.admonition p {
-  padding: 0 0.25rem;
 }
 
 

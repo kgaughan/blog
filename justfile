@@ -47,3 +47,8 @@ upload: publish
 [group("Deployment")]
 deploy:
 	@ansible-playbook deploy.yml -i hosts.ini --diff
+
+# Calculate the integrity hash for a given file
+[group("Deployment")]
+integrity path:
+	@printf "sha384-%s\n" $(openssl sha384 -binary {{path}} | base64)
