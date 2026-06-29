@@ -2,10 +2,51 @@
 <html lang="{{ DEFAULT_LANG }}">
 
 <head>
+	<meta charset="utf-8">
 	{% block head %}
 		<title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@graph": [
+				{
+					"@type": "WebSite",
+					"@id": "{{ SITEURL }}#website",
+					"url": "{{ SITEURL }}",
+					"name": "Keith Gaughan",
+					"description": "The personal site of Keith Gaughan, a software developer based in Ireland.",
+					"inLanguage": "en-IE",
+					"publisher": {
+						"@id": "{{ SITEURL }}#person"
+					}
+				},
+				{
+					"@type": "Person",
+					"@id": "{{ SITEURL }}#person",
+					"url": "{{ SITEURL }}",
+					"name": "Keith Gaughan",
+					"alternateName": "talideon",
+					"givenName": "Keith",
+					"familyName": "Gaughan",
+					"jobTitle": "Software Developer",
+					"knowsLanguage": "en-IE",
+					"knowsAbout": [],
+					"nationality": {
+						"@type": "Country",
+						"name": "Ireland"
+					},
+					"sameAs": [
+						"https://github.com/kgaughan",
+						"https://stackoverflow.com/users/8342/keith-gaughan",
+						"https://www.linkedin.com/in/keithgaughan",
+						"https://lobste.rs/~talideon",
+						"https://news.ycombinator.com/user?id=talideon"
+					]
+				}
+			]
+		}
+		</script>
 	{% endblock head %}
-	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="google-site-verification" content="KzSbN7ThsTvX_DvYQp5ppcB8J4DYcNq42u_3TJzhbOk">
 	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css" media="screen,print" integrity="sha384-iVcpJqchHJpb9pU1TvYrOMKFw4uFFZyVeJPVMa+o3unAreW1RNb8slRHmGW/TLBi">
