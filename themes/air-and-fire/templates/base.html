@@ -3,6 +3,10 @@
 
 <head>
 	<meta charset="utf-8">
+	<link rel="preload" href="/theme/fonts/raleway/1Ptug8zYS_SKggPNyC0ITw.woff2" as="font" type="font/woff2">
+	<link rel="preload" href="/theme/fonts/raleway/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4WjMDrMfIA.woff2" as="font" type="font/woff2">
+	<link rel="preload" href="/theme/fonts/raleway/1Ptug8zYS_SKggPNyCMIT5lu.woff2" as="font" type="font/woff2">
+	<link rel="preload" href="/theme/fonts/raleway/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4WjMDr0fIA9c.woff2" as="font" type="font/woff2">
 	{% block head %}
 		<title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
 		<script type="application/ld+json">
@@ -49,8 +53,8 @@
 	{% endblock head %}
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="google-site-verification" content="KzSbN7ThsTvX_DvYQp5ppcB8J4DYcNq42u_3TJzhbOk">
-	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css" media="screen,print" integrity="sha384-iVcpJqchHJpb9pU1TvYrOMKFw4uFFZyVeJPVMa+o3unAreW1RNb8slRHmGW/TLBi">
-	<script src="{{ SITEURL }}/theme/dayjs.min.js" integrity="sha384-qKOGKwlxNqVZhquaywex6q1R6Le1uR5tc1BYZqDKKctqN7VkuYyVUhK2dSdDIXXz" defer></script>
+	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css" media="screen,print" integrity="sha384-XYavn1p4pyVFz+613rMtF0JfrFN0PmJqJdjv2ESKmJxbUVIYCttJ2g2bLx8jNN6s">
+	<script src="{{ SITEURL }}/theme/dayjs.min.js" integrity="sha384-8hI+xw/FWAcldc3YzdLffQaWQaTXgzchsaMy+wnjcpbvhks4XaKmG7XhcbopX3Nt" defer></script>
 	{%- if FEED_ALL_ATOM %}
 	<link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed">
 	{%- endif %}
