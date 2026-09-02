@@ -131,10 +131,7 @@ THEME = os.path.join(os.curdir, "themes", "air-and-fire")
 
 SITEMAP = {
     "format": "xml",
-    "exclude": [
-        "^categories/",
-        r"^index[0-9]+\.html$"
-    ],
+    "exclude": [r"^index[0-9]+\.html$"],
 }
 
 DEFAULT_PAGINATION = 20
