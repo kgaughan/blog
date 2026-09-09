@@ -12,4 +12,5 @@ Disallow: /
 
 User-agent: *
 Allow: /
+
 Sitemap: https://keith.gaughan.ie/sitemap.xml
