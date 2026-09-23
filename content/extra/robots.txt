@@ -1,3 +1,5 @@
+Sitemap: https://keith.gaughan.ie/sitemap.xml
+
 User-agent: MJ12bot
 Disallow: /
 
@@ -9,8 +11,3 @@ Disallow: /
 
 User-agent: DataForSeoBot
 Disallow: /
-
-User-agent: *
-Allow: /
-
-Sitemap: https://keith.gaughan.ie/sitemap.xml
