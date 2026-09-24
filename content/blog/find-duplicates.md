@@ -7,8 +7,6 @@ Status: published
 !!! note
     This one was relatively populate for whatever reason. I'd recommend you use something like [duff](http://duff.dreda.org/) these days, though find-duplicates still works better in some circumstances.
 
-	I'm still kind of happy with this code though. [Here](https://web.archive.org/web/20080907024912/http://talideon.com/weblog/2008/02/find-duplicates.cfm) is a cache of the original post.
-
 This is is starting to become a bit of a series! I needed a small, sharp tool for finding what duplicate files I had sitting on my external harddrive. I've lot of stuff which, over time, has got inadvertently duplicated, or downloaded twice, such as photos, software archives, sound files, papers and articles, &c. It needed to be fast and small, capable of having several directories searched at once (e.g., my home directory and some directory on the external HDD), and grepable. Here's the result:
 
 ```python

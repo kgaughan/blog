@@ -4,9 +4,6 @@ Category: Coding
 Slug: srgp
 Status: published
 
-!!! note
-    This is juvenile, but it's still better than XML-RPC. [Here](https://web.archive.org/web/20080807163956/http://talideon.com/weblog/2008/05/srgp.cfm) is the original post.
-
 Sometimes something you do as a joke can yield interesting results.
 
 About a year or so ago, I was feeling bored and decided to see how much of a diet I could put [XML-RPC](http://xmlrpc.scripting.com/) on as you do. Though I managed to slim it down quite a bit and produce a [RELAX NG](https://relaxng.org/) schema for the resulting format, it was all just a diversion and I only did it for fun. I let all of this sit on my harddrive festering away for ages until I stumbled across it again and decided to fiddle with the idea of a HTTP-derived joke protocol designed _specifically_ for tunnelling the likes of XML-RPC.
@@ -29,16 +26,18 @@ It also introduces two header elements of its own: `Reference` and `Token`, but 
 
 The response status codes are trimmed down. Their semantics are close to the HTTP originals:
 
-200 OK
-202 Accepted
-301 Moved Permanently
-400 Bad Request
-403 Forbidden
-404 Bad Endpoint
-405 Bad Request Type
-500 Internal Server Error
-503 Service Unavailable
-505 Protocol Version Not Supported
+| Code | Status |
+| ---- | ------ |
+| 200 | OK |
+| 202 | Accepted |
+| 301 | Moved Permanently |
+| 400 | Bad Request |
+| 403 | Forbidden |
+| 404 | Bad Endpoint |
+| 405 | Bad Request Type |
+| 500 | Internal Server Error |
+| 503 | Service Unavailable |
+| 505 | Protocol Version Not Supported |
 
 **200** implies that the request was successfully _dispatched_, but not necessarily that it was successfully _processed_. After all, it can contain a fault response. The headers accompanying it are `Content-Type` and `Date`, and if they were provided with the request, `Reference` and `Token` will be returned with the response too. The response might also include the `Content-Encoding`, `Server`, and `Connection` responses.
 

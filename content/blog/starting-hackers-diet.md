@@ -4,9 +4,6 @@ Slug: starting-hackers-diet
 Category: Health
 Status: published
 
-!!! note
-    [An old post](https://web.archive.org/web/20080829000908/http://talideon.com/weblog/2004/09/starting-hackers-diet.cfm) from the second iteration of my blog. I was actually pretty down on myself back then about all this, though it only comes out here and there. This attempt, as you might guess, failed.
-
 There's one thing that I really dislike about myself, and that's my weight.
 
 I'm not tremendously overweight, but suffice to say that I weigh much more than I should and much of that should really be muscle or just not there.

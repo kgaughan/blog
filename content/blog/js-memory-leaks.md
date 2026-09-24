@@ -4,9 +4,6 @@ Slug: js-memory-leaks
 Category: Coding
 Status: published
 
-!!! note
-    I've edited this down a little bit. A snapshot of the original post is [here](https://web.archive.org/web/20150602124013/https://talideon.com/weblog/2005/03/js-memory-leaks.cfm).
-
 I'm a fan of [unobtrusive JavaScript](http://www.onlinetools.org/articles/unobtrusivejavascript/) and I've strove to make my JavaScript code as unobtrusive as possible for years now.
 
 However, I discovered something about IE a while ago when I was reading through the [comp.lang.JavaScript FAQ](http://jibbering.com/faq/): IE [leaks memory like a sieve](http://www.jibbering.com/faq/faq_notes/closures.html) when you use closures with any kind of COM object (including DOM elements, which are implemented using COM). That kinda sucks. Firefox and other browsers apparently have the same problem only to a lesser extent. Damned multiple garbage collectors!

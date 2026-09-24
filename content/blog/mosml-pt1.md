@@ -4,9 +4,6 @@ Slug: mosml-pt1
 Category: Coding
 Status: published
 
-!!! note
-    A cache of the original post is [here](https://web.archive.org/web/20080829001200/http://talideon.com/weblog/2008/03/mosml-pt1.cfm).
-
 I was playing with [Moscow ML](http://www.itu.dk/~sestoft/mosml.html) because I've wanted to give [Standard ML](http://en.wikipedia.org/wiki/Standard_ML) a bash for a while now, but I could never get [SML/NJ](http://www.smlnj.org/) to play nice for me back when I tried it first on Windows. That, and there was no documentation download.
 
 So why Moscow ML and not SML/NJ, or [Mlton](http://mlton.org/), or one of the other proper Standard ML compilers? Well, even though Moscow ML is getting on a bit and uses bytecode compilation rather than native compilation, it's simple to use, is well-documented, and, unlike Mlton, doesn't require FreeBSD 7.0 and much as I'd like to, I haven't upgraded yet.

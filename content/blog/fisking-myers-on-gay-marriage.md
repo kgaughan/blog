@@ -4,9 +4,6 @@ Category: Asshats
 Slug: fisking-myers-on-gay-marriage
 Status: published
 
-!!! note
-    This could've been written better, but I still stand by just about everything in it. I've vague recollections of just hammering the thing out and posting it. Myers was and remains somebody who ought to have been a wankstain on his father's underpants. I'm glad [we consigned this to history's dustbin](https://en.wikipedia.org/wiki/Thirty-fourth_Amendment_of_the_Constitution_of_Ireland). The original post is [here](http://talideon.com/weblog/2006/05/fisking-myers-on-gay-marriage.cfm).
-
 Sigh. There's nothing I dislike more than poor logic, and [Myers](http://en.wikipedia.org/wiki/Kevin_Myers), as always is a veritable font of the stuff. [More awfulness in the Bindo this morning](https://web.archive.org/web/20110830120635/http://www.unison.ie/irish_independent/stories.php3?ca=44&si=1615268&issue_id=14049) (registration required). Mind that I'm not expressing an opinion _for_ or _against_ such unions, just that Myer's logic is flawed. It's a long one, but let's fisk this mother:
 
 > What decent person...

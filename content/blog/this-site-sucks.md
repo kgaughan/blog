@@ -1,5 +1,5 @@
 Title: Things that suck about this site
-Slug: this-site-sucks.cfm
+Slug: this-site-sucks
 Date: 2006-01-30 15:33
 Category: Meta
 Status: published

@@ -4,9 +4,6 @@ Slug: tir-gan-teanga-tir-gan-anam
 Category: Asshats
 Status: published
 
-!!! note
-    The original is [here](http://talideon.com/weblog/2006/07/tir-gan-teanga-tir-gan-anam.cfm), and it has some comments worth reading.
-
 I'm, of course, referencing _Risteárd Ó Bodchroitheadoir_'s (aren't cross-linguistic puns a fine thing!) latest piece, "[We Can Do Without Irish](https://web.archive.org/web/20110830115939/http://siciliannotes.blogspot.com/2006/07/we-can-do-without-irish.html)". As with other pieces, whether I agree with the writer's points or not is unimportant; I'm simply out to point out flaws in his thesis.
 
 I know Richard is probably just [trolling](http://en.wikipedia.org/wiki/Internet_troll), and I shouldn't feed the trolls, but it's been a while since I've fisked anybody, so it's time for another.

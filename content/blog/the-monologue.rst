@@ -5,10 +5,6 @@ The monologue
 :category: Fiction
 :status: published
 
-[Original available here__.]
-
-.. __: https://web.archive.org/web/20080829003758/talideon.com/weblog/2007/09/the-monologue.cfm
-
 I'm working on a monologue for a story I'm writing. Here's what I have right
 now. The story's metaphysical sci-fi. The character making the speech is meant
 to speak in a rather flowery and grandiloquent manner, so ignore that. What I

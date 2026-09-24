@@ -4,9 +4,6 @@ Slug: detecting-broken-images-js
 Category: Coding
 Status: published
 
-!!! note
-    A cache of the original can be found [here](https://web.archive.org/web/20091227154326/http://talideon.com/weblog/2005/02/detecting-broken-images-js.cfm).
-
 I hit an annoying problem with a project at work. It's not my fault, there's nothing wrong with the code, but sometimes things will happen: people will delete images out of the backend, not upload the image they've given, or will be referencing an image on another server. Welcome to a plague of broken images.
 
 So how to cope with this? Your guess is as good as mine, but for now my solution is to pretend the image isn't there at all. Not completely mind you: it occupies a space, but it's not shown.
